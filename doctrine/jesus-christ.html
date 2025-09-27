@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Christ - Busca Cristo LDS Church</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .doctrine-page {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .breadcrumb-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .breadcrumb a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            color: #ffd700;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            color: #6c757d;
+        }
+        
+        .doctrine-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+        
+        .doctrine-header .subtitle {
+            font-size: 1.3rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .doctrine-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .doctrine-section {
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #ffd700;
+            padding-left: 1rem;
+        }
+        
+        .doctrine-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 1.5rem;
+        }
+        
+        .scripture-quote {
+            background: #f8f9fa;
+            border-left: 4px solid #1e3c72;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1e3c72;
+        }
+        
+        .scripture-reference {
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #1e3c72;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .back-button:hover {
+            background: #2a5298;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+        
+        .related-topics {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+        
+        .related-topics h3 {
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .related-link {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .related-link:hover {
+            background: #1e3c72;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cross"></i>
+                <span>Busca Cristo</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#activities" class="nav-link">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#doctrine" class="nav-link">Our Faith</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#locations" class="nav-link">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../index.html#doctrine">Our Faith</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Jesus Christ</span>
+        </div>
+    </div>
+
+    <!-- Doctrine Page Content -->
+    <section class="doctrine-page">
+        <div class="container">
+            <div class="doctrine-header">
+                <h1>Jesus Christ</h1>
+                <p class="subtitle">Our Savior, Redeemer, and the central figure of our faith</p>
+            </div>
+
+            <div class="doctrine-content">
+                <a href="../index.html#doctrine" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Our Faith
+                </a>
+
+                <div class="doctrine-section">
+                    <h2>Who is Jesus Christ?</h2>
+                    <p>
+                        Jesus Christ is the Son of God, the Savior and Redeemer of the world. He is the central figure of our faith and the foundation of our hope. Through His infinite Atonement, all mankind may be saved by obedience to the laws and ordinances of the Gospel.
+                    </p>
+                    <p>
+                        We believe that Jesus Christ is the literal Son of God, born of Mary in Bethlehem. He lived a perfect, sinless life, showing us the way to live and serve others. His teachings, miracles, and example provide the pattern for our lives.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>The Atonement of Jesus Christ</h2>
+                    <p>
+                        The Atonement of Jesus Christ is the central doctrine of our faith. Through His suffering in Gethsemane and His death on the cross, Jesus Christ took upon Himself the sins, pains, and afflictions of all mankind. This infinite sacrifice makes it possible for us to be forgiven of our sins and return to live with our Heavenly Father.
+                    </p>
+                    <div class="scripture-quote">
+                        "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
+                        <div class="scripture-reference">John 3:16</div>
+                    </div>
+                    <p>
+                        The Atonement not only provides forgiveness for our sins but also gives us strength to overcome our weaknesses and challenges. Through His grace, we can become better people and draw closer to God.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>Following Christ's Example</h2>
+                    <p>
+                        As followers of Jesus Christ, we strive to live as He lived. This means loving God with all our heart, might, mind, and strength, and loving our neighbors as ourselves. We seek to serve others, show compassion, and live with integrity and faith.
+                    </p>
+                    <p>
+                        Christ taught us to be humble, forgiving, and charitable. He showed us how to pray, how to treat others with kindness, and how to trust in our Heavenly Father's plan. By following His example, we can find peace, joy, and purpose in our lives.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>Our Relationship with Christ</h2>
+                    <p>
+                        Jesus Christ is not just a historical figure to us—He is our living Savior. We believe He knows each of us personally and loves us unconditionally. Through prayer, scripture study, and following His teachings, we can develop a personal relationship with Him.
+                    </p>
+                    <p>
+                        As we come unto Christ, we find healing, hope, and direction for our lives. He is our advocate with the Father and our source of strength in times of trial. Through His Atonement, we can be transformed and become more like Him.
+                    </p>
+                </div>
+
+                <div class="related-topics">
+                    <h3>Related Topics</h3>
+                    <div class="related-links">
+                        <a href="plan-of-salvation.html" class="related-link">Plan of Salvation</a>
+                        <a href="book-of-mormon.html" class="related-link">Book of Mormon</a>
+                        <a href="priesthood.html" class="related-link">Priesthood Power</a>
+                        <a href="eternal-families.html" class="related-link">Eternal Families</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+

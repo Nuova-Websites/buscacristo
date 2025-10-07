@@ -114,7 +114,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: #1A4B5C url('/images/bautismo.jpeg?v=2');
+    background: #1A4B5C url('images/bautismo.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

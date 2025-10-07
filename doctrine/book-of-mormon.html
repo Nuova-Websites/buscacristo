@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Mormon - Busca Cristo LDS Church</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .doctrine-page {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .breadcrumb-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .breadcrumb a {
+            color: #1A4B5C;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            color: #D4AF37;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            color: #6c757d;
+        }
+        
+        .doctrine-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1A4B5C;
+            margin-bottom: 1rem;
+        }
+        
+        .doctrine-header .subtitle {
+            font-size: 1.3rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .doctrine-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .doctrine-section {
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1A4B5C;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #D4AF37;
+            padding-left: 1rem;
+        }
+        
+        .doctrine-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 1.5rem;
+        }
+        
+        .scripture-quote {
+            background: #f8f9fa;
+            border-left: 4px solid #1A4B5C;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1A4B5C;
+        }
+        
+        .scripture-reference {
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #1A4B5C;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .back-button:hover {
+            background: #2C5F5F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26, 75, 92, 0.3);
+        }
+        
+        .related-topics {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+        
+        .related-topics h3 {
+            color: #1A4B5C;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .related-link {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1A4B5C;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .related-link:hover {
+            background: #1A4B5C;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/faro.png" alt="Busca Cristo Logo" class="logo-image">
+                <span>Busca Cristo</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#activities" class="nav-link">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#doctrine" class="nav-link">Our Faith</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#locations" class="nav-link">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../index.html#doctrine">Our Faith</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Book of Mormon</span>
+        </div>
+    </div>
+
+    <!-- Doctrine Page Content -->
+    <section class="doctrine-page">
+        <div class="container">
+            <div class="doctrine-header">
+                <h1>Book of Mormon</h1>
+                <p class="subtitle">Another Testament of Jesus Christ</p>
+            </div>
+
+            <div class="doctrine-content">
+                <a href="../index.html#doctrine" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Our Faith
+                </a>
+
+                <div class="doctrine-section">
+                    <h2>What is the Book of Mormon?</h2>
+                    <p>
+                        The Book of Mormon is another testament of Jesus Christ, confirming the truths found in the Bible. It is a sacred record of ancient American civilizations and contains the fullness of the everlasting gospel. The book was written by ancient prophets who lived on the American continent from approximately 600 B.C. to A.D. 421.
+                    </p>
+                    <p>
+                        The Book of Mormon testifies of Jesus Christ and His divine mission. It teaches the same principles of faith, repentance, baptism, and the gift of the Holy Ghost that are found in the Bible. Together, the Bible and the Book of Mormon provide a more complete understanding of God's plan for His children.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>The Coming Forth of the Book of Mormon</h2>
+                    <p>
+                        The Book of Mormon was translated by Joseph Smith through the gift and power of God. The original records were written on gold plates and were buried in the earth for over 1,400 years. In 1823, the angel Moroni appeared to Joseph Smith and told him about these sacred records.
+                    </p>
+                    <div class="scripture-quote">
+                        "And he shall bring forth a new record, and therein shall be the same gospel which he hath declared unto them in the Bible; and there shall be no more than two nations."
+                        <div class="scripture-reference">Ezekiel 37:16-17</div>
+                    </div>
+                    <p>
+                        After four years of preparation, Joseph Smith received the gold plates and translated them by the power of God. The Book of Mormon was first published in 1830 and has since been translated into over 100 languages.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>Key Teachings of the Book of Mormon</h2>
+                    <p>
+                        The Book of Mormon contains many important teachings about Jesus Christ, including His birth, ministry, death, and resurrection. It teaches about the importance of faith, repentance, baptism, and receiving the gift of the Holy Ghost. The book also emphasizes the importance of families, service to others, and following the commandments of God.
+                    </p>
+                    <p>
+                        One of the most powerful teachings in the Book of Mormon is about the Atonement of Jesus Christ. The book teaches that through Christ's sacrifice, all mankind can be saved and return to live with God. It also teaches about the importance of personal revelation and how we can receive guidance from God in our daily lives.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>The Promise of the Book of Mormon</h2>
+                    <p>
+                        The Book of Mormon contains a promise that anyone who reads it with a sincere heart and asks God in faith will receive a witness of its truthfulness. This promise is found in Moroni 10:3-5, where we are invited to read, ponder, and pray about the book.
+                    </p>
+                    <div class="scripture-quote">
+                        "And when ye shall receive these things, I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true; and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost."
+                        <div class="scripture-reference">Moroni 10:4</div>
+                    </div>
+                    <p>
+                        This promise applies to everyone who reads the Book of Mormon. Through prayer and study, we can receive a personal witness that the book is true and that it contains the word of God.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2>How to Study the Book of Mormon</h2>
+                    <p>
+                        The Book of Mormon is meant to be studied prayerfully and regularly. We encourage everyone to read it daily, ponder its teachings, and apply its principles in their lives. The book can be read individually or as a family, and there are many resources available to help with understanding its teachings.
+                    </p>
+                    <p>
+                        As you study the Book of Mormon, look for principles that apply to your life. Pay attention to the examples of faith, courage, and obedience shown by the people in the book. Most importantly, pray for understanding and guidance as you read.
+                    </p>
+                </div>
+
+                <div class="related-topics">
+                    <h3>Related Topics</h3>
+                    <div class="related-links">
+                        <a href="jesus-christ.html" class="related-link">Jesus Christ</a>
+                        <a href="living-prophets.html" class="related-link">Living Prophets</a>
+                        <a href="plan-of-salvation.html" class="related-link">Plan of Salvation</a>
+                        <a href="priesthood.html" class="related-link">Priesthood Power</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+

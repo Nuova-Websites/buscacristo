@@ -272,6 +272,34 @@ body {
     overflow: hidden;
 }
 
+.activity-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.activity-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: all 0.3s ease;
+}
+
+.activity-type-card:hover .activity-card-image img {
+    transform: scale(1.05);
+    filter: brightness(0.5);
+}
+
+.activity-type-card > *:not(.activity-card-image) {
+    position: relative;
+    z-index: 1;
+}
+
 .activity-type-card[data-activity] {
     background-size: cover;
     background-position: center;
@@ -573,6 +601,48 @@ body {
     background-repeat: no-repeat;
 }
 
+.doctrine-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.doctrine-card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.doctrine-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.doctrine-card-image img[src*="jesus"] {
+    object-position: center top;
+}
+
+.doctrine-topic-card:hover .doctrine-card-image img {
+    transform: scale(1.05);
+}
+
+.doctrine-topic-card > *:not(.doctrine-card-image) {
+    position: relative;
+    z-index: 2;
+}
+
 .doctrine-topic-card::before {
     content: '';
     position: absolute;
@@ -759,10 +829,36 @@ body {
     margin-top: 2rem;
 }
 
+.missionary-cta .btn-secondary {
+    background: transparent;
+    color: #1A4B5C;
+    border: 2px solid #1A4B5C;
+}
+
+.missionary-cta .btn-secondary:hover {
+    background: #1A4B5C;
+    color: white;
+}
+
 .missionaries-image {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.missionaries-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: 3px solid white;
+}
+
+.missionaries-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
 
 .missionaries-placeholder {
@@ -1202,6 +1298,10 @@ body {
     .missionaries-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .missionaries-image img {
+        max-width: 100%;
     }
 
     .missionary-features {

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../translations.js"></script>
+    <script src="../languageManager.js"></script>
     <style>
         .doctrine-page {
             padding: 120px 0 80px;
@@ -174,19 +176,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../index.html#home" class="nav-link">Home</a>
+                    <a href="../index.html#home" class="nav-link" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#activities" class="nav-link">Activities</a>
+                    <a href="../index.html#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#doctrine" class="nav-link">Our Faith</a>
+                    <a href="../index.html#doctrine" class="nav-link" data-i18n="nav.faith">Our Faith</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#locations" class="nav-link">Locations</a>
+                    <a href="../index.html#locations" class="nav-link" data-i18n="nav.locations">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                    <a href="../index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -200,9 +202,9 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="breadcrumb-content">
-            <a href="../index.html">Home</a>
+            <a href="../index.html" data-i18n="breadcrumb.home">Home</a>
             <i class="fas fa-chevron-right"></i>
-            <a href="../index.html#doctrine">Our Faith</a>
+            <a href="../index.html#doctrine" data-i18n="breadcrumb.faith">Our Faith</a>
             <i class="fas fa-chevron-right"></i>
             <span>Eternal Families</span>
         </div>
@@ -212,14 +214,14 @@
     <section class="doctrine-page">
         <div class="container">
             <div class="doctrine-header">
-                <h1>Eternal Families</h1>
-                <p class="subtitle">Families Can Be Together Forever</p>
+                <h1 data-i18n="doctrinePages.eternalFamilies.title">Eternal Families</h1>
+                <p class="subtitle" data-i18n="doctrinePages.eternalFamilies.subtitle">Families Can Be Together Forever</p>
             </div>
 
             <div class="doctrine-content">
                 <a href="../index.html#doctrine" class="back-button">
                     <i class="fas fa-arrow-left"></i>
-                    Back to Our Faith
+                    <span data-i18n="modal.backToFaith">Back to Our Faith</span>
                 </a>
 
                 <div class="doctrine-section">
@@ -281,7 +283,7 @@
                 </div>
 
                 <div class="related-topics">
-                    <h3>Related Topics</h3>
+                    <h3 data-i18n="doctrinePages.jesusChrist.related">Related Topics</h3>
                     <div class="related-links">
                         <a href="jesus-christ.html" class="related-link">Jesus Christ</a>
                         <a href="plan-of-salvation.html" class="related-link">Plan of Salvation</a>

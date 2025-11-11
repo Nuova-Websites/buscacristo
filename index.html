@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcoe27GdS4xvSPw9orQH5_1KWR1suD9xs&libraries=places&callback=initMap"></script>
+    <script src="translations.js"></script>
+    <script src="languageManager.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,24 +21,32 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#activities" class="nav-link">Activities</a>
+                    <a href="#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#doctrine" class="nav-link">Our Faith</a>
+                    <a href="#doctrine" class="nav-link" data-i18n="nav.faith">Our Faith</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#missionaries" class="nav-link">Missionaries</a>
+                    <a href="#missionaries" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#locations" class="nav-link">Locations</a>
+                    <a href="#locations" class="nav-link" data-i18n="nav.locations">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
+            <div class="language-selector-container">
+                <select id="languageSelector" class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="ca">Català</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -49,11 +59,11 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to Busca Cristo</h1>
-            <p class="hero-subtitle">Come unto Christ and be perfected in Him</p>
+            <h1 class="hero-title" data-i18n="hero.title">Welcome to Busca Cristo</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Come unto Christ and be perfected in Him</p>
             <div class="hero-buttons">
-                <a href="#activities" class="btn btn-primary">View Activities</a>
-                <a href="#locations" class="btn btn-secondary">Find a Location</a>
+                <a href="#activities" class="btn btn-primary" data-i18n="hero.btnActivities">View Activities</a>
+                <a href="#locations" class="btn btn-secondary" data-i18n="hero.btnLocations">Find a Location</a>
             </div>
         </div>
     </section>
@@ -61,8 +71,8 @@
     <!-- Activities Section -->
     <section id="activities" class="activities">
         <div class="container">
-            <h2 class="section-title">Church Activities</h2>
-            <p class="activities-intro">Discover the various activities and programs available at our church locations. Each location offers unique opportunities for spiritual growth, fellowship, and service.</p>
+            <h2 class="section-title" data-i18n="activities.title">Church Activities</h2>
+            <p class="activities-intro" data-i18n="activities.intro">Discover the various activities and programs available at our church locations. Each location offers unique opportunities for spiritual growth, fellowship, and service.</p>
             
             <div class="activity-types-grid">
                 <div class="activity-type-card" data-activity="worship">
@@ -72,18 +82,18 @@
                     <div class="activity-type-icon">
                         <i class="fas fa-pray"></i>
                     </div>
-                    <h3>Worship Services</h3>
-                    <p>Sunday worship, sacrament meetings, and special devotional services</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('worship')">View Activities</button>
+                    <h3 data-i18n="activities.worship.title">Worship Services</h3>
+                    <p data-i18n="activities.worship.desc">Sunday worship, sacrament meetings, and special devotional services</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('worship')" data-i18n="activities.worship.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="youth">
                     <div class="activity-type-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Youth Programs</h3>
-                    <p>Activities, camps, and programs for youth ages 12-18</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('youth')">View Activities</button>
+                    <h3 data-i18n="activities.youth.title">Youth Programs</h3>
+                    <p data-i18n="activities.youth.desc">Activities, camps, and programs for youth ages 12-18</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('youth')" data-i18n="activities.youth.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="family">
@@ -93,36 +103,36 @@
                     <div class="activity-type-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Family Activities</h3>
-                    <p>Family home evening, activities, and programs for all ages</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('family')">View Activities</button>
+                    <h3 data-i18n="activities.family.title">Family Activities</h3>
+                    <p data-i18n="activities.family.desc">Family home evening, activities, and programs for all ages</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('family')" data-i18n="activities.family.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="education">
                     <div class="activity-type-icon">
                         <i class="fas fa-user-friends"></i>
                     </div>
-                    <h3>Young Adult Activities</h3>
-                    <p>Sunday School, Institute, and other learning opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('education')">View Activities</button>
+                    <h3 data-i18n="activities.education.title">Young Adult Activities</h3>
+                    <p data-i18n="activities.education.desc">Sunday School, Institute, and other learning opportunities</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('education')" data-i18n="activities.education.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="service">
                     <div class="activity-type-icon">
                         <i class="fas fa-graduation-cap"></i>   
                     </div>
-                    <h3>Language Study</h3>
-                    <p>Community service, humanitarian aid, and volunteer opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('service')">View Activities</button>
+                    <h3 data-i18n="activities.service.title">Language Study</h3>
+                    <p data-i18n="activities.service.desc">Community service, humanitarian aid, and volunteer opportunities</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('service')" data-i18n="activities.service.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="temple">
                     <div class="activity-type-icon">
                         <i class="fas fa-church"></i>
                     </div>
-                    <h3>Personal Gospel Lessons</h3>
-                    <p>Temple worship, family history, and temple preparation classes</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('temple')">View Activities</button>
+                    <h3 data-i18n="activities.temple.title">Personal Gospel Lessons</h3>
+                    <p data-i18n="activities.temple.desc">Temple worship, family history, and temple preparation classes</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('temple')" data-i18n="activities.temple.btn">View Activities</button>
                 </div>
             </div>
         </div>
@@ -132,63 +142,63 @@
     <div id="activityModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="modalTitle">Activity Details</h2>
-                <span class="close" onclick="closeActivityModal()">&times;</span>
+                <h2 id="modalTitle" data-i18n="modal.activityDetails">Activity Details</h2>
+                <span class="close" onclick="closeActivityModal()" data-i18n="modal.close">&times;</span>
             </div>
             <div class="modal-body">
                 <div id="activityDetails">
                     <!-- Activity details will be populated here -->
                 </div>
                 <div class="location-info-section">
-                    <h3>Get Location-Specific Information</h3>
-                    <p>To receive detailed schedules and information for your specific location, please provide your contact information below.</p>
+                    <h3 data-i18n="modal.locationInfo">Get Location-Specific Information</h3>
+                    <p data-i18n="modal.locationInfoDesc">To receive detailed schedules and information for your specific location, please provide your contact information below.</p>
                     <form id="locationInfoForm" class="location-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="firstName">First Name *</label>
+                                <label for="firstName" data-i18n="modal.firstName">First Name *</label>
                                 <input type="text" id="firstName" name="firstName" required>
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last Name *</label>
+                                <label for="lastName" data-i18n="modal.lastName">Last Name *</label>
                                 <input type="text" id="lastName" name="lastName" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">Email *</label>
+                                <label for="email" data-i18n="modal.email">Email *</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
+                                <label for="phone" data-i18n="modal.phone">Phone Number</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="preferredLocation">Preferred Location *</label>
+                            <label for="preferredLocation" data-i18n="modal.preferredLocation">Preferred Location *</label>
                             <select id="preferredLocation" name="preferredLocation" required>
-                                <option value="">Select a location</option>
-                                <option value="main-chapel">Main Chapel - 123 Faith Street</option>
-                                <option value="north-building">North Building - 456 Hope Avenue</option>
-                                <option value="east-building">East Building - 789 Charity Road</option>
-                                <option value="south-building">South Building - 321 Grace Boulevard</option>
+                                <option value="" data-i18n="modal.selectLocation">Select a location</option>
+                                <option value="main-chapel" data-i18n="locationsList.mainChapel">Main Chapel - 123 Faith Street</option>
+                                <option value="north-building" data-i18n="locationsList.northBuilding">North Building - 456 Hope Avenue</option>
+                                <option value="east-building" data-i18n="locationsList.eastBuilding">East Building - 789 Charity Road</option>
+                                <option value="south-building" data-i18n="locationsList.southBuilding">South Building - 321 Grace Boulevard</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="interests">Activities of Interest</label>
+                            <label for="interests" data-i18n="modal.interests">Activities of Interest</label>
                             <div class="checkbox-group">
-                                <label><input type="checkbox" name="interests" value="worship"> Worship Services</label>
-                                <label><input type="checkbox" name="interests" value="youth"> Youth Programs</label>
-                                <label><input type="checkbox" name="interests" value="family"> Family Activities</label>
-                                <label><input type="checkbox" name="interests" value="education"> Religious Education</label>
-                                <label><input type="checkbox" name="interests" value="service"> Service Projects</label>
-                                <label><input type="checkbox" name="interests" value="temple"> Temple Activities</label>
+                                <label><input type="checkbox" name="interests" value="worship"> <span data-i18n="modal.worship">Worship Services</span></label>
+                                <label><input type="checkbox" name="interests" value="youth"> <span data-i18n="modal.youth">Youth Programs</span></label>
+                                <label><input type="checkbox" name="interests" value="family"> <span data-i18n="modal.family">Family Activities</span></label>
+                                <label><input type="checkbox" name="interests" value="education"> <span data-i18n="modal.education">Religious Education</span></label>
+                                <label><input type="checkbox" name="interests" value="service"> <span data-i18n="modal.service">Service Projects</span></label>
+                                <label><input type="checkbox" name="interests" value="temple"> <span data-i18n="modal.temple">Temple Activities</span></label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Additional Questions or Comments</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Please let us know if you have any specific questions about activities or would like to know more about any particular program."></textarea>
+                            <label for="message" data-i18n="modal.message">Additional Questions or Comments</label>
+                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="modal.messagePlaceholder" placeholder="Please let us know if you have any specific questions about activities or would like to know more about any particular program."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Get Location Details</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="modal.submitBtn">Get Location Details</button>
                     </form>
                 </div>
             </div>
@@ -198,8 +208,8 @@
     <!-- Doctrine Section -->
     <section id="doctrine" class="doctrine">
         <div class="container">
-            <h2 class="section-title">Our Faith & Doctrine</h2>
-            <p class="doctrine-intro">Learn more about our core beliefs and teachings. Click on any topic to explore deeper understanding of our faith.</p>
+            <h2 class="section-title" data-i18n="doctrine.title">Our Faith & Doctrine</h2>
+            <p class="doctrine-intro" data-i18n="doctrine.intro">Learn more about our core beliefs and teachings. Click on any topic to explore deeper understanding of our faith.</p>
             
             <div class="doctrine-topics">
                 <div class="doctrine-topic-card" onclick="window.location.href='doctrine/jesus-christ.html'">
@@ -209,8 +219,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-cross"></i>
                     </div>
-                    <h3>Jesus Christ</h3>
-                    <p>Learn about our Savior, His Atonement, and His central role in our faith and salvation.</p>
+                    <h3 data-i18n="doctrine.jesus.title">Jesus Christ</h3>
+                    <p data-i18n="doctrine.jesus.desc">Learn about our Savior, His Atonement, and His central role in our faith and salvation.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -223,8 +233,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h3>Book of Mormon</h3>
-                    <p>Discover another testament of Jesus Christ and its importance in our understanding of God's plan.</p>
+                    <h3 data-i18n="doctrine.bom.title">Book of Mormon</h3>
+                    <p data-i18n="doctrine.bom.desc">Discover another testament of Jesus Christ and its importance in our understanding of God's plan.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -237,8 +247,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Eternal Families</h3>
-                    <p>Understand how families can be together forever through sacred temple ordinances.</p>
+                    <h3 data-i18n="doctrine.families.title">Eternal Families</h3>
+                    <p data-i18n="doctrine.families.desc">Understand how families can be together forever through sacred temple ordinances.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -251,8 +261,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-user-tie"></i>
                     </div>
-                    <h3>Living Prophets</h3>
-                    <p>Learn about modern-day revelation and how God speaks to us through His chosen servants.</p>
+                    <h3 data-i18n="doctrine.prophets.title">Living Prophets</h3>
+                    <p data-i18n="doctrine.prophets.desc">Learn about modern-day revelation and how God speaks to us through His chosen servants.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -265,8 +275,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-hands"></i>
                     </div>
-                    <h3>Priesthood Power</h3>
-                    <p>Discover how God's power is manifest on earth through the priesthood authority.</p>
+                    <h3 data-i18n="doctrine.priesthood.title">Priesthood Power</h3>
+                    <p data-i18n="doctrine.priesthood.desc">Discover how God's power is manifest on earth through the priesthood authority.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -279,8 +289,8 @@
                     <div class="topic-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Plan of Salvation</h3>
-                    <p>Explore God's eternal plan for His children and our purpose in this life.</p>
+                    <h3 data-i18n="doctrine.salvation.title">Plan of Salvation</h3>
+                    <p data-i18n="doctrine.salvation.desc">Explore God's eternal plan for His children and our purpose in this life.</p>
                     <div class="topic-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -292,19 +302,19 @@
     <!-- Missionaries Section -->
     <section id="missionaries" class="missionaries">
         <div class="container">
-            <h2 class="section-title">Meet Our Missionaries</h2>
+            <h2 class="section-title" data-i18n="missionaries.title">Meet Our Missionaries</h2>
             <div class="missionaries-content">
                 <div class="missionaries-text">
-                    <h3>Sharing the Gospel of Jesus Christ</h3>
-                    <p>
+                    <h3 data-i18n="missionaries.heading">Sharing the Gospel of Jesus Christ</h3>
+                    <p data-i18n="missionaries.p1">
                         Our full-time missionaries are dedicated young men and women who have chosen to serve the Lord for 18-24 months. They come from all over the world to share the message of Jesus Christ and His restored gospel.
                     </p>
-                    <p>
+                    <p data-i18n="missionaries.p2">
                         These missionaries are here to help you learn about our beliefs, answer your questions, and provide spiritual guidance. They offer free lessons about Jesus Christ, the Book of Mormon, and how families can be together forever.
                     </p>
                     <div class="missionary-cta">
-                        <a href="#contact" class="btn btn-primary">Meet with Missionaries</a>
-                        <a href="https://www.churchofjesuschrist.org/comeuntochrist" target="_blank" class="btn btn-secondary">Learn More Online</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="missionaries.btnMeet">Meet with Missionaries</a>
+                        <a href="https://www.churchofjesuschrist.org/comeuntochrist" target="_blank" class="btn btn-secondary" data-i18n="missionaries.btnLearn">Learn More Online</a>
                     </div>
                 </div>
                 <div class="missionaries-image">
@@ -317,19 +327,19 @@
     <!-- Locations Section -->
     <section id="locations" class="locations">
         <div class="container">
-            <h2 class="section-title">Find a Church Near You</h2>            
+            <h2 class="section-title" data-i18n="locations.title">Find a Church Near You</h2>            
             <div class="location-finder">
                 <div class="location-search">
                     <div class="location-options">
-                        <button onclick="useMyLocation()" class="btn btn-secondary location-btn">
+                        <button onclick="useMyLocation(event)" class="btn btn-secondary location-btn">
                             <i class="fas fa-map-marker-alt"></i>
-                            Use My Location
+                            <span data-i18n="locations.useLocation">Use My Location</span>
                         </button>
-                        <span class="or-divider">or</span>
+                        <span class="or-divider" data-i18n="locations.or">or</span>
                     </div>
                     <div class="search-form">
-                        <input type="text" id="locationInput" placeholder="Enter your city, address, or postal code" class="location-input">
-                        <button onclick="findNearestChurch()" class="btn btn-primary">Find Church</button>
+                        <input type="text" id="locationInput" data-i18n-placeholder="locations.placeholder" placeholder="Enter your city, address, or postal code" class="location-input">
+                        <button onclick="findNearestChurch()" class="btn btn-primary" data-i18n="locations.findBtn">Find Church</button>
                     </div>
                 </div>
                 
@@ -341,7 +351,7 @@
                     <div id="googleMap" style="width: 100%; height: 400px; border-radius: 15px;"></div>
                 </div>
                 <div class="map-actions">
-                    <button onclick="openInMaps()" class="btn btn-outline">Open in Google Maps</button>
+                    <button onclick="openInMaps()" class="btn btn-outline" data-i18n="locations.openMaps">Open in Google Maps</button>
                 </div>
             </div>
 
@@ -351,36 +361,36 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>We'd love to hear from you and answer any questions you may have about our church or activities.</p>
+                    <h3 data-i18n="contact.heading">Get in Touch</h3>
+                    <p data-i18n="contact.p">We'd love to hear from you and answer any questions you may have about our church or activities.</p>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+34 93 123 4567</span>
+                        <span data-i18n="contact.phone">+34 93 123 4567</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@buscacristo.org</span>
+                        <span data-i18n="contact.email">info@buscacristo.org</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Faith Street, Barcelona, Spain</span>
+                        <span data-i18n="contact.address">123 Faith Street, Barcelona, Spain</span>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.sendBtn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -392,20 +402,20 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Busca Cristo</h3>
-                    <p>Come unto Christ and be perfected in Him through faith, repentance, baptism, and the gift of the Holy Ghost.</p>
+                    <h3 data-i18n="footer.about">Busca Cristo</h3>
+                    <p data-i18n="footer.aboutText">Come unto Christ and be perfected in Him through faith, repentance, baptism, and the gift of the Holy Ghost.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#activities">Activities</a></li>
-                        <li><a href="#doctrine">Our Faith</a></li>
-                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#activities" data-i18n="nav.activities">Activities</a></li>
+                        <li><a href="#doctrine" data-i18n="nav.faith">Our Faith</a></li>
+                        <li><a href="#locations" data-i18n="nav.locations">Locations</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Resources</h3>
+                    <h3 data-i18n="footer.resources">Resources</h3>
                     <ul>
                         <li><a href="https://www.churchofjesuschrist.org" target="_blank">Church Website</a></li>
                         <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a></li>
@@ -414,7 +424,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Follow Us</h3>
+                    <h3 data-i18n="footer.follow">Follow Us</h3>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -424,11 +434,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Busca Cristo - The Church of Jesus Christ of Latter-day Saints. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2024 Busca Cristo - The Church of Jesus Christ of Latter-day Saints. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Initialize language on page load
+        if (typeof languageManager !== 'undefined') {
+            languageManager.updateLanguageSelector();
+        }
+    </script>
 </body>
 </html>

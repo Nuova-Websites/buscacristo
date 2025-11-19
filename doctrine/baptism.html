@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptism - Busca Cristo LDS Church</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../translations.js"></script>
+    <script src="../languageManager.js"></script>
+    <style>
+        .doctrine-page {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .breadcrumb-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .breadcrumb a {
+            color: #1A4B5C;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            color: #D4AF37;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            color: #6c757d;
+        }
+        
+        .doctrine-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+        
+        .doctrine-header .subtitle {
+            font-size: 1.3rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .doctrine-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .doctrine-section {
+            margin-bottom: 3rem;
+        }
+        
+        .doctrine-section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #ffd700;
+            padding-left: 1rem;
+        }
+        
+        .doctrine-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 1.5rem;
+        }
+        
+        .scripture-quote {
+            background: #f8f9fa;
+            border-left: 4px solid #1e3c72;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1e3c72;
+        }
+        
+        .scripture-reference {
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #1e3c72;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .back-button:hover {
+            background: #2a5298;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+        
+        .related-topics {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+        
+        .related-topics h3 {
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .related-link {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1A4B5C;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .related-link:hover {
+            background: #1A4B5C;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/faro.png" alt="Busca Cristo Logo" class="logo-image">
+                <span>Busca Cristo</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link" data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#doctrine" class="nav-link" data-i18n="nav.faith">Our Faith</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#missionaries" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#locations" class="nav-link" data-i18n="nav.locations">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </li>
+            </ul>
+            <div class="language-selector-container">
+                <select id="languageSelector" class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="ca">Català</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="../index.html" data-i18n="breadcrumb.home">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../index.html#doctrine" data-i18n="breadcrumb.faith">Our Faith</a>
+            <i class="fas fa-chevron-right"></i>
+            <span data-i18n="doctrinePages.baptism.title">Baptism</span>
+        </div>
+    </div>
+
+    <!-- Doctrine Page Content -->
+    <section class="doctrine-page">
+        <div class="container">
+            <div class="doctrine-header">
+                <h1 data-i18n="doctrinePages.baptism.title">Baptism</h1>
+                <p class="subtitle" data-i18n="doctrinePages.baptism.subtitle">The First Principles and Ordinances of the Gospel</p>
+            </div>
+
+            <div class="doctrine-content">
+                <a href="../index.html#doctrine" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="modal.backToFaith">Back to Our Faith</span>
+                </a>
+
+                <div class="doctrine-section">
+                    <h2 data-i18n="doctrinePages.baptism.faith.title">Faith in Jesus Christ</h2>
+                    <p data-i18n="doctrinePages.baptism.faith.p1">
+                        Faith is the first principle of the gospel. It is a hope for things which are not seen, but which are true. Faith in Jesus Christ means trusting in Him, believing in His teachings, and following His example. When we have faith in Christ, we accept Him as our Savior and Redeemer and believe that through His Atonement, we can be forgiven of our sins and return to live with God.
+                    </p>
+                    <div class="scripture-quote">
+                        <span data-i18n="doctrinePages.baptism.faith.scripture">"And now as I said concerning faith—faith is not to have a perfect knowledge of things; therefore if ye have faith ye hope for things which are not seen, which are true."</span>
+                        <div class="scripture-reference" data-i18n="doctrinePages.baptism.faith.reference">Alma 32:21</div>
+                    </div>
+                    <p data-i18n="doctrinePages.baptism.faith.p2">
+                        Faith leads us to act. When we have faith in Jesus Christ, we are willing to keep His commandments, repent of our sins, and follow His teachings. Faith is like a seed—when we plant it and nourish it, it grows and brings forth good fruit in our lives.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2 data-i18n="doctrinePages.baptism.repentance.title">Repentance</h2>
+                    <p data-i18n="doctrinePages.baptism.repentance.p1">
+                        Repentance is the second principle of the gospel. It is the process of changing our thoughts, beliefs, and behaviors to align with God's will. Through repentance, we turn away from sin and turn toward God. Repentance involves recognizing our mistakes, feeling sorrow for them, confessing them to God, making restitution when possible, and committing to change.
+                    </p>
+                    <div class="scripture-quote">
+                        <span data-i18n="doctrinePages.baptism.repentance.scripture">"By this ye may know if a man repenteth of his sins—behold, he will confess them and forsake them."</span>
+                        <div class="scripture-reference" data-i18n="doctrinePages.baptism.repentance.reference">Doctrine and Covenants 58:43</div>
+                    </div>
+                    <p data-i18n="doctrinePages.baptism.repentance.p2">
+                        Repentance is made possible through the Atonement of Jesus Christ. When we repent, we can be forgiven of our sins and receive peace and joy. Repentance is not a one-time event but a continuous process throughout our lives as we strive to become more like Christ.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2 data-i18n="doctrinePages.baptism.baptism.title">Baptism</h2>
+                    <p data-i18n="doctrinePages.baptism.baptism.p1">
+                        Baptism is the first ordinance of the gospel and is essential for salvation. It is performed by immersion in water by someone who has the proper priesthood authority. Baptism represents the death, burial, and resurrection of Jesus Christ and symbolizes our commitment to follow Him. When we are baptized, we make a covenant with God to take upon ourselves the name of Jesus Christ, always remember Him, and keep His commandments.
+                    </p>
+                    <div class="scripture-quote">
+                        <span data-i18n="doctrinePages.baptism.baptism.scripture">"And now, if the Lamb of God, he being holy, should have need to be baptized by water, to fulfil all righteousness, O then, how much more need have we, being unholy, to be baptized, yea, even by water!"</span>
+                        <div class="scripture-reference" data-i18n="doctrinePages.baptism.baptism.reference">2 Nephi 31:5</div>
+                    </div>
+                    <p data-i18n="doctrinePages.baptism.baptism.p2">
+                        Baptism is the gateway to the path that leads to eternal life. Through baptism, we are cleansed from our sins and become members of Christ's church. We are baptized at the age of accountability (eight years old) or when we are old enough to understand and make this important covenant with God.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2 data-i18n="doctrinePages.baptism.holyghost.title">The Gift of the Holy Ghost</h2>
+                    <p data-i18n="doctrinePages.baptism.holyghost.p1">
+                        After baptism, we receive the gift of the Holy Ghost through the laying on of hands by those with priesthood authority. The Holy Ghost is the third member of the Godhead and serves as a constant companion, guide, and comforter. The gift of the Holy Ghost is different from the influence of the Holy Ghost—it is the right to have the Holy Ghost as a constant companion, as long as we remain worthy.
+                    </p>
+                    <div class="scripture-quote">
+                        <span data-i18n="doctrinePages.baptism.holyghost.scripture">"And by the power of the Holy Ghost ye may know the truth of all things."</span>
+                        <div class="scripture-reference" data-i18n="doctrinePages.baptism.holyghost.reference">Moroni 10:5</div>
+                    </div>
+                    <p data-i18n="doctrinePages.baptism.holyghost.p2">
+                        The Holy Ghost helps us in many ways: He testifies of truth, warns us of danger, comforts us in times of need, guides us in making decisions, and helps us understand the scriptures. When we live righteously and keep the commandments, we can have the constant companionship of the Holy Ghost, which brings peace, joy, and spiritual strength.
+                    </p>
+                </div>
+
+                <div class="doctrine-section">
+                    <h2 data-i18n="doctrinePages.baptism.endure.title">Enduring to the End</h2>
+                    <p data-i18n="doctrinePages.baptism.endure.p1">
+                        Enduring to the end means remaining faithful to the covenants we make throughout our lives. It means continuing to have faith in Jesus Christ, repenting daily, keeping the commandments, and serving others. Enduring to the end is not just about surviving—it is about growing, learning, and becoming more like our Savior.
+                    </p>
+                    <div class="scripture-quote">
+                        <span data-i18n="doctrinePages.baptism.endure.scripture">"Look unto me in every thought; doubt not, fear not. Behold the wounds which pierced my side, and also the prints of the nails in my hands and feet; be faithful, keep my commandments, and ye shall inherit the kingdom of heaven."</span>
+                        <div class="scripture-reference" data-i18n="doctrinePages.baptism.endure.reference">Doctrine and Covenants 6:36-37</div>
+                    </div>
+                    <p data-i18n="doctrinePages.baptism.endure.p2">
+                        The gospel of Jesus Christ is a way of life, not just a one-time event. As we endure to the end, we continue to grow spiritually, serve others, and draw closer to God. Through the Atonement of Jesus Christ and our faithfulness, we can receive the greatest of all the gifts of God—eternal life.
+                    </p>
+                </div>
+
+                <div class="related-topics">
+                    <h3 data-i18n="doctrinePages.jesusChrist.related">Related Topics</h3>
+                    <div class="related-links">
+                        <a href="jesus-christ.html" class="related-link">Jesus Christ</a>
+                        <a href="book-of-mormon.html" class="related-link">Book of Mormon</a>
+                        <a href="eternal-families.html" class="related-link">Eternal Families</a>
+                        <a href="plan-of-salvation.html" class="related-link">Plan of Salvation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+

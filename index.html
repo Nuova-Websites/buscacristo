@@ -67,164 +67,6 @@
         </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="activities" class="activities">
-        <div class="container">
-            <h2 class="section-title" data-i18n="activities.title">Church Activities</h2>
-            <p class="activities-intro" data-i18n="activities.intro">Discover the various activities and programs available at our church locations. Each location offers unique opportunities for spiritual growth, fellowship, and service.</p>
-            
-            <div class="activity-types-grid">
-                <div class="activity-type-card" data-activity="worship">
-                    <div class="activity-card-image">
-                        <img src="images/emptychurch.jpg" alt="Worship Services">
-                    </div>
-                    <div class="activity-type-icon">
-                        <i class="fas fa-pray"></i>
-                    </div>
-                    <h3 data-i18n="activities.worship.title">Worship Services</h3>
-                    <p data-i18n="activities.worship.desc">Sunday worship, sacrament meetings, and special devotional services</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('worship')" data-i18n="activities.worship.btn">View Activities</button>
-                </div>
-
-                <div class="activity-type-card" data-activity="youth">
-                    <div class="activity-type-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 data-i18n="activities.youth.title">Youth Programs</h3>
-                    <p data-i18n="activities.youth.desc">Activities, camps, and programs for youth ages 12-18</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('youth')" data-i18n="activities.youth.btn">View Activities</button>
-                </div>
-
-                <div class="activity-type-card" data-activity="family">
-                    <div class="activity-card-image">
-                        <img src="images/family.jpg" alt="Family Activities">
-                    </div>
-                    <div class="activity-type-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 data-i18n="activities.family.title">Family Activities</h3>
-                    <p data-i18n="activities.family.desc">Family home evening, activities, and programs for all ages</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('family')" data-i18n="activities.family.btn">View Activities</button>
-                </div>
-
-                <div class="activity-type-card" data-activity="education">
-                    <div class="activity-type-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <h3 data-i18n="activities.education.title">Young Adult Activities</h3>
-                    <p data-i18n="activities.education.desc">Sunday School, Institute, and other learning opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('education')" data-i18n="activities.education.btn">View Activities</button>
-                </div>
-
-                <div class="activity-type-card" data-activity="service">
-                    <div class="activity-type-icon">
-                        <i class="fas fa-graduation-cap"></i>   
-                    </div>
-                    <h3 data-i18n="activities.service.title">Language Study</h3>
-                    <p data-i18n="activities.service.desc">Community service, humanitarian aid, and volunteer opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('service')" data-i18n="activities.service.btn">View Activities</button>
-                </div>
-
-                <div class="activity-type-card" data-activity="temple">
-                    <div class="activity-card-image">
-                        <img src="images/buscatemple.jpg" alt="Temple Worship">
-                    </div>
-                    <div class="activity-type-icon">
-                        <i class="fas fa-church"></i>
-                    </div>
-                    <h3 data-i18n="activities.temple.title">Personal Gospel Lessons</h3>
-                    <p data-i18n="activities.temple.desc">Temple worship, family history, and temple preparation classes</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('temple')" data-i18n="activities.temple.btn">View Activities</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activity Details Modal -->
-    <div id="activityModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalTitle" data-i18n="modal.activityDetails">Activity Details</h2>
-                <span class="close" onclick="closeActivityModal()" data-i18n="modal.close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div id="activityDetails">
-                    <!-- Activity details will be populated here -->
-                </div>
-                <div class="location-info-section">
-                    <h3 data-i18n="modal.locationInfo">Get Location-Specific Information</h3>
-                    <p data-i18n="modal.locationInfoDesc">To receive detailed schedules and information for your specific location, please provide your contact information below.</p>
-                    <form id="locationInfoForm" class="location-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName" data-i18n="modal.firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required data-i18n-placeholder="modal.firstNamePlaceholder" placeholder="Your first name">
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName" data-i18n="modal.lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required data-i18n-placeholder="modal.lastNamePlaceholder" placeholder="Your last name">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email" data-i18n="modal.email">Email *</label>
-                                <input type="email" id="email" name="email" required data-i18n-placeholder="modal.emailPlaceholder" placeholder="Your email">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" data-i18n="modal.phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" data-i18n-placeholder="modal.phonePlaceholder" placeholder="Your phone number">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="interests" data-i18n="modal.interests">Activities of Interest</label>
-                            <div class="checkbox-group">
-                                <label><input type="checkbox" name="interests" value="worship"> <span data-i18n="modal.worship">Worship Services</span></label>
-                                <label><input type="checkbox" name="interests" value="youth"> <span data-i18n="modal.youth">Youth Programs</span></label>
-                                <label><input type="checkbox" name="interests" value="family"> <span data-i18n="modal.family">Family Activities</span></label>
-                                <label><input type="checkbox" name="interests" value="education"> <span data-i18n="modal.education">Religious Education</span></label>
-                                <label><input type="checkbox" name="interests" value="service"> <span data-i18n="modal.service">Service Projects</span></label>
-                                <label><input type="checkbox" name="interests" value="temple"> <span data-i18n="modal.temple">Temple Activities</span></label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="modal.message">Additional Questions or Comments</label>
-                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="modal.messagePlaceholder" placeholder="Please let us know if you have any specific questions about activities or would like to know more about any particular program."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-i18n="modal.submitBtn">Get Location Details</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Missionary Form Modal -->
-    <div id="missionaryModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 data-i18n="missionaries.formTitle">Meet with Missionaries</h2>
-                <span class="close" onclick="closeMissionaryForm()" data-i18n="modal.close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p data-i18n="missionaries.formDescription">Fill out the form below and our missionaries will contact you to schedule a meeting.</p>
-                <form id="missionaryForm" class="location-form">
-                    <div class="form-group">
-                        <label for="missionaryName" data-i18n="missionaries.nameLabel">Name *</label>
-                        <input type="text" id="missionaryName" name="name" required data-i18n-placeholder="missionaries.namePlaceholder" placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="missionaryAddress" data-i18n="missionaries.addressLabel">Address *</label>
-                        <input type="text" id="missionaryAddress" name="address" required data-i18n-placeholder="missionaries.addressPlaceholder" placeholder="Your address">
-                    </div>
-                    <div class="form-group">
-                        <label for="missionaryLearnAbout" data-i18n="missionaries.learnAboutLabel">What would you like to learn more about?</label>
-                        <textarea id="missionaryLearnAbout" name="learnAbout" rows="5" data-i18n-placeholder="missionaries.learnAboutPlaceholder" placeholder="Tell us what you're interested in learning about..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-i18n="missionaries.submitBtn">Submit Request</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- Doctrine Section -->
     <section id="doctrine" class="doctrine">
         <div class="container">
@@ -318,6 +160,161 @@
             </div>
         </div>
     </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2 class="section-title" data-i18n="activities.title">Church Activities</h2>
+            <p class="activities-intro" data-i18n="activities.intro">Discover the various activities and programs available at our church locations. Each location offers unique opportunities for spiritual growth, fellowship, and service.</p>
+            
+            <div class="activity-types-grid">
+                <div class="activity-type-card" data-activity="worship">
+                    <div class="activity-card-image">
+                        <img src="images/emptychurch.jpg" alt="Worship Services">
+                    </div>
+                    <div class="activity-type-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h3 data-i18n="activities.worship.title">Worship Services</h3>
+                    <p data-i18n="activities.worship.desc">Sunday worship, sacrament meetings, and special devotional services</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('worship')" data-i18n="activities.worship.btn">View Activities</button>
+                </div>
+
+                <div class="activity-type-card" data-activity="youth">
+                    <div class="activity-type-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="activities.youth.title">Youth Programs</h3>
+                    <p data-i18n="activities.youth.desc">Activities, camps, and programs for youth ages 12-18</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('youth')" data-i18n="activities.youth.btn">View Activities</button>
+                </div>
+
+                <div class="activity-type-card" data-activity="family">
+                    <div class="activity-card-image">
+                        <img src="images/family.jpg" alt="Family Activities">
+                    </div>
+                    <div class="activity-type-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 data-i18n="activities.family.title">Family Activities</h3>
+                    <p data-i18n="activities.family.desc">Family home evening, activities, and programs for all ages</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('family')" data-i18n="activities.family.btn">View Activities</button>
+                </div>
+
+                <div class="activity-type-card" data-activity="education">
+                    <div class="activity-type-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 data-i18n="activities.education.title">Young Adult Activities</h3>
+                    <p data-i18n="activities.education.desc">Sunday School, Institute, and other learning opportunities</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('education')" data-i18n="activities.education.btn">View Activities</button>
+                </div>
+
+                <div class="activity-type-card" data-activity="service">
+                    <div class="activity-type-icon">
+                        <i class="fas fa-graduation-cap"></i>   
+                    </div>
+                    <h3 data-i18n="activities.service.title">Language Study</h3>
+                    <p data-i18n="activities.service.desc">Community service, humanitarian aid, and volunteer opportunities</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('service')" data-i18n="activities.service.btn">View Activities</button>
+                </div>
+
+                <div class="activity-type-card" data-activity="other">
+                    <div class="activity-type-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <h3 data-i18n="activities.other.title">Other Opportunities</h3>
+                    <p data-i18n="activities.other.desc">Additional activities and programs available at our locations</p>
+                    <button class="view-activities-btn" onclick="showActivityDetails('other')" data-i18n="activities.other.btn">View Activities</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Details Modal -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" data-i18n="modal.activityDetails">Activity Details</h2>
+                <span class="close" onclick="closeActivityModal()" data-i18n="modal.close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="activityDetails">
+                    <!-- Activity details will be populated here -->
+                </div>
+                <div class="location-info-section">
+                    <h3 data-i18n="modal.locationInfo">Get Location-Specific Information</h3>
+                    <p data-i18n="modal.locationInfoDesc">To receive detailed schedules and information for your specific location, please provide your contact information below.</p>
+                    <form id="locationInfoForm" class="location-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-i18n="modal.firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required data-i18n-placeholder="modal.firstNamePlaceholder" placeholder="Your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-i18n="modal.lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required data-i18n-placeholder="modal.lastNamePlaceholder" placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="modal.email">Email *</label>
+                                <input type="email" id="email" name="email" required data-i18n-placeholder="modal.emailPlaceholder" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="modal.phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" data-i18n-placeholder="modal.phonePlaceholder" placeholder="Your phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests" data-i18n="modal.interests">Activities of Interest</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="interests" value="worship"> <span data-i18n="modal.worship">Worship Services</span></label>
+                                <label><input type="checkbox" name="interests" value="youth"> <span data-i18n="modal.youth">Youth Programs</span></label>
+                                <label><input type="checkbox" name="interests" value="family"> <span data-i18n="modal.family">Family Activities</span></label>
+                                <label><input type="checkbox" name="interests" value="education"> <span data-i18n="modal.education">Religious Education</span></label>
+                                <label><input type="checkbox" name="interests" value="service"> <span data-i18n="modal.service">Service Projects</span></label>
+                                <label><input type="checkbox" name="interests" value="other"> <span data-i18n="modal.other">Other Opportunities</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="modal.message">Additional Questions or Comments</label>
+                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="modal.messagePlaceholder" placeholder="Please let us know if you have any specific questions about activities or would like to know more about any particular program."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="modal.submitBtn">Get Location Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Missionary Form Modal -->
+    <div id="missionaryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="missionaries.formTitle">Meet with Missionaries</h2>
+                <span class="close" onclick="closeMissionaryForm()" data-i18n="modal.close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p data-i18n="missionaries.formDescription">Fill out the form below and our missionaries will contact you to schedule a meeting.</p>
+                <form id="missionaryForm" class="location-form">
+                    <div class="form-group">
+                        <label for="missionaryName" data-i18n="missionaries.nameLabel">Name *</label>
+                        <input type="text" id="missionaryName" name="name" required data-i18n-placeholder="missionaries.namePlaceholder" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="missionaryAddress" data-i18n="missionaries.addressLabel">Address *</label>
+                        <input type="text" id="missionaryAddress" name="address" required data-i18n-placeholder="missionaries.addressPlaceholder" placeholder="Your address">
+                    </div>
+                    <div class="form-group">
+                        <label for="missionaryLearnAbout" data-i18n="missionaries.learnAboutLabel">What would you like to learn more about?</label>
+                        <textarea id="missionaryLearnAbout" name="learnAbout" rows="5" data-i18n-placeholder="missionaries.learnAboutPlaceholder" placeholder="Tell us what you're interested in learning about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="missionaries.submitBtn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Missionaries Section -->
     <section id="missionaries" class="missionaries">

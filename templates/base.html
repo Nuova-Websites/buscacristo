@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Busca Cristo - LDS Church{% endblock %}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/languageManager.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/faro.png" alt="Busca Cristo Logo" class="logo-image">
+                <span>Busca Cristo</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#home{% else %}/#home{% endif %}" class="nav-link" data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#activities{% else %}/#activities{% endif %}" class="nav-link" data-i18n="nav.activities">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#doctrine{% else %}/#doctrine{% endif %}" class="nav-link" data-i18n="nav.faith">Our Faith</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#missionaries{% else %}/#missionaries{% endif %}" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#locations{% else %}/#locations{% endif %}" class="nav-link" data-i18n="nav.locations">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% if is_index_page %}#contact{% else %}/#contact{% endif %}" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </li>
+            </ul>
+            <div class="language-selector-container">
+                <select id="languageSelector" class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="ca">Català</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    {% block breadcrumb %}{% endblock %}
+
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">Busca Cristo</h3>
+                    <p data-i18n="footer.aboutText">Come unto Christ and be perfected in Him through faith, repentance, baptism, and the gift of the Holy Ghost.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="{% if is_index_page %}#home{% else %}/#home{% endif %}" data-i18n="nav.home">Home</a></li>
+                        <li><a href="{% if is_index_page %}#activities{% else %}/#activities{% endif %}" data-i18n="nav.activities">Activities</a></li>
+                        <li><a href="{% if is_index_page %}#doctrine{% else %}/#doctrine{% endif %}" data-i18n="nav.faith">Our Faith</a></li>
+                        <li><a href="{% if is_index_page %}#locations{% else %}/#locations{% endif %}" data-i18n="nav.locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.resources">Resources</h3>
+                    <ul>
+                        <li><a href="https://www.churchofjesuschrist.org" target="_blank">Church Website</a></li>
+                        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a></li>
+                        <li><a href="https://www.churchofjesuschrist.org/temples" target="_blank">Temples</a></li>
+                        <li><a href="https://www.churchofjesuschrist.org/study/manual" target="_blank">Manuals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.follow">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 Busca Cristo - The Church of Jesus Christ of Latter-day Saints. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>
+

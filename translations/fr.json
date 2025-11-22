@@ -1,0 +1,437 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "faith": "Notre Foi",
+    "missionaries": "Missionnaires",
+    "locations": "Emplacements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bienvenue à Busca Cristo",
+    "subtitle": "Venez au Christ et soyez rendus parfaits en Lui",
+    "btnActivities": "Voir les Activités",
+    "btnLocations": "Trouver un Emplacement"
+  },
+  "activities": {
+    "title": "Activités de l'Église",
+    "intro": "Découvrez les diverses activités et programmes disponibles dans nos emplacements. Chaque emplacement offre des opportunités uniques pour la croissance spirituelle, la fraternité et le service.",
+    "worship": {
+      "title": "Services de l'Église",
+      "desc": "Culte du dimanche, réunions de la sainte cène et services dévotionnels spéciaux",
+      "btn": "Voir les Activités"
+    },
+    "youth": {
+      "title": "Activités pour les Jeunes",
+      "desc": "Activités, camps et programmes pour les jeunes de 12 à 18 ans",
+      "btn": "Voir les Activités"
+    },
+    "family": {
+      "title": "Activités Familiales",
+      "desc": "Soirée familiale, activités et programmes pour tous les âges",
+      "btn": "Voir les Activités"
+    },
+    "education": {
+      "title": "Activités pour les Jeunes Adultes",
+      "desc": "École du Dimanche, Institut et autres opportunités d'apprentissage",
+      "btn": "Voir les Activités"
+    },
+    "service": {
+      "title": "Cours d'Anglais",
+      "desc": "Apprenez l'anglais dans un environnement communautaire bienveillant avec des cours gratuits pour tous les niveaux",
+      "btn": "Voir les Activités"
+    },
+    "temple": {
+      "title": "Culte au Temple",
+      "desc": "Culte au temple, histoire familiale et classes de préparation au temple",
+      "btn": "Voir les Activités"
+    }
+  },
+  "doctrine": {
+    "title": "Notre Foi et Doctrine",
+    "intro": "Apprenez-en plus sur nos croyances et enseignements fondamentaux. Cliquez sur n'importe quel sujet pour explorer une compréhension plus profonde de notre foi.",
+    "jesus": {
+      "title": "Jésus-Christ",
+      "desc": "Apprenez-en plus sur notre Sauveur, Son Expiation et Son rôle central dans notre foi et notre salut"
+    },
+    "bom": {
+      "title": "Livre de Mormon",
+      "desc": "Découvrez un autre témoignage de Jésus-Christ et son importance dans notre compréhension du plan de Dieu"
+    },
+    "families": {
+      "title": "Familles Éternelles",
+      "desc": "Comprenez comment les familles peuvent être ensemble pour toujours à travers les ordonnances sacrées du temple"
+    },
+    "prophets": {
+      "title": "Prophètes Vivants",
+      "desc": "Apprenez-en plus sur la révélation moderne et comment Dieu nous parle à travers Ses serviteurs choisis"
+    },
+    "baptism": {
+      "title": "Baptême",
+      "desc": "Apprenez-en plus sur les premiers principes et ordonnances de l'Évangile de Jésus-Christ"
+    },
+    "salvation": {
+      "title": "Plan de Salut",
+      "desc": "Explorez le plan éternel de Dieu pour Ses enfants et notre but dans cette vie"
+    }
+  },
+  "missionaries": {
+    "title": "Rencontrez nos Missionnaires",
+    "heading": "Partager l'Évangile de Jésus-Christ",
+    "p1": "Nos missionnaires à plein temps sont de jeunes hommes et femmes dévoués qui ont choisi de servir le Seigneur pendant 18-24 mois. Ils viennent du monde entier pour partager le message de Jésus-Christ et Son évangile restauré.",
+    "p2": "Ces missionnaires sont là pour vous aider à apprendre nos croyances, répondre à vos questions et fournir des conseils spirituels. Ils offrent des leçons gratuites sur Jésus-Christ, le Livre de Mormon et comment les familles peuvent être ensemble pour toujours.",
+    "btnMeet": "Rencontrer les Missionnaires",
+    "btnLearn": "En Savoir Plus en Ligne",
+    "formTitle": "Rencontrer les Missionnaires",
+    "formDescription": "Remplissez le formulaire ci-dessous et nos missionnaires vous contacteront pour planifier une réunion.",
+    "nameLabel": "Nom *",
+    "addressLabel": "Adresse *",
+    "learnAboutLabel": "Sur quoi aimeriez-vous en savoir plus?",
+    "namePlaceholder": "Votre nom",
+    "addressPlaceholder": "Votre adresse",
+    "learnAboutPlaceholder": "Dites-nous ce qui vous intéresse d'apprendre...",
+    "submitBtn": "Soumettre la Demande",
+    "successMessage": "Merci! Nous vous contacterons bientôt."
+  },
+  "locations": {
+    "title": "Trouvez une Église Près de Vous",
+    "useLocation": "Utiliser Ma Position",
+    "or": "ou",
+    "placeholder": "Entrez votre ville, adresse ou code postal",
+    "findBtn": "Trouver une Église",
+    "openMaps": "Ouvrir dans Google Maps",
+    "note": "Entrez une ville spécifique plutôt qu'une grande région pour des résultats plus précis."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "heading": "Entrer en Contact",
+    "p": "Nous aimerions avoir de vos nouvelles et répondre à toutes vos questions sur notre église ou nos activités.",
+    "phone": "+34 93 123 4567",
+    "email": "info@buscacristo.org",
+    "address": "123 Rue de la Foi, Barcelone, Espagne",
+    "namePlaceholder": "Votre Nom",
+    "emailPlaceholder": "Votre Email",
+    "messagePlaceholder": "Votre Message",
+    "sendBtn": "Envoyer le Message"
+  },
+  "footer": {
+    "about": "Busca Cristo",
+    "aboutText": "Venez au Christ et soyez rendus parfaits en Lui par la foi, le repentir, le baptême et le don du Saint-Esprit.",
+    "quickLinks": "Liens Rapides",
+    "resources": "Ressources",
+    "follow": "Suivez-nous",
+    "copyright": "© 2024 Busca Cristo - L'Église de Jésus-Christ des Saints des Derniers Jours. Tous droits réservés."
+  },
+  "modal": {
+    "close": "×",
+    "activityDetails": "Détails de l'Activité",
+    "locationInfo": "Obtenir des Informations Spécifiques à l'Emplacement",
+    "locationInfoDesc": "Pour recevoir des horaires détaillés et des informations pour votre emplacement spécifique, veuillez fournir vos informations de contact ci-dessous.",
+    "firstName": "Prénom *",
+    "lastName": "Nom *",
+    "email": "Email *",
+    "phone": "Numéro de Téléphone",
+    "firstNamePlaceholder": "Votre prénom",
+    "lastNamePlaceholder": "Votre nom",
+    "emailPlaceholder": "Votre email",
+    "phonePlaceholder": "Votre numéro de téléphone",
+    "preferredLocation": "Emplacement Préféré *",
+    "selectLocation": "Sélectionnez un emplacement",
+    "interests": "Activités d'Intérêt",
+    "worship": "Services de l'Église",
+    "youth": "Services pour les Jeunes",
+    "family": "Activités Familiales",
+    "education": "Éducation Religieuse",
+    "service": "Cours d'Anglais",
+    "temple": "Activités du Temple",
+    "message": "Questions ou Commentaires Supplémentaires",
+    "messagePlaceholder": "Veuillez nous faire savoir si vous avez des questions spécifiques sur les activités ou si vous souhaitez en savoir plus sur un programme particulier.",
+    "submitBtn": "Obtenir les Détails de l'Emplacement",
+    "backToFaith": "Retour à Notre Foi"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "faith": "Notre Foi"
+  },
+  "activitiesDetail": {
+    "worship": {
+      "title": "Services de l'Église",
+      "desc": "Rejoignez-nous chaque semaine pour adorer, apprendre et grandir dans la foi. Nos réunions comprennent les services de la sainte cène, l'École du Dimanche et les réunions de prêtrise et de Société de Secours, avec des dévotionnels et des réunions de témoignage tout au long de l'année.",
+      "activities": []
+    },
+    "youth": {
+      "title": "Activités pour les Jeunes",
+      "desc": "Pour les jeunes de 12 à 18 ans, nous offrons des activités hebdomadaires édificantes, des conférences de jeunes et des camps d'été qui construisent des amitiés, la foi et la confiance grâce au service, à l'apprentissage et au plaisir.",
+      "activities": []
+    },
+    "family": {
+      "title": "Activités Familiales",
+      "desc": "Les familles peuvent se rapprocher grâce aux soirées familiales, aux projets de service et aux rassemblements sociaux qui renforcent la foi et l'unité. Les voyages au temple et les activités d'histoire familiale aident à connecter les générations dans l'amour et le but.",
+      "activities": []
+    },
+    "education": {
+      "title": "Activités pour les Jeunes Adultes",
+      "desc": "Les jeunes adultes se réunissent chaque semaine pour un bref message spirituel, suivi de nourriture, de jeux et de temps social. Les classes d'Institut et d'autres discussions de l'évangile offrent des moyens significatifs d'apprendre et de grandir ensemble.",
+      "activities": []
+    },
+    "service": {
+      "title": "Cours d'Anglais",
+      "desc": "Améliorez vos compétences en anglais grâce à des cours gratuits conçus pour tous les niveaux. Nos cours se concentrent sur la conversation pratique, la grammaire et le vocabulaire utile pour les situations quotidiennes. Rejoignez une communauté d'apprentissage où vous pouvez pratiquer l'anglais tout en rencontrant de nouvelles personnes.",
+      "activities": []
+    },
+    "temple": {
+      "title": "Culte au Temple",
+      "desc": "Trouvez la paix et le but grâce à l'adoration et au service au temple. Participez aux sessions du temple, aux classes de préparation et au travail d'histoire familiale qui renforcent la foi et apportent la joie spirituelle.",
+      "activities": []
+    },
+    "availableActivities": "Activités Disponibles:"
+  },
+  "notifications": {
+    "fillFields": "Veuillez remplir tous les champs.",
+    "validEmail": "Veuillez entrer une adresse email valide.",
+    "thankYou": "Merci pour votre message! Nous vous répondrons bientôt.",
+    "locationInfo": "Merci! Nous vous enverrons des informations spécifiques à l'emplacement dans les 24 heures.",
+    "enterLocation": "Veuillez entrer un emplacement à rechercher.",
+    "noChurches": "Aucune église SUD trouvée dans cette zone.",
+    "foundChurches": "Trouvé {count} églises SUD près de {location}",
+    "locationNotFound": "Emplacement non trouvé. Veuillez essayer une adresse différente.",
+    "gettingLocation": "Obtention de la Position...",
+    "foundNearYou": "Trouvé {count} églises SUD près de vous!",
+    "noChurchesNearYou": "Aucune église SUD trouvée dans votre zone.",
+    "locationFound": "Emplacement trouvé! Recherche d'églises à proximité...",
+    "geolocationError": "Impossible d'obtenir votre position. ",
+    "permissionDenied": "Veuillez autoriser l'accès à la position et réessayer.",
+    "positionUnavailable": "Les informations de position ne sont pas disponibles.",
+    "timeout": "La demande de position a expiré.",
+    "unknownError": "Une erreur inconnue s'est produite.",
+    "geolocationNotSupported": "La géolocalisation n'est pas prise en charge par ce navigateur.",
+    "openNow": "Ouvert Maintenant",
+    "closed": "Fermé",
+    "viewAllHours": "Voir Toutes les Heures",
+    "directions": "Itinéraires",
+    "call": "Appeler",
+    "visitWebsite": "Visiter le Site Web"
+  },
+  "locationsList": {
+    "mainChapel": "Chapelle Principale - 123 Rue de la Foi",
+    "northBuilding": "Bâtiment Nord - 456 Avenue de l'Espérance",
+    "eastBuilding": "Bâtiment Est - 789 Rue de la Charité",
+    "southBuilding": "Bâtiment Sud - 321 Boulevard de la Grâce"
+  },
+  "doctrinePages": {
+    "jesusChrist": {
+      "title": "Jésus-Christ",
+      "subtitle": "Notre Sauveur, Rédempteur et la figure centrale de notre foi",
+      "backToFaith": "Retour à Notre Foi",
+      "whoIs": {
+        "title": "Qui est Jésus-Christ?",
+        "p1": "Jésus-Christ est le Fils de Dieu, le Sauveur et Rédempteur du monde. Il est la figure centrale de notre foi et le fondement de notre espérance. Grâce à Son Expiation infinie, toute l'humanité peut être sauvée par l'obéissance aux lois et ordonnances de l'Évangile.",
+        "p2": "Nous croyons que Jésus-Christ est le Fils littéral de Dieu, né de Marie à Bethléem. Il a vécu une vie parfaite et sans péché, nous montrant le chemin pour vivre et servir les autres. Ses enseignements, miracles et exemple fournissent le modèle pour nos vies."
+      },
+      "atonement": {
+        "title": "L'Expiation de Jésus-Christ",
+        "p1": "L'Expiation de Jésus-Christ est la doctrine centrale de notre foi. Grâce à Sa souffrance à Gethsémané et Sa mort sur la croix, Jésus-Christ a pris sur Lui les péchés, les douleurs et les afflictions de toute l'humanité. Ce sacrifice infini permet que nous soyons pardonnés de nos péchés et que nous retournions vivre avec notre Père Céleste.",
+        "scripture": "Car Dieu a tant aimé le monde qu'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle.",
+        "reference": "Jean 3:16",
+        "p2": "L'Expiation ne fournit pas seulement le pardon de nos péchés, mais nous donne aussi la force de surmonter nos faiblesses et nos défis. Grâce à Sa grâce, nous pouvons devenir de meilleures personnes et nous rapprocher de Dieu."
+      },
+      "following": {
+        "title": "Suivre l'Exemple du Christ",
+        "p1": "En tant que disciples de Jésus-Christ, nous nous efforçons de vivre comme Il a vécu. Cela signifie aimer Dieu de tout notre cœur, de toute notre âme, de toute notre force et de tout notre pouvoir, et aimer notre prochain comme nous-mêmes. Nous cherchons à servir les autres, à montrer de la compassion et à vivre avec intégrité et foi.",
+        "p2": "Le Christ nous a enseigné à être humbles, pardonneurs et charitables. Il nous a montré comment prier, comment traiter les autres avec bonté et comment faire confiance au plan de notre Père Céleste. En suivant Son exemple, nous pouvons trouver la paix, la joie et un but dans nos vies."
+      },
+      "relationship": {
+        "title": "Notre Relation avec le Christ",
+        "p1": "Jésus-Christ n'est pas seulement une figure historique pour nous—Il est notre Sauveur vivant. Nous croyons qu'Il nous connaît personnellement, chacun de nous, et qu'Il nous aime inconditionnellement. Grâce à la prière, l'étude des Écritures et le suivi de Ses enseignements, nous pouvons développer une relation personnelle avec Lui.",
+        "p2": "En venant au Christ, nous trouvons la guérison, l'espérance et la direction pour nos vies. Il est notre avocat auprès du Père et notre source de force dans les moments d'épreuve. Grâce à Son Expiation, nous pouvons être transformés et devenir plus comme Lui."
+      },
+      "related": "Sujets Connexes"
+    },
+    "bookOfMormon": {
+      "title": "Livre de Mormon",
+      "subtitle": "Un autre témoignage de Jésus-Christ",
+      "backToFaith": "Retour à Notre Foi",
+      "whatIs": {
+        "title": "Qu'est-ce que le Livre de Mormon?",
+        "p1": "Le Livre de Mormon est un autre témoignage de Jésus-Christ, confirmant les vérités trouvées dans la Bible. C'est un registre sacré des civilisations américaines anciennes et contient la plénitude de l'évangile éternel. Le livre a été écrit par des prophètes anciens qui vivaient sur le continent américain d'environ 600 av. J.-C. à 421 apr. J.-C.",
+        "p2": "Le Livre de Mormon témoigne de Jésus-Christ et de Sa mission divine. Il enseigne les mêmes principes de foi, de repentir, de baptême et du don du Saint-Esprit que l'on trouve dans la Bible. Ensemble, la Bible et le Livre de Mormon fournissent une compréhension plus complète du plan de Dieu pour Ses enfants."
+      },
+      "comingForth": {
+        "title": "La Venue du Livre de Mormon",
+        "p1": "Le Livre de Mormon a été traduit par Joseph Smith par le don et le pouvoir de Dieu. Les registres originaux ont été écrits sur des plaques d'or et ont été enterrés dans la terre pendant plus de 1 400 ans. En 1823, l'ange Moroni est apparu à Joseph Smith et lui a parlé de ces registres sacrés.",
+        "scripture": "Et il apportera un nouveau registre, et il y aura le même évangile qu'il leur a déclaré dans la Bible; et il n'y aura pas plus de deux nations.",
+        "reference": "Ézéchiel 37:16-17",
+        "p2": "Après quatre ans de préparation, Joseph Smith a reçu les plaques d'or et les a traduites par le pouvoir de Dieu. Le Livre de Mormon a été publié pour la première fois en 1830 et a depuis été traduit dans plus de 100 langues."
+      },
+      "teachings": {
+        "title": "Enseignements Clés du Livre de Mormon",
+        "p1": "Le Livre de Mormon contient de nombreux enseignements importants sur Jésus-Christ, y compris Sa naissance, Son ministère, Sa mort et Sa résurrection. Il enseigne l'importance de la foi, du repentir, du baptême et de recevoir le don du Saint-Esprit. Le livre met également l'accent sur l'importance des familles, du service aux autres et du suivi des commandements de Dieu.",
+        "p2": "L'un des enseignements les plus puissants du Livre de Mormon concerne l'Expiation de Jésus-Christ. Le livre enseigne que grâce au sacrifice du Christ, toute l'humanité peut être sauvée et retourner vivre avec Dieu. Il enseigne également l'importance de la révélation personnelle et comment nous pouvons recevoir des conseils de Dieu dans notre vie quotidienne."
+      },
+      "promise": {
+        "title": "La Promesse du Livre de Mormon",
+        "p1": "Le Livre de Mormon contient une promesse que quiconque le lit avec un cœur sincère et demande à Dieu avec foi recevra un témoignage de sa véracité. Cette promesse se trouve dans Moroni 10:3-5, où nous sommes invités à lire, méditer et prier au sujet du livre.",
+        "scripture": "Et quand vous recevrez ces choses, je vous exhorte à demander à Dieu, le Père Éternel, au nom du Christ, si ces choses ne sont pas vraies; et si vous demandez avec un cœur sincère, avec une intention réelle, ayant foi au Christ, il vous manifestera la vérité de ces choses par le pouvoir du Saint-Esprit.",
+        "reference": "Moroni 10:4",
+        "p2": "Cette promesse s'applique à tous ceux qui lisent le Livre de Mormon. Grâce à la prière et à l'étude, nous pouvons recevoir un témoignage personnel que le livre est vrai et qu'il contient la parole de Dieu."
+      },
+      "study": {
+        "title": "Comment Étudier le Livre de Mormon",
+        "p1": "Le Livre de Mormon est destiné à être étudié avec prière et régulièrement. Nous encourageons tout le monde à le lire quotidiennement, à méditer ses enseignements et à appliquer ses principes dans leur vie. Le livre peut être lu individuellement ou en famille, et il existe de nombreuses ressources disponibles pour aider à comprendre ses enseignements.",
+        "p2": "Lorsque vous étudiez le Livre de Mormon, cherchez des principes qui s'appliquent à votre vie. Prêtez attention aux exemples de foi, de courage et d'obéissance montrés par les personnes dans le livre. Plus important encore, priez pour la compréhension et les conseils pendant que vous lisez."
+      },
+      "related": "Sujets Connexes"
+    },
+    "eternalFamilies": {
+      "title": "Familles Éternelles",
+      "subtitle": "Les Familles Peuvent Être Ensemble pour Toujours",
+      "backToFaith": "Retour à Notre Foi",
+      "divineNature": {
+        "title": "La Nature Divine des Familles",
+        "p1": "Les familles sont centrales au plan de Dieu pour Ses enfants. Nous croyons que les familles peuvent être ensemble pour toujours grâce aux ordonnances sacrées du temple. La famille est l'unité fondamentale de la société et l'organisation la plus importante dans le temps et l'éternité. Dieu a établi les familles pour fournir l'amour, le soutien et les conseils à Ses enfants.",
+        "p2": "La famille est l'endroit où nous apprenons à aimer, servir et prendre soin des autres. C'est là que nous développons notre caractère, nos valeurs et notre foi. Grâce aux relations familiales, nous expérimentons la joie, la croissance et les bénédictions de l'amour de Dieu. La famille fournit un refuge sûr où nous pouvons apprendre, grandir et devenir les personnes que Dieu veut que nous soyons."
+      },
+      "templeMarriage": {
+        "title": "Mariage au Temple et Familles Éternelles",
+        "p1": "Dans les temples, les couples dignes peuvent être scellés ensemble pour le temps et toute l'éternité. Cette ordonnance sacrée, accomplie par l'autorité appropriée de la prêtrise, unit les familles au-delà de la mort. Lorsqu'un couple est scellé au temple, son mariage n'est pas seulement pour cette vie mais pour l'éternité.",
+        "scripture": "Et je te donnerai les clés du royaume des cieux: et tout ce que tu lieras sur la terre sera lié dans les cieux: et tout ce que tu délieras sur la terre sera délié dans les cieux.",
+        "reference": "Matthieu 16:19",
+        "p2": "Les enfants nés de parents qui ont été scellés au temple sont automatiquement scellés à leurs parents pour l'éternité. Cela signifie que les familles peuvent être ensemble pour toujours, pas seulement jusqu'à ce que la mort les sépare. C'est l'une des plus grandes bénédictions de l'évangile de Jésus-Christ."
+      },
+      "familyHistory": {
+        "title": "Histoire Familiale et Œuvre du Temple",
+        "p1": "Nous croyons que tous les enfants de Dieu, vivants et morts, devraient avoir l'opportunité de recevoir les bénédictions de l'évangile. Grâce à la recherche d'histoire familiale et à l'œuvre du temple, nous pouvons aider nos ancêtres décédés à recevoir les ordonnances de salut, y compris le baptême, la confirmation et le scellement du temple.",
+        "p2": "L'œuvre d'histoire familiale nous connecte à nos ancêtres et nous aide à comprendre notre patrimoine. Elle renforce nos familles et nous rapproche de Dieu. Lorsque nous accomplissons les ordonnances du temple pour nos ancêtres, nous les aidons à progresser dans leur voyage éternel et renforçons les liens de notre famille éternelle."
+      },
+      "strengthening": {
+        "title": "Renforcer les Familles Aujourd'hui",
+        "p1": "Bien que les familles éternelles soient une bénédiction future, nous pouvons commencer à renforcer nos familles aujourd'hui. Cela inclut la prière familiale régulière, l'étude des Écritures et la soirée familiale. Nous devons également passer du temps de qualité ensemble, nous soutenir mutuellement et travailler ensemble pour surmonter les défis.",
+        "p2": "Les familles fortes sont construites sur des principes d'amour, de respect, de pardon et de service. Les parents doivent enseigner l'évangile à leurs enfants et les aider à développer la foi en Jésus-Christ. Les enfants doivent honorer et obéir à leurs parents. Lorsque les familles travaillent ensemble et se soutiennent mutuellement, elles deviennent plus fortes et plus unies."
+      },
+      "promise": {
+        "title": "La Promesse des Familles Éternelles",
+        "p1": "La promesse des familles éternelles nous donne l'espoir et le réconfort en temps de perte et de séparation. Nous savons que la mort n'est pas la fin de nos relations avec nos proches. Grâce à l'Expiation de Jésus-Christ et au pouvoir de la prêtrise, les familles peuvent être réunies et vivre ensemble pour toujours en la présence de Dieu.",
+        "scripture": "Et s'il arrive que vous travailliez tous vos jours à proclamer le repentir à ce peuple et que vous ameniez, ne serait-ce qu'une seule âme à moi, quelle sera votre joie avec elle dans le royaume de mon Père!",
+        "reference": "Doctrine et Alliances 18:15",
+        "p2": "Cette promesse nous motive à vivre avec droiture et à travailler pour être dignes de la vie éternelle. Elle nous encourage à renforcer nos relations familiales et à aider les autres à venir au Christ. La famille n'est pas seulement un arrangement temporaire mais une institution éternelle qui continuera pour toujours."
+      },
+      "related": "Sujets Connexes"
+    },
+    "livingProphets": {
+      "title": "Prophètes Vivants",
+      "subtitle": "Dieu Parle à Travers Ses Serviteurs Choisis",
+      "backToFaith": "Retour à Notre Foi",
+      "whatIs": {
+        "title": "Qu'est-ce qu'un Prophète?",
+        "p1": "Un prophète est un homme appelé par Dieu pour être Son porte-parole sur la terre. Les prophètes reçoivent la révélation de Dieu et enseignent Sa volonté au peuple. Ils sont choisis par Dieu pour diriger Son église et guider Ses enfants dans la droiture. Tout au long de l'histoire, Dieu a appelé des prophètes pour enseigner Son évangile et avertir Son peuple.",
+        "p2": "Les prophètes ne sont pas des hommes parfaits, mais ils sont appelés par Dieu et soutenus par le peuple. Ils reçoivent l'inspiration et la révélation pour guider l'église et aider les enfants de Dieu à naviguer les défis de leur temps. Ils parlent pour Dieu et fournissent la direction pour nos vies."
+      },
+      "modernRevelation": {
+        "title": "Révélation Moderne",
+        "p1": "Nous croyons que Dieu continue de parler à Ses enfants aujourd'hui à travers des prophètes vivants. Tout comme Dieu a parlé à Moïse, Ésaïe et d'autres prophètes anciens, Il parle à Ses prophètes aujourd'hui. Cette révélation moderne nous aide à comprendre la volonté de Dieu pour notre temps et fournit des conseils pour les défis auxquels nous sommes confrontés.",
+        "scripture": "Car le Seigneur, l'Éternel, ne fait rien sans révéler son secret à ses serviteurs les prophètes.",
+        "reference": "Amos 3:7",
+        "p2": "La révélation moderne vient par le Président de L'Église de Jésus-Christ des Saints des Derniers Jours, qui sert de prophète, voyant et révélateur pour le monde entier. Cette révélation est donnée dans les discours de la conférence générale, les déclarations officielles et d'autres communications inspirées."
+      },
+      "firstPresidency": {
+        "title": "La Première Présidence et le Collège des Douze",
+        "p1": "La Première Présidence se compose du Président de l'Église et de ses deux conseillers. Le Collège des Douze Apôtres sont des témoins spéciaux de Jésus-Christ et servent sous la direction de la Première Présidence. Ensemble, ces quinze hommes forment le corps dirigeant de l'église et reçoivent la révélation pour le monde entier.",
+        "p2": "Ces hommes sont appelés par Dieu et soutenus par les membres de l'église. Ils voyagent dans le monde entier pour enseigner, témoigner et servir les enfants de Dieu. Ils fournissent des conseils sur les questions de doctrine, de politique et de conduite personnelle. Leurs enseignements nous aident à comprendre la volonté de Dieu et à vivre selon Ses commandements."
+      },
+      "generalConference": {
+        "title": "Conférence Générale",
+        "p1": "Deux fois par an, l'église tient une conférence générale, où le prophète et d'autres dirigeants de l'église parlent au monde entier. Ces conférences sont diffusées dans le monde entier et fournissent une opportunité pour tous les membres d'entendre la parole de Dieu à travers Ses serviteurs choisis. Les messages donnés à la conférence générale sont considérés comme des Écritures et fournissent des conseils pour nos vies.",
+        "p2": "Les discours de la conférence générale couvrent un large éventail de sujets, y compris la foi, le repentir, le service, la famille et les défis actuels auxquels le monde est confronté. Ces messages fournissent le réconfort, les conseils et la direction pour les membres de l'église et quiconque choisit d'écouter. Ils nous aident à comprendre comment appliquer les principes de l'évangile dans notre vie quotidienne."
+      },
+      "following": {
+        "title": "Suivre le Prophète",
+        "p1": "Nous sommes encouragés à suivre les conseils des prophètes vivants. Leurs enseignements nous aident à rester sur le chemin qui mène à la vie éternelle. Lorsque nous suivons leurs conseils, nous sommes bénis avec la paix, la protection et la croissance spirituelle. Les paroles du prophète ne sont pas seulement des suggestions mais sont des conseils inspirés de Dieu.",
+        "scripture": "Que ce soit par ma propre voix ou par la voix de mes serviteurs, c'est la même chose.",
+        "reference": "Doctrine et Alliances 1:38",
+        "p2": "Suivre le prophète nécessite la foi et l'obéissance. Nous ne comprenons peut-être pas toujours pourquoi certains conseils sont donnés, mais nous pouvons faire confiance qu'ils viennent de Dieu et sont pour notre bénéfice. En suivant les conseils du prophète, nous serons bénis et protégés des maux du monde."
+      },
+      "related": "Sujets Connexes"
+    },
+    "baptism": {
+      "title": "Baptême",
+      "subtitle": "Les Premiers Principes et Ordonnances de l'Évangile",
+      "backToFaith": "Retour à Notre Foi",
+      "faith": {
+        "title": "Foi en Jésus-Christ",
+        "p1": "La foi est le premier principe de l'évangile. C'est une espérance en des choses qui ne sont pas vues, mais qui sont vraies. La foi en Jésus-Christ signifie avoir confiance en Lui, croire en Ses enseignements et suivre Son exemple. Lorsque nous avons foi au Christ, nous L'acceptons comme notre Sauveur et Rédempteur et croyons que grâce à Son Expiation, nous pouvons être pardonnés de nos péchés et retourner vivre avec Dieu.",
+        "scripture": "Et maintenant, comme j'ai dit concernant la foi—la foi n'est pas d'avoir une connaissance parfaite des choses; c'est pourquoi si vous avez la foi, vous espérez en des choses qui ne sont pas vues, qui sont vraies.",
+        "reference": "Alma 32:21",
+        "p2": "La foi nous pousse à agir. Lorsque nous avons foi en Jésus-Christ, nous sommes disposés à garder Ses commandements, à nous repentir de nos péchés et à suivre Ses enseignements. La foi est comme une graine—lorsque nous la plantons et la nourrissons, elle grandit et produit de bons fruits dans nos vies."
+      },
+      "repentance": {
+        "title": "Repentir",
+        "p1": "Le repentir est le deuxième principe de l'évangile. C'est le processus de changer nos pensées, nos croyances et nos comportements pour les aligner avec la volonté de Dieu. Grâce au repentir, nous nous éloignons du péché et nous tournons vers Dieu. Le repentir implique de reconnaître nos erreurs, d'en ressentir du chagrin, de les confesser à Dieu, de faire restitution lorsque c'est possible et de s'engager à changer.",
+        "scripture": "Par ceci vous saurez si un homme se repent de ses péchés—voici, il les confessera et les abandonnera.",
+        "reference": "Doctrine et Alliances 58:43",
+        "p2": "Le repentir est rendu possible grâce à l'Expiation de Jésus-Christ. Lorsque nous nous repentons, nous pouvons être pardonnés de nos péchés et recevoir la paix et la joie. Le repentir n'est pas un événement unique mais un processus continu tout au long de nos vies alors que nous nous efforçons de devenir plus comme le Christ."
+      },
+      "baptism": {
+        "title": "Baptême",
+        "p1": "Le baptême est la première ordonnance de l'évangile et est essentiel pour le salut. Il est accompli par immersion dans l'eau par quelqu'un qui a l'autorité appropriée de la prêtrise. Le baptême représente la mort, l'ensevelissement et la résurrection de Jésus-Christ et symbolise notre engagement à Le suivre. Lorsque nous sommes baptisés, nous faisons une alliance avec Dieu de prendre sur nous le nom de Jésus-Christ, de toujours nous souvenir de Lui et de garder Ses commandements.",
+        "scripture": "Et maintenant, si l'Agneau de Dieu, étant saint, a besoin d'être baptisé par l'eau pour accomplir toute justice, oh alors, combien plus avons-nous besoin, étant impurs, d'être baptisés, oui, même par l'eau!",
+        "reference": "2 Néphi 31:5",
+        "p2": "Le baptême est la porte d'entrée sur le chemin qui mène à la vie éternelle. Grâce au baptême, nous sommes purifiés de nos péchés et devenons membres de l'église du Christ. Nous sommes baptisés à l'âge de responsabilité (huit ans) ou lorsque nous sommes assez âgés pour comprendre et faire cette importante alliance avec Dieu."
+      },
+      "holyghost": {
+        "title": "Le Don du Saint-Esprit",
+        "p1": "Après le baptême, nous recevons le don du Saint-Esprit par l'imposition des mains par ceux qui ont l'autorité de la prêtrise. Le Saint-Esprit est le troisième membre de la Divinité et sert de compagnon constant, de guide et de consolateur. Le don du Saint-Esprit est différent de l'influence du Saint-Esprit—c'est le droit d'avoir le Saint-Esprit comme compagnon constant, tant que nous restons dignes.",
+        "scripture": "Et par le pouvoir du Saint-Esprit vous pouvez connaître la vérité de toutes choses.",
+        "reference": "Moroni 10:5",
+        "p2": "Le Saint-Esprit nous aide de nombreuses façons: Il témoigne de la vérité, nous avertit du danger, nous console dans les moments de besoin, nous guide dans la prise de décisions et nous aide à comprendre les Écritures. Lorsque nous vivons avec droiture et gardons les commandements, nous pouvons avoir la compagnie constante du Saint-Esprit, qui apporte la paix, la joie et la force spirituelle."
+      },
+      "endure": {
+        "title": "Persévérer jusqu'à la Fin",
+        "p1": "Persévérer jusqu'à la fin signifie rester fidèles aux alliances que nous faisons tout au long de nos vies. Cela signifie continuer à avoir foi en Jésus-Christ, à nous repentir quotidiennement, à garder les commandements et à servir les autres. Persévérer jusqu'à la fin ne consiste pas seulement à survivre—il s'agit de grandir, d'apprendre et de devenir plus comme notre Sauveur.",
+        "scripture": "Regarde-moi dans chaque pensée; ne doute pas, ne crains pas. Voici les blessures qui ont percé mon côté, et aussi les empreintes des clous dans mes mains et mes pieds; sois fidèle, garde mes commandements, et tu hériteras du royaume des cieux.",
+        "reference": "Doctrine et Alliances 6:36-37",
+        "p2": "L'évangile de Jésus-Christ est un mode de vie, pas seulement un événement unique. Alors que nous persévérons jusqu'à la fin, nous continuons à grandir spirituellement, à servir les autres et à nous rapprocher de Dieu. Grâce à l'Expiation de Jésus-Christ et à notre fidélité, nous pouvons recevoir le plus grand de tous les dons de Dieu—la vie éternelle."
+      },
+      "related": "Sujets Connexes"
+    },
+    "planOfSalvation": {
+      "title": "Plan de Salut",
+      "subtitle": "Le Plan Éternel de Dieu pour Ses Enfants",
+      "backToFaith": "Retour à Notre Foi",
+      "whatIs": {
+        "title": "Qu'est-ce que le Plan de Salut?",
+        "p1": "Le Plan de Salut est le plan éternel de Dieu pour le bonheur et le salut de Ses enfants. Il explique notre but dans la vie, d'où nous venons, pourquoi nous sommes ici et où nous allons après la mort. Ce plan a été établi avant que le monde ne soit créé et fournit le cadre pour notre progression éternelle.",
+        "p2": "Le plan comprend trois phases principales: la vie pré-mortelle, la vie mortelle et la vie après la mort. Chaque phase est essentielle pour notre développement et notre bonheur éternels. Grâce à ce plan, nous pouvons devenir comme notre Père Céleste et vivre avec Lui pour toujours dans des familles éternelles."
+      },
+      "preMortal": {
+        "title": "Vie Pré-Mortelle",
+        "p1": "Avant de naître sur la terre, nous vivions avec notre Père Céleste comme Ses enfants spirituels. Nous avons été créés à Son image et avions le potentiel de devenir comme Lui. Dans cette existence pré-mortelle, nous avons appris sur le plan de Dieu et avons choisi de venir sur la terre pour obtenir des corps physiques et expérimenter la mortalité.",
+        "scripture": "Avant que je t'aie formé dans le ventre, je t'ai connu; et avant que tu sortes du sein de ta mère, je t'ai sanctifié, et je t'ai établi prophète pour les nations.",
+        "reference": "Jérémie 1:5",
+        "p2": "Dans la vie pré-mortelle, nous avons développé nos personnalités, nos talents et nos dons spirituels. Nous avons également fait des choix qui ont influencé nos expériences terrestres. Cette existence pré-mortelle aide à expliquer pourquoi nous avons différentes circonstances et défis dans cette vie."
+      },
+      "mortal": {
+        "title": "Vie Mortelle",
+        "p1": "La vie mortelle est un temps d'épreuve et de croissance. Nous sommes ici pour obtenir des corps physiques, apprendre à choisir entre le bien et le mal, et développer la foi en Jésus-Christ. Cette vie n'est pas facile, mais elle est essentielle pour notre progression éternelle. Grâce à nos expériences, nous apprenons à devenir plus comme notre Père Céleste.",
+        "p2": "Pendant la mortalité, nous faisons face à des défis, commettons des erreurs et expérimentons à la fois la joie et la tristesse. Ces expériences nous aident à développer le caractère, la compassion et la sagesse. Nous avons également l'opportunité d'apprendre sur l'évangile, de faire des alliances avec Dieu et de servir les autres. Les choix que nous faisons dans cette vie déterminent notre destinée éternelle."
+      },
+      "afterDeath": {
+        "title": "Vie Après la Mort",
+        "p1": "Après la mort, nos esprits vont dans le monde des esprits, où nous continuons à apprendre et à grandir. Le monde des esprits est divisé en paradis et prison, basé sur notre acceptation de l'évangile pendant la mortalité. Ceux qui ont accepté l'évangile vont au paradis, tandis que ceux qui ne l'ont pas fait vont en prison, où ils peuvent encore apprendre sur l'évangile.",
+        "p2": "Finalement, toutes les personnes seront ressuscitées et jugées selon leurs œuvres et leurs désirs. Basé sur nos choix et notre fidélité, nous serons assignés à l'un des trois royaumes de gloire: le royaume céleste (le plus élevé), le royaume terrestre ou le royaume téleste. Le royaume céleste est où nous pouvons vivre avec Dieu et nos familles pour toujours."
+      },
+      "atonement": {
+        "title": "L'Expiation de Jésus-Christ",
+        "p1": "Central au Plan de Salut est l'Expiation de Jésus-Christ. Grâce à Sa souffrance, Sa mort et Sa résurrection, Jésus-Christ a rendu possible que nous surmontions le péché et la mort. Son Expiation fournit le chemin pour que nous retournions à notre Père Céleste et recevions la vie éternelle.",
+        "scripture": "Car Dieu a tant aimé le monde qu'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle.",
+        "reference": "Jean 3:16",
+        "p2": "L'Expiation ne concerne pas seulement le pardon des péchés, mais aussi nous permettre de devenir de meilleures personnes. Grâce à la grâce du Christ, nous pouvons surmonter nos faiblesses, développer des attributs semblables au Christ et progresser vers la vie éternelle. L'Expiation rend le Plan de Salut possible."
+      },
+      "ourRole": {
+        "title": "Notre Rôle dans le Plan",
+        "p1": "Nous avons un rôle important à jouer dans le Plan de Salut. Nous devons choisir de suivre Jésus-Christ, garder Ses commandements et servir les autres. Nous devons nous efforcer de développer la foi, de nous repentir de nos péchés, d'être baptisés, de recevoir le don du Saint-Esprit et de persévérer jusqu'à la fin. Ce sont les principes et ordonnances de l'évangile.",
+        "p2": "Nous avons également la responsabilité d'aider les autres à comprendre et accepter le plan. Cela inclut de partager l'évangile avec nos amis et notre famille, de servir dans l'église et d'être des exemples de droiture. Alors que nous aidons les autres à venir au Christ, nous participons à l'œuvre de Dieu et aidons à accomplir Son plan."
+      },
+      "related": "Sujets Connexes"
+    }
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "activities": "Actividades",
+    "faith": "Nuestra Fe",
+    "missionaries": "Misioneros",
+    "locations": "Ubicaciones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bienvenido a Busca Cristo",
+    "subtitle": "Venid a Cristo y perfeccionaos en Él",
+    "btnActivities": "Ver Actividades",
+    "btnLocations": "Encontrar Ubicación"
+  },
+  "activities": {
+    "title": "Actividades de la Iglesia",
+    "intro": "Descubre las diversas actividades y programas disponibles en nuestras ubicaciones. Cada ubicación ofrece oportunidades únicas para el crecimiento espiritual, la hermandad y el servicio.",
+    "worship": {
+      "title": "Servicios de la Iglesia",
+      "desc": "Adoración dominical, reuniones de la santa cena y servicios devocionales especiales",
+      "btn": "Ver Actividades"
+    },
+    "youth": {
+      "title": "Servicios para Jóvenes",
+      "desc": "Actividades, campamentos y programas para jóvenes de 12 a 18 años",
+      "btn": "Ver Actividades"
+    },
+    "family": {
+      "title": "Actividades Familiares",
+      "desc": "Noche de hogar familiar, actividades y programas para todas las edades",
+      "btn": "Ver Actividades"
+    },
+    "education": {
+      "title": "Actividades para Jóvenes Adultos",
+      "desc": "Escuela Dominical, Instituto y otras oportunidades de aprendizaje",
+      "btn": "Ver Actividades"
+    },
+    "service": {
+      "title": "Clases de Inglés",
+      "desc": "Aprende inglés en un ambiente comunitario de apoyo con clases gratuitas para todos los niveles",
+      "btn": "Ver Actividades"
+    },
+    "other": {
+      "title": "Otras Oportunidades",
+      "desc": "Actividades y programas adicionales disponibles en nuestras ubicaciones",
+      "btn": "Ver Actividades"
+    }
+  },
+  "doctrine": {
+    "title": "Nuestra Fe y Doctrina",
+    "intro": "Aprende más sobre nuestras creencias y enseñanzas fundamentales. Haz clic en cualquier tema para explorar una comprensión más profunda de nuestra fe.",
+    "jesus": {
+      "title": "Jesucristo",
+      "desc": "Aprende sobre nuestro Salvador, Su Expiación y Su papel central en nuestra fe y salvación"
+    },
+    "bom": {
+      "title": "Libro de Mormón",
+      "desc": "Descubre otro testamento de Jesucristo y su importancia en nuestra comprensión del plan de Dios"
+    },
+    "families": {
+      "title": "Familias Eternas",
+      "desc": "Entiende cómo las familias pueden estar juntas para siempre a través de ordenanzas sagradas del templo"
+    },
+    "prophets": {
+      "title": "Profetas Vivientes",
+      "desc": "Aprende sobre la revelación moderna y cómo Dios nos habla a través de Sus siervos elegidos"
+    },
+    "baptism": {
+      "title": "Bautismo",
+      "desc": "Aprende sobre los primeros principios y ordenanzas del Evangelio de Jesucristo"
+    },
+    "salvation": {
+      "title": "Plan de Salvación",
+      "desc": "Explora el plan eterno de Dios para Sus hijos y nuestro propósito en esta vida"
+    }
+  },
+  "missionaries": {
+    "title": "Conoce a Nuestros Misioneros",
+    "heading": "Compartiendo el Evangelio de Jesucristo",
+    "p1": "Nuestros misioneros de tiempo completo son jóvenes dedicados que han elegido servir al Señor durante 18-24 meses. Vienen de todo el mundo para compartir el mensaje de Jesucristo y Su evangelio restaurado.",
+    "p2": "Estos misioneros están aquí para ayudarte a aprender sobre nuestras creencias, responder tus preguntas y brindar orientación espiritual. Ofrecen lecciones gratuitas sobre Jesucristo, el Libro de Mormón y cómo las familias pueden estar juntas para siempre.",
+    "btnMeet": "Reunirse con Misioneros",
+    "btnLearn": "Aprender Más en Línea",
+    "formTitle": "Reunirse con Misioneros",
+    "formDescription": "Completa el formulario a continuación y nuestros misioneros se pondrán en contacto contigo para programar una reunión.",
+    "nameLabel": "Nombre *",
+    "addressLabel": "Dirección *",
+    "learnAboutLabel": "¿Sobre qué te gustaría aprender más?",
+    "namePlaceholder": "Tu nombre",
+    "addressPlaceholder": "Tu dirección",
+    "learnAboutPlaceholder": "Cuéntanos qué te interesa aprender...",
+    "submitBtn": "Enviar Solicitud",
+    "successMessage": "¡Gracias! Nos pondremos en contacto contigo pronto."
+  },
+  "locations": {
+    "title": "Encuentra una Iglesia Cerca de Ti",
+    "useLocation": "Usar Mi Ubicación",
+    "or": "o",
+    "placeholder": "Ingresa tu ciudad, dirección o código postal",
+    "findBtn": "Buscar Iglesia",
+    "openMaps": "Abrir en Google Maps",
+    "note": "Ingresa una ciudad específica en lugar de una región grande para obtener resultados más precisos."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "heading": "Ponerse en Contacto",
+    "p": "Nos encantaría saber de ti y responder cualquier pregunta que puedas tener sobre nuestra iglesia o actividades.",
+    "phone": "+34 93 123 4567",
+    "email": "info@buscacristo.org",
+    "address": "123 Calle de la Fe, Barcelona, España",
+    "namePlaceholder": "Tu Nombre",
+    "emailPlaceholder": "Tu Email",
+    "messagePlaceholder": "Tu Mensaje",
+    "sendBtn": "Enviar Mensaje"
+  },
+  "footer": {
+    "about": "Busca Cristo",
+    "aboutText": "Venid a Cristo y perfeccionaos en Él mediante la fe, el arrepentimiento, el bautismo y el don del Espíritu Santo.",
+    "quickLinks": "Enlaces Rápidos",
+    "resources": "Recursos",
+    "follow": "Síguenos",
+    "copyright": "© 2024 Busca Cristo - La Iglesia de Jesucristo de los Santos de los Últimos Días. Todos los derechos reservados."
+  },
+  "modal": {
+    "close": "×",
+    "activityDetails": "Detalles de la Actividad",
+    "locationInfo": "Obtener Información Específica de la Ubicación",
+    "locationInfoDesc": "Para recibir horarios detallados e información para tu ubicación específica, por favor proporciona tu información de contacto a continuación.",
+    "firstName": "Nombre *",
+    "lastName": "Apellido *",
+    "email": "Correo Electrónico *",
+    "phone": "Número de Teléfono",
+    "firstNamePlaceholder": "Tu nombre",
+    "lastNamePlaceholder": "Tu apellido",
+    "emailPlaceholder": "Tu correo",
+    "phonePlaceholder": "Tu teléfono",
+    "preferredLocation": "Ubicación Preferida *",
+    "selectLocation": "Selecciona una ubicación",
+    "interests": "Actividades de Interés",
+    "worship": "Servicios de la Iglesia",
+    "youth": "Servicios para Jóvenes",
+    "family": "Actividades Familiares",
+    "education": "Educación Religiosa",
+    "service": "Clases de Inglés",
+    "other": "Otras Oportunidades",
+    "message": "Preguntas o Comentarios Adicionales",
+    "messagePlaceholder": "Por favor, háznoslo saber si tienes preguntas específicas sobre actividades o te gustaría saber más sobre algún programa en particular.",
+    "submitBtn": "Obtener Detalles de Ubicación",
+    "backToFaith": "Volver a Nuestra Fe"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "faith": "Nuestra Fe"
+  },
+  "activitiesDetail": {
+    "worship": {
+      "title": "Servicios de la Iglesia",
+      "desc": "Únete a nosotros cada semana para adorar, aprender y crecer en la fe. Nuestras reuniones incluyen servicios de la santa cena, Escuela Dominical y reuniones de sacerdocio y Sociedad de Socorro, con devocionales y reuniones de testimonios durante todo el año.",
+      "activities": []
+    },
+    "youth": {
+      "title": "Actividades para Jóvenes",
+      "desc": "Para jóvenes de 12 a 18 años, ofrecemos actividades semanales edificantes, conferencias de jóvenes y campamentos de verano que construyen amistades, fe y confianza a través del servicio, el aprendizaje y la diversión.",
+      "activities": []
+    },
+    "family": {
+      "title": "Actividades Familiares",
+      "desc": "Las familias pueden acercarse más a través de las noches de hogar familiar, proyectos de servicio y reuniones sociales que fortalecen la fe y la unidad. Los viajes al templo y las actividades de historia familiar ayudan a conectar generaciones en amor y propósito.",
+      "activities": []
+    },
+    "education": {
+      "title": "Actividades para Jóvenes Adultos",
+      "desc": "Los jóvenes adultos se reúnen semanalmente para un breve mensaje espiritual, seguido de comida, juegos y tiempo social. Las clases de Instituto y otras discusiones del evangelio ofrecen formas significativas de aprender y crecer juntos.",
+      "activities": []
+    },
+    "service": {
+      "title": "Clases de Inglés",
+      "desc": "Mejora tus habilidades en inglés a través de clases gratuitas diseñadas para todos los niveles. Nuestras clases se enfocan en conversación práctica, gramática y vocabulario útil para situaciones cotidianas. Únete a una comunidad de aprendizaje donde puedes practicar inglés mientras conoces nuevas personas.",
+      "activities": []
+    },
+    "other": {
+      "title": "Otras Oportunidades",
+      "desc": "Descubre actividades y programas adicionales disponibles en nuestras ubicaciones. Contenido detallado disponible próximamente.",
+      "activities": []
+    },
+    "availableActivities": "Actividades Disponibles:"
+  },
+  "notifications": {
+    "fillFields": "Por favor completa todos los campos.",
+    "validEmail": "Por favor ingresa una dirección de correo electrónico válida.",
+    "thankYou": "¡Gracias por tu mensaje! Te responderemos pronto.",
+    "locationInfo": "¡Gracias! Te enviaremos información específica de la ubicación dentro de 24 horas.",
+    "enterLocation": "Por favor ingresa una ubicación para buscar.",
+    "noChurches": "No se encontraron iglesias SUD en esa área.",
+    "foundChurches": "Se encontraron {count} iglesias SUD cerca de {location}",
+    "locationNotFound": "Ubicación no encontrada. Por favor intenta con una dirección diferente.",
+    "gettingLocation": "Obteniendo Ubicación...",
+    "foundNearYou": "¡Se encontraron {count} iglesias SUD cerca de ti!",
+    "noChurchesNearYou": "No se encontraron iglesias SUD en tu área.",
+    "locationFound": "¡Ubicación encontrada! Buscando iglesias cercanas...",
+    "geolocationError": "No se pudo obtener tu ubicación. ",
+    "permissionDenied": "Por favor permite el acceso a la ubicación e intenta de nuevo.",
+    "positionUnavailable": "La información de ubicación no está disponible.",
+    "timeout": "La solicitud de ubicación expiró.",
+    "unknownError": "Ocurrió un error desconocido.",
+    "geolocationNotSupported": "La geolocalización no es compatible con este navegador.",
+    "openNow": "Abierto Ahora",
+    "closed": "Cerrado",
+    "viewAllHours": "Ver Todas las Horas",
+    "directions": "Direcciones",
+    "call": "Llamar",
+    "visitWebsite": "Visitar Sitio Web"
+  },
+  "locationsList": {
+    "mainChapel": "Capilla Principal - 123 Calle de la Fe",
+    "northBuilding": "Edificio Norte - 456 Avenida de la Esperanza",
+    "eastBuilding": "Edificio Este - 789 Calle de la Caridad",
+    "southBuilding": "Edificio Sur - 321 Bulevar de la Gracia"
+  },
+  "doctrinePages": {
+    "jesusChrist": {
+      "title": "Jesucristo",
+      "subtitle": "Nuestro Salvador, Redentor y la figura central de nuestra fe",
+      "backToFaith": "Volver a Nuestra Fe",
+      "whoIs": {
+        "title": "¿Quién es Jesucristo?",
+        "p1": "Jesucristo es el Hijo de Dios, el Salvador y Redentor del mundo. Él es la figura central de nuestra fe y el fundamento de nuestra esperanza. A través de Su Expiación infinita, toda la humanidad puede ser salva mediante la obediencia a las leyes y ordenanzas del Evangelio.",
+        "p2": "Creemos que Jesucristo es el Hijo literal de Dios, nacido de María en Belén. Vivió una vida perfecta y sin pecado, mostrándonos el camino para vivir y servir a otros. Sus enseñanzas, milagros y ejemplo proporcionan el patrón para nuestras vidas."
+      },
+      "atonement": {
+        "title": "La Expiación de Jesucristo",
+        "p1": "La Expiación de Jesucristo es la doctrina central de nuestra fe. A través de Su sufrimiento en Getsemaní y Su muerte en la cruz, Jesucristo tomó sobre Sí mismo los pecados, dolores y aflicciones de toda la humanidad. Este sacrificio infinito hace posible que seamos perdonados de nuestros pecados y regresemos a vivir con nuestro Padre Celestial.",
+        "scripture": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+        "reference": "Juan 3:16",
+        "p2": "La Expiación no solo proporciona el perdón de nuestros pecados, sino que también nos da fuerza para superar nuestras debilidades y desafíos. A través de Su gracia, podemos convertirnos en mejores personas y acercarnos más a Dios."
+      },
+      "following": {
+        "title": "Siguiendo el Ejemplo de Cristo",
+        "p1": "Como seguidores de Jesucristo, nos esforzamos por vivir como Él vivió. Esto significa amar a Dios con todo nuestro corazón, mente, fuerza y poder, y amar a nuestro prójimo como a nosotros mismos. Buscamos servir a otros, mostrar compasión y vivir con integridad y fe.",
+        "p2": "Cristo nos enseñó a ser humildes, perdonadores y caritativos. Nos mostró cómo orar, cómo tratar a otros con bondad y cómo confiar en el plan de nuestro Padre Celestial. Al seguir Su ejemplo, podemos encontrar paz, gozo y propósito en nuestras vidas."
+      },
+      "relationship": {
+        "title": "Nuestra Relación con Cristo",
+        "p1": "Jesucristo no es solo una figura histórica para nosotros—Él es nuestro Salvador viviente. Creemos que Él nos conoce personalmente a cada uno de nosotros y nos ama incondicionalmente. A través de la oración, el estudio de las escrituras y seguir Sus enseñanzas, podemos desarrollar una relación personal con Él.",
+        "p2": "A medida que venimos a Cristo, encontramos sanación, esperanza y dirección para nuestras vidas. Él es nuestro abogado con el Padre y nuestra fuente de fortaleza en tiempos de prueba. A través de Su Expiación, podemos ser transformados y llegar a ser más como Él."
+      },
+      "related": "Temas Relacionados"
+    },
+    "bookOfMormon": {
+      "title": "Libro de Mormón",
+      "subtitle": "Otro Testamento de Jesucristo",
+      "backToFaith": "Volver a Nuestra Fe",
+      "whatIs": {
+        "title": "¿Qué es el Libro de Mormón?",
+        "p1": "El Libro de Mormón es otro testamento de Jesucristo, confirmando las verdades que se encuentran en la Biblia. Es un registro sagrado de civilizaciones americanas antiguas y contiene la plenitud del evangelio sempiterno. El libro fue escrito por profetas antiguos que vivieron en el continente americano desde aproximadamente 600 a.C. hasta 421 d.C.",
+        "p2": "El Libro de Mormón testifica de Jesucristo y Su misión divina. Enseña los mismos principios de fe, arrepentimiento, bautismo y el don del Espíritu Santo que se encuentran en la Biblia. Juntos, la Biblia y el Libro de Mormón proporcionan una comprensión más completa del plan de Dios para Sus hijos."
+      },
+      "comingForth": {
+        "title": "La Venida del Libro de Mormón",
+        "p1": "El Libro de Mormón fue traducido por José Smith mediante el don y el poder de Dios. Los registros originales fueron escritos en planchas de oro y estuvieron enterrados en la tierra por más de 1,400 años. En 1823, el ángel Moroni se apareció a José Smith y le habló sobre estos registros sagrados.",
+        "scripture": "Y traerá un nuevo registro, y en él estará el mismo evangelio que él les ha declarado en la Biblia; y no habrá más de dos naciones.",
+        "reference": "Ezequiel 37:16-17",
+        "p2": "Después de cuatro años de preparación, José Smith recibió las planchas de oro y las tradujo por el poder de Dios. El Libro de Mormón se publicó por primera vez en 1830 y desde entonces ha sido traducido a más de 100 idiomas."
+      },
+      "teachings": {
+        "title": "Enseñanzas Clave del Libro de Mormón",
+        "p1": "El Libro de Mormón contiene muchas enseñanzas importantes sobre Jesucristo, incluyendo Su nacimiento, ministerio, muerte y resurrección. Enseña sobre la importancia de la fe, el arrepentimiento, el bautismo y recibir el don del Espíritu Santo. El libro también enfatiza la importancia de las familias, el servicio a otros y seguir los mandamientos de Dios.",
+        "p2": "Una de las enseñanzas más poderosas en el Libro de Mormón es sobre la Expiación de Jesucristo. El libro enseña que a través del sacrificio de Cristo, toda la humanidad puede ser salva y regresar a vivir con Dios. También enseña sobre la importancia de la revelación personal y cómo podemos recibir guía de Dios en nuestra vida diaria."
+      },
+      "promise": {
+        "title": "La Promesa del Libro de Mormón",
+        "p1": "El Libro de Mormón contiene una promesa de que cualquiera que lo lea con corazón sincero y pregunte a Dios con fe recibirá un testimonio de su veracidad. Esta promesa se encuentra en Moroni 10:3-5, donde se nos invita a leer, meditar y orar sobre el libro.",
+        "scripture": "Y cuando recibáis estas cosas, quisiera exhortaros a que preguntéis a Dios, el Padre Eterno, en el nombre de Cristo, si estas cosas no son verdaderas; y si pedís con corazón sincero, con verdadera intención, teniendo fe en Cristo, él os manifestará la verdad de ellas por el poder del Espíritu Santo.",
+        "reference": "Moroni 10:4",
+        "p2": "Esta promesa se aplica a todos los que leen el Libro de Mormón. A través de la oración y el estudio, podemos recibir un testimonio personal de que el libro es verdadero y que contiene la palabra de Dios."
+      },
+      "study": {
+        "title": "Cómo Estudiar el Libro de Mormón",
+        "p1": "El Libro de Mormón está destinado a ser estudiado con oración y regularmente. Animamos a todos a leerlo diariamente, meditar en sus enseñanzas y aplicar sus principios en sus vidas. El libro puede leerse individualmente o en familia, y hay muchos recursos disponibles para ayudar a comprender sus enseñanzas.",
+        "p2": "Mientras estudias el Libro de Mormón, busca principios que se apliquen a tu vida. Presta atención a los ejemplos de fe, valentía y obediencia mostrados por las personas en el libro. Lo más importante, ora por entendimiento y guía mientras lees."
+      },
+      "related": "Temas Relacionados"
+    },
+    "eternalFamilies": {
+      "title": "Familias Eternas",
+      "subtitle": "Las Familias Pueden Estar Juntas para Siempre",
+      "backToFaith": "Volver a Nuestra Fe",
+      "divineNature": {
+        "title": "La Naturaleza Divina de las Familias",
+        "p1": "Las familias son centrales en el plan de Dios para Sus hijos. Creemos que las familias pueden estar juntas para siempre a través de ordenanzas sagradas del templo. La familia es la unidad fundamental de la sociedad y la organización más importante en el tiempo y la eternidad. Dios estableció las familias para proporcionar amor, apoyo y guía para Sus hijos.",
+        "p2": "La familia es donde aprendemos a amar, servir y cuidar a otros. Es donde desarrollamos nuestro carácter, valores y fe. A través de las relaciones familiares, experimentamos gozo, crecimiento y las bendiciones del amor de Dios. La familia proporciona un refugio seguro donde podemos aprender, crecer y llegar a ser las personas que Dios quiere que seamos."
+      },
+      "templeMarriage": {
+        "title": "Matrimonio en el Templo y Familias Eternas",
+        "p1": "En los templos, las parejas dignas pueden ser selladas juntas por el tiempo y toda la eternidad. Esta ordenanza sagrada, realizada por la autoridad apropiada del sacerdocio, une a las familias más allá de la muerte. Cuando una pareja es sellada en el templo, su matrimonio no es solo para esta vida sino para la eternidad.",
+        "scripture": "Y a ti te daré las llaves del reino de los cielos; y todo lo que ates en la tierra será atado en los cielos; y todo lo que desates en la tierra será desatado en los cielos.",
+        "reference": "Mateo 16:19",
+        "p2": "Los niños nacidos de padres que han sido sellados en el templo están automáticamente sellados a sus padres por la eternidad. Esto significa que las familias pueden estar juntas para siempre, no solo hasta que la muerte las separe. Esta es una de las mayores bendiciones del evangelio de Jesucristo."
+      },
+      "familyHistory": {
+        "title": "Historia Familiar y Obra del Templo",
+        "p1": "Creemos que todos los hijos de Dios, tanto vivos como muertos, deben tener la oportunidad de recibir las bendiciones del evangelio. A través de la investigación de historia familiar y la obra del templo, podemos ayudar a nuestros antepasados fallecidos a recibir las ordenanzas de salvación, incluyendo el bautismo, la confirmación y el sellamiento del templo.",
+        "p2": "La obra de historia familiar nos conecta con nuestros antepasados y nos ayuda a entender nuestro patrimonio. Fortalece a nuestras familias y nos acerca más a Dios. Cuando realizamos ordenanzas del templo para nuestros antepasados, los estamos ayudando a progresar en su viaje eterno y fortaleciendo los lazos de nuestra familia eterna."
+      },
+      "strengthening": {
+        "title": "Fortaleciendo las Familias Hoy",
+        "p1": "Mientras que las familias eternas son una bendición futura, podemos comenzar a fortalecer nuestras familias hoy. Esto incluye la oración familiar regular, el estudio de las escrituras y la noche de hogar familiar. También debemos pasar tiempo de calidad juntos, apoyarnos mutuamente y trabajar juntos para superar desafíos.",
+        "p2": "Las familias fuertes se construyen sobre principios de amor, respeto, perdón y servicio. Los padres deben enseñar el evangelio a sus hijos y ayudarlos a desarrollar fe en Jesucristo. Los hijos deben honrar y obedecer a sus padres. Cuando las familias trabajan juntas y se apoyan mutuamente, se vuelven más fuertes y más unidas."
+      },
+      "promise": {
+        "title": "La Promesa de las Familias Eternas",
+        "p1": "La promesa de las familias eternas nos da esperanza y consuelo en tiempos de pérdida y separación. Sabemos que la muerte no es el fin de nuestras relaciones con nuestros seres queridos. A través de la Expiación de Jesucristo y el poder del sacerdocio, las familias pueden ser reunidas y vivir juntas para siempre en la presencia de Dios.",
+        "scripture": "Y si acontece que trabajáis todos vuestros días proclamando el arrepentimiento a este pueblo y traéis, aunque sea una sola alma a mí, ¡cuán grande será vuestro gozo con ella en el reino de mi Padre!",
+        "reference": "Doctrina y Convenios 18:15",
+        "p2": "Esta promesa nos motiva a vivir rectamente y a trabajar para ser dignos de la vida eterna. Nos anima a fortalecer nuestras relaciones familiares y a ayudar a otros a venir a Cristo. La familia no es solo un arreglo temporal sino una institución eterna que continuará para siempre."
+      },
+      "related": "Temas Relacionados"
+    },
+    "livingProphets": {
+      "title": "Profetas Vivientes",
+      "subtitle": "Dios Habla a Través de Sus Siervos Elegidos",
+      "backToFaith": "Volver a Nuestra Fe",
+      "whatIs": {
+        "title": "¿Qué es un Profeta?",
+        "p1": "Un profeta es un hombre llamado por Dios para ser Su portavoz en la tierra. Los profetas reciben revelación de Dios y enseñan Su voluntad al pueblo. Son elegidos por Dios para dirigir Su iglesia y guiar a Sus hijos en la rectitud. A lo largo de la historia, Dios ha llamado profetas para enseñar Su evangelio y advertir a Su pueblo.",
+        "p2": "Los profetas no son hombres perfectos, pero son llamados por Dios y sostenidos por el pueblo. Reciben inspiración y revelación para guiar la iglesia y ayudar a los hijos de Dios a navegar los desafíos de su tiempo. Hablan por Dios y proporcionan dirección para nuestras vidas."
+      },
+      "modernRevelation": {
+        "title": "Revelación Moderna",
+        "p1": "Creemos que Dios continúa hablando a Sus hijos hoy a través de profetas vivientes. Así como Dios habló a Moisés, Isaías y otros profetas antiguos, Él habla a Sus profetas hoy. Esta revelación moderna nos ayuda a entender la voluntad de Dios para nuestro tiempo y proporciona guía para los desafíos que enfrentamos.",
+        "scripture": "Porque no hará nada Jehová el Señor, sin que revele su secreto a sus siervos los profetas.",
+        "reference": "Amós 3:7",
+        "p2": "La revelación moderna viene a través del Presidente de La Iglesia de Jesucristo de los Santos de los Últimos Días, quien sirve como profeta, vidente y revelador para todo el mundo. Esta revelación se da en discursos de conferencia general, declaraciones oficiales y otras comunicaciones inspiradas."
+      },
+      "firstPresidency": {
+        "title": "La Primera Presidencia y el Quórum de los Doce",
+        "p1": "La Primera Presidencia consiste en el Presidente de la Iglesia y sus dos consejeros. El Quórum de los Doce Apóstoles son testigos especiales de Jesucristo y sirven bajo la dirección de la Primera Presidencia. Juntos, estos quince hombres forman el cuerpo gobernante de la iglesia y reciben revelación para todo el mundo.",
+        "p2": "Estos hombres son llamados por Dios y sostenidos por los miembros de la iglesia. Viajan por todo el mundo para enseñar, testificar y ministrar a los hijos de Dios. Proporcionan guía sobre asuntos de doctrina, política y conducta personal. Sus enseñanzas nos ayudan a entender la voluntad de Dios y vivir de acuerdo con Sus mandamientos."
+      },
+      "generalConference": {
+        "title": "Conferencia General",
+        "p1": "Dos veces al año, la iglesia celebra conferencia general, donde el profeta y otros líderes de la iglesia hablan a todo el mundo. Estas conferencias se transmiten en todo el mundo y proporcionan una oportunidad para que todos los miembros escuchen la palabra de Dios a través de Sus siervos elegidos. Los mensajes dados en la conferencia general se consideran escritura y proporcionan guía para nuestras vidas.",
+        "p2": "Los discursos de la conferencia general cubren una amplia gama de temas, incluyendo fe, arrepentimiento, servicio, familia y desafíos actuales que enfrenta el mundo. Estos mensajes proporcionan consuelo, guía y dirección para los miembros de la iglesia y cualquiera que elija escuchar. Nos ayudan a entender cómo aplicar los principios del evangelio en nuestra vida diaria."
+      },
+      "following": {
+        "title": "Siguiendo al Profeta",
+        "p1": "Se nos anima a seguir el consejo de los profetas vivientes. Sus enseñanzas nos ayudan a permanecer en el camino que lleva a la vida eterna. Cuando seguimos Su guía, somos bendecidos con paz, protección y crecimiento espiritual. Las palabras del profeta no son solo sugerencias sino guía inspirada de Dios.",
+        "scripture": "Ya sea por mi propia voz o por la voz de mis siervos, es lo mismo.",
+        "reference": "Doctrina y Convenios 1:38",
+        "p2": "Seguir al profeta requiere fe y obediencia. Puede que no siempre entendamos por qué se da cierto consejo, pero podemos confiar en que viene de Dios y es para nuestro beneficio. A medida que seguimos la guía del profeta, seremos bendecidos y protegidos de los males del mundo."
+      },
+      "related": "Temas Relacionados"
+    },
+    "baptism": {
+      "title": "Bautismo",
+      "subtitle": "Los Primeros Principios y Ordenanzas del Evangelio",
+      "backToFaith": "Volver a Nuestra Fe",
+      "faith": {
+        "title": "Fe en Jesucristo",
+        "p1": "La fe es el primer principio del evangelio. Es una esperanza en cosas que no se ven, pero que son verdaderas. La fe en Jesucristo significa confiar en Él, creer en Sus enseñanzas y seguir Su ejemplo. Cuando tenemos fe en Cristo, Lo aceptamos como nuestro Salvador y Redentor y creemos que a través de Su Expiación, podemos ser perdonados de nuestros pecados y regresar a vivir con Dios.",
+        "scripture": "Y ahora, como dije concerniente a la fe—la fe no es tener un conocimiento perfecto de las cosas; por tanto, si tenéis fe, esperáis en cosas que no se ven, que son verdaderas.",
+        "reference": "Alma 32:21",
+        "p2": "La fe nos lleva a actuar. Cuando tenemos fe en Jesucristo, estamos dispuestos a guardar Sus mandamientos, arrepentirnos de nuestros pecados y seguir Sus enseñanzas. La fe es como una semilla—cuando la plantamos y la nutrimos, crece y produce buenos frutos en nuestras vidas."
+      },
+      "repentance": {
+        "title": "Arrepentimiento",
+        "p1": "El arrepentimiento es el segundo principio del evangelio. Es el proceso de cambiar nuestros pensamientos, creencias y comportamientos para alinearlos con la voluntad de Dios. A través del arrepentimiento, nos alejamos del pecado y nos volvemos hacia Dios. El arrepentimiento implica reconocer nuestros errores, sentir pesar por ellos, confesarlos a Dios, hacer restitución cuando sea posible y comprometernos a cambiar.",
+        "scripture": "Por esto sabréis si un hombre se arrepiente de sus pecados—he aquí, los confesará y los abandonará.",
+        "reference": "Doctrina y Convenios 58:43",
+        "p2": "El arrepentimiento es posible gracias a la Expiación de Jesucristo. Cuando nos arrepentimos, podemos ser perdonados de nuestros pecados y recibir paz y gozo. El arrepentimiento no es un evento único sino un proceso continuo a lo largo de nuestras vidas mientras nos esforzamos por llegar a ser más como Cristo."
+      },
+      "baptism": {
+        "title": "Bautismo",
+        "p1": "El bautismo es la primera ordenanza del evangelio y es esencial para la salvación. Se realiza por inmersión en agua por alguien que tiene la autoridad apropiada del sacerdocio. El bautismo representa la muerte, sepultura y resurrección de Jesucristo y simboliza nuestro compromiso de seguirle. Cuando somos bautizados, hacemos un convenio con Dios de tomar sobre nosotros el nombre de Jesucristo, recordarle siempre y guardar Sus mandamientos.",
+        "scripture": "Y ahora, si el Cordero de Dios, siendo santo, tiene necesidad de ser bautizado por agua para cumplir toda justicia, ¡oh entonces, cuánto más necesidad tenemos nosotros, siendo impuros, de ser bautizados, sí, aun por agua!",
+        "reference": "2 Nefi 31:5",
+        "p2": "El bautismo es la puerta de entrada al sendero que conduce a la vida eterna. A través del bautismo, somos limpiados de nuestros pecados y nos convertimos en miembros de la iglesia de Cristo. Somos bautizados a la edad de responsabilidad (ocho años) o cuando tenemos la edad suficiente para entender y hacer este importante convenio con Dios."
+      },
+      "holyghost": {
+        "title": "El Don del Espíritu Santo",
+        "p1": "Después del bautismo, recibimos el don del Espíritu Santo mediante la imposición de manos por aquellos con autoridad del sacerdocio. El Espíritu Santo es el tercer miembro de la Trinidad y sirve como un compañero constante, guía y consolador. El don del Espíritu Santo es diferente de la influencia del Espíritu Santo—es el derecho de tener al Espíritu Santo como un compañero constante, siempre que permanezcamos dignos.",
+        "scripture": "Y por el poder del Espíritu Santo podréis conocer la verdad de todas las cosas.",
+        "reference": "Moroni 10:5",
+        "p2": "El Espíritu Santo nos ayuda de muchas maneras: Él testifica de la verdad, nos advierte del peligro, nos consuela en tiempos de necesidad, nos guía en la toma de decisiones y nos ayuda a entender las escrituras. Cuando vivimos rectamente y guardamos los mandamientos, podemos tener la compañía constante del Espíritu Santo, que trae paz, gozo y fortaleza espiritual."
+      },
+      "endure": {
+        "title": "Perseverar hasta el Fin",
+        "p1": "Perseverar hasta el fin significa permanecer fieles a los convenios que hacemos a lo largo de nuestras vidas. Significa continuar teniendo fe en Jesucristo, arrepintiéndonos diariamente, guardando los mandamientos y sirviendo a otros. Perseverar hasta el fin no se trata solo de sobrevivir—se trata de crecer, aprender y llegar a ser más como nuestro Salvador.",
+        "scripture": "Mírame en todo pensamiento; no dudes, no temas. He aquí las heridas que traspasaron mi costado, y también las impresiones de los clavos en mis manos y pies; sed fieles, guardad mis mandamientos, y heredaréis el reino de los cielos.",
+        "reference": "Doctrina y Convenios 6:36-37",
+        "p2": "El evangelio de Jesucristo es una forma de vida, no solo un evento único. A medida que perseveramos hasta el fin, continuamos creciendo espiritualmente, sirviendo a otros y acercándonos más a Dios. A través de la Expiación de Jesucristo y nuestra fidelidad, podemos recibir el mayor de todos los dones de Dios—la vida eterna."
+      },
+      "related": "Temas Relacionados"
+    },
+    "planOfSalvation": {
+      "title": "Plan de Salvación",
+      "subtitle": "El Plan Eterno de Dios para Sus Hijos",
+      "backToFaith": "Volver a Nuestra Fe",
+      "whatIs": {
+        "title": "¿Qué es el Plan de Salvación?",
+        "p1": "El Plan de Salvación es el plan eterno de Dios para la felicidad y salvación de Sus hijos. Explica nuestro propósito en la vida, de dónde venimos, por qué estamos aquí y adónde vamos después de la muerte. Este plan se estableció antes de que el mundo fuera creado y proporciona el marco para nuestro progreso eterno.",
+        "p2": "El plan incluye tres fases principales: vida pre-mortal, vida mortal y vida después de la muerte. Cada fase es esencial para nuestro desarrollo y felicidad eternos. A través de este plan, podemos llegar a ser como nuestro Padre Celestial y vivir con Él para siempre en familias eternas."
+      },
+      "preMortal": {
+        "title": "Vida Pre-Mortal",
+        "p1": "Antes de nacer en la tierra, vivíamos con nuestro Padre Celestial como Sus hijos espirituales. Fuimos creados a Su imagen y teníamos el potencial de llegar a ser como Él. En esta existencia pre-mortal, aprendimos sobre el plan de Dios y elegimos venir a la tierra para obtener cuerpos físicos y experimentar la mortalidad.",
+        "scripture": "Antes que te formase en el vientre te conocí, y antes que nacieses te santifiqué, te di por profeta a las naciones.",
+        "reference": "Jeremías 1:5",
+        "p2": "En la vida pre-mortal, desarrollamos nuestras personalidades, talentos y dones espirituales. También hicimos elecciones que influyeron en nuestras experiencias terrenales. Esta existencia pre-mortal ayuda a explicar por qué tenemos diferentes circunstancias y desafíos en esta vida."
+      },
+      "mortal": {
+        "title": "Vida Mortal",
+        "p1": "La vida mortal es un tiempo de prueba y crecimiento. Estamos aquí para obtener cuerpos físicos, aprender a elegir entre el bien y el mal, y desarrollar fe en Jesucristo. Esta vida no es fácil, pero es esencial para nuestro progreso eterno. A través de nuestras experiencias, aprendemos a llegar a ser más como nuestro Padre Celestial.",
+        "p2": "Durante la mortalidad, enfrentamos desafíos, cometemos errores y experimentamos tanto gozo como tristeza. Estas experiencias nos ayudan a desarrollar carácter, compasión y sabiduría. También tenemos la oportunidad de aprender sobre el evangelio, hacer convenios con Dios y servir a otros. Las elecciones que hacemos en esta vida determinan nuestro destino eterno."
+      },
+      "afterDeath": {
+        "title": "Vida Después de la Muerte",
+        "p1": "Después de la muerte, nuestros espíritus van al mundo de los espíritus, donde continuamos aprendiendo y creciendo. El mundo de los espíritus está dividido en paraíso y prisión, basado en nuestra aceptación del evangelio durante la mortalidad. Aquellos que aceptaron el evangelio van al paraíso, mientras que aquellos que no lo hicieron van a prisión, donde aún pueden aprender sobre el evangelio.",
+        "p2": "Eventualmente, todas las personas serán resucitadas y juzgadas según sus obras y deseos. Basado en nuestras elecciones y fidelidad, seremos asignados a uno de tres reinos de gloria: el reino celestial (el más alto), el reino terrestre o el reino telestial. El reino celestial es donde podemos vivir con Dios y nuestras familias para siempre."
+      },
+      "atonement": {
+        "title": "La Expiación de Jesucristo",
+        "p1": "Central al Plan de Salvación está la Expiación de Jesucristo. A través de Su sufrimiento, muerte y resurrección, Jesucristo hizo posible que superemos el pecado y la muerte. Su Expiación proporciona el camino para que regresemos a nuestro Padre Celestial y recibamos la vida eterna.",
+        "scripture": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+        "reference": "Juan 3:16",
+        "p2": "La Expiación no se trata solo del perdón de los pecados, sino también de capacitarnos para llegar a ser mejores personas. A través de la gracia de Cristo, podemos superar nuestras debilidades, desarrollar atributos semejantes a Cristo y progresar hacia la vida eterna. La Expiación hace posible el Plan de Salvación."
+      },
+      "ourRole": {
+        "title": "Nuestro Papel en el Plan",
+        "p1": "Tenemos un papel importante que desempeñar en el Plan de Salvación. Debemos elegir seguir a Jesucristo, guardar Sus mandamientos y servir a otros. Debemos esforzarnos por desarrollar fe, arrepentirnos de nuestros pecados, ser bautizados, recibir el don del Espíritu Santo y perseverar hasta el fin. Estos son los principios y ordenanzas del evangelio.",
+        "p2": "También tenemos la responsabilidad de ayudar a otros a entender y aceptar el plan. Esto incluye compartir el evangelio con nuestros amigos y familiares, servir en la iglesia y ser ejemplos de rectitud. A medida que ayudamos a otros a venir a Cristo, estamos participando en la obra de Dios y ayudando a cumplir Su plan."
+      },
+      "related": "Temas Relacionados"
+    }
+  }
+}

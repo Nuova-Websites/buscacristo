@@ -161,7 +161,7 @@ body:has(.doctrine-page) .navbar {
 .hero {
     background: #1A4B5C url('images/bautismo.jpeg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: white;
@@ -335,7 +335,7 @@ body:has(.doctrine-page) .navbar {
     transition: all 0.3s ease;
 }
 
-.activity-type-card[data-activity="other"] .activity-card-image img {
+.activity-type-card[data-activity="temple"] .activity-card-image img {
     object-position: calc(50% - 100px) center;
 }
 
@@ -376,7 +376,7 @@ body:has(.doctrine-page) .navbar {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
 }
 
-.activity-type-card[data-activity="other"] {
+.activity-type-card[data-activity="temple"] {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
 }
 
@@ -1320,12 +1320,6 @@ body:has(.doctrine-page) .navbar {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .hero {
-        background-attachment: scroll;
-    }
-}
-
 @media (max-width: 768px) {
     .nav-container {
         justify-content: space-between;
@@ -1376,8 +1370,7 @@ body:has(.doctrine-page) .navbar {
     }
 
     .hero {
-        background-position: center center;
-        background-attachment: scroll;
+        background-position: 90% center;
     }
 
     .hero-content {
@@ -1526,6 +1519,289 @@ input:focus,
 textarea:focus {
     outline: 2px solid #D4AF37;
     outline-offset: 2px;
+}
+
+/* Doctrine Page Styles */
+.doctrine-page {
+    padding: 168px 0 80px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: none;
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    box-shadow: none;
+}
+
+.breadcrumb-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.breadcrumb-content a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb-content a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.breadcrumb-content i {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-content span {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.doctrine-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.doctrine-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.doctrine-header .subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.doctrine-content {
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #1A4B5C;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid #e9ecef;
+}
+
+.back-button:hover {
+    background: #1A4B5C;
+    color: white;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 12px rgba(26, 75, 92, 0.3);
+}
+
+.back-button i {
+    font-size: 0.9rem;
+}
+
+.doctrine-section {
+    margin-bottom: 3rem;
+}
+
+.doctrine-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1A4B5C;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    position: relative;
+    border-left: 4px solid #D4AF37;
+}
+
+.doctrine-section:first-child h2 {
+    margin-top: 0;
+}
+
+.doctrine-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.doctrine-section p:last-child {
+    margin-bottom: 0;
+}
+
+.scripture-quote {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-left: 5px solid #2196F3;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+}
+
+.scripture-quote::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, #2196F3 0%, #64b5f6 100%);
+    border-radius: 5px 0 0 5px;
+}
+
+.scripture-quote span {
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #1565C0;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.scripture-reference {
+    font-size: 0.95rem;
+    color: #1976D2;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-style: normal;
+}
+
+.related-topics {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e9ecef;
+}
+
+.related-topics h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1A4B5C;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.related-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #1A4B5C;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 2px solid #1A4B5C;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.related-link:hover {
+    background: #1A4B5C;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 75, 92, 0.3);
+}
+
+/* Responsive styles for doctrine pages */
+@media (max-width: 768px) {
+    .doctrine-page {
+        padding: 100px 0 60px;
+    }
+
+    .breadcrumb {
+        top: 60px;
+    }
+
+    .breadcrumb-content {
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+
+    .doctrine-header h1 {
+        font-size: 2rem;
+    }
+
+    .doctrine-header .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .doctrine-content {
+        padding: 0 1rem;
+    }
+
+    .doctrine-section h2 {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .doctrine-section p {
+        font-size: 1rem;
+    }
+
+    .scripture-quote {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .scripture-quote span {
+        font-size: 1.05rem;
+    }
+
+    .related-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-link {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
 }
 
 /* Print Styles */

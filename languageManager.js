@@ -9,15 +9,20 @@ class LanguageManager {
             'ca': 'Català',
             'fr': 'Français'
         };
+        this.translations = {}; // Will store loaded translations
+        this.loadingPromises = {}; // Cache for loading promises
         this.init();
     }
 
-    init() {
+    async init() {
         // Check sessionStorage for saved language preference
         const savedLanguage = sessionStorage.getItem('selectedLanguage');
         if (savedLanguage && this.supportedLanguages.includes(savedLanguage)) {
             this.currentLanguage = savedLanguage;
         }
+        
+        // Load default language first
+        await this.loadLanguage(this.currentLanguage);
         
         // Wait for DOM to be ready
         if (document.readyState === 'loading') {
@@ -35,8 +40,47 @@ class LanguageManager {
         document.documentElement.lang = this.currentLanguage;
     }
 
-    setLanguage(lang) {
+    async loadLanguage(lang) {
+        // Return cached promise if already loading
+        if (this.loadingPromises[lang]) {
+            return this.loadingPromises[lang];
+        }
+
+        // Return immediately if already loaded
+        if (this.translations[lang]) {
+            return Promise.resolve(this.translations[lang]);
+        }
+
+        // Create loading promise
+        const loadPromise = fetch(`/translations/${lang}.json`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${lang}.json`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.translations[lang] = data;
+                return data;
+            })
+            .catch(error => {
+                console.error(`Error loading language ${lang}:`, error);
+                // Fallback to Spanish if available
+                if (lang !== 'es' && this.translations['es']) {
+                    return this.translations['es'];
+                }
+                throw error;
+            });
+
+        this.loadingPromises[lang] = loadPromise;
+        return loadPromise;
+    }
+
+    async setLanguage(lang) {
         if (this.supportedLanguages.includes(lang)) {
+            // Load language if not already loaded
+            await this.loadLanguage(lang);
+            
             this.currentLanguage = lang;
             sessionStorage.setItem('selectedLanguage', lang);
             document.documentElement.lang = lang;
@@ -54,20 +98,33 @@ class LanguageManager {
 
     getTranslation(key) {
         const keys = key.split('.');
-        let value = translations[this.currentLanguage];
+        let value = this.translations[this.currentLanguage];
+        
+        if (!value) {
+            // Fallback to Spanish if current language not loaded
+            value = this.translations['es'];
+            if (!value) {
+                return key; // Return key if no translations loaded
+            }
+        }
         
         for (const k of keys) {
             if (value && typeof value === 'object' && k in value) {
                 value = value[k];
             } else {
                 // Fallback to Spanish if translation not found
-                value = translations['es'];
-                for (const k2 of keys) {
-                    if (value && typeof value === 'object' && k2 in value) {
-                        value = value[k2];
-                    } else {
-                        return key; // Return key if translation not found
+                const fallbackValue = this.translations['es'];
+                if (fallbackValue) {
+                    value = fallbackValue;
+                    for (const k2 of keys) {
+                        if (value && typeof value === 'object' && k2 in value) {
+                            value = value[k2];
+                        } else {
+                            return key; // Return key if translation not found
+                        }
                     }
+                } else {
+                    return key;
                 }
                 break;
             }
@@ -151,8 +208,8 @@ class LanguageManager {
 const languageManager = new LanguageManager();
 
 // Function to change language (called from HTML)
-function changeLanguage(lang) {
-    languageManager.setLanguage(lang);
+async function changeLanguage(lang) {
+    await languageManager.setLanguage(lang);
 }
 
 // Export for use in other scripts

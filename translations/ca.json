@@ -1,0 +1,437 @@
+{
+  "nav": {
+    "home": "Inici",
+    "activities": "Activitats",
+    "faith": "La Nostra Fe",
+    "missionaries": "Missioners",
+    "locations": "Ubicacions",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "title": "Benvingut a Busca Cristo",
+    "subtitle": "Veniu a Crist i perfeccioneu-vos en Ell",
+    "btnActivities": "Veure Activitats",
+    "btnLocations": "Trobar una Ubicació"
+  },
+  "activities": {
+    "title": "Activitats de l'Església",
+    "intro": "Descobreix les diverses activitats i programes disponibles a les nostres ubicacions. Cada ubicació ofereix oportunitats úniques per al creixement espiritual, la germanor i el servei.",
+    "worship": {
+      "title": "Serveis de l'Església",
+      "desc": "Adoració diumenge, reunions de la santa cena i serveis devocionals especials",
+      "btn": "Veure Activitats"
+    },
+    "youth": {
+      "title": "Activitats per a Joves",
+      "desc": "Activitats, campaments i programes per a joves de 12 a 18 anys",
+      "btn": "Veure Activitats"
+    },
+    "family": {
+      "title": "Activitats Familiars",
+      "desc": "Nit de casa familiar, activitats i programes per a totes les edats",
+      "btn": "Veure Activitats"
+    },
+    "education": {
+      "title": "Activitats per a Joves Adults",
+      "desc": "Escola Diumenge, Institut i altres oportunitats d'aprenentatge",
+      "btn": "Veure Activitats"
+    },
+    "service": {
+      "title": "Classes d'Anglès",
+      "desc": "Aprèn anglès en un ambient comunitari de suport amb classes gratuïtes per a tots els nivells",
+      "btn": "Veure Activitats"
+    },
+    "temple": {
+      "title": "Adoració al Temple",
+      "desc": "Adoració al temple, història familiar i classes de preparació per al temple",
+      "btn": "Veure Activitats"
+    }
+  },
+  "doctrine": {
+    "title": "La Nostra Fe i Doctrina",
+    "intro": "Aprèn més sobre les nostres creences i ensenyaments fonamentals. Fes clic en qualsevol tema per explorar una comprensió més profunda de la nostra fe.",
+    "jesus": {
+      "title": "Jesucrist",
+      "desc": "Aprèn sobre el nostre Salvador, la Seva Expiació i el Seu paper central en la nostra fe i salvació"
+    },
+    "bom": {
+      "title": "Llibre de Mormó",
+      "desc": "Descobreix un altre testimoni de Jesucrist i la seva importància en la nostra comprensió del pla de Déu"
+    },
+    "families": {
+      "title": "Famílies Eternes",
+      "desc": "Entén com les famílies poden estar juntes per sempre a través d'ordenances sagrades del temple"
+    },
+    "prophets": {
+      "title": "Profetes Vius",
+      "desc": "Aprèn sobre la revelació moderna i com Déu ens parla a través dels Seus servents elegits"
+    },
+    "baptism": {
+      "title": "Baptisme",
+      "desc": "Aprèn sobre els primers principis i ordenances de l'Evangeli de Jesucrist"
+    },
+    "salvation": {
+      "title": "Pla de Salvació",
+      "desc": "Explora el pla etern de Déu per als Seus fills i el nostre propòsit en aquesta vida"
+    }
+  },
+  "missionaries": {
+    "title": "Coneix els Nostres Missioners",
+    "heading": "Compartint l'Evangeli de Jesucrist",
+    "p1": "Els nostres missioners de temps complet són joves dedicats que han triat servir el Senyor durant 18-24 mesos. Vénen de tot el món per compartir el missatge de Jesucrist i el Seu evangeli restaurat.",
+    "p2": "Aquests missioners estan aquí per ajudar-te a aprendre sobre les nostres creences, respondre les teves preguntes i brindar orientació espiritual. Oferixen lliçons gratuïtes sobre Jesucrist, el Llibre de Mormó i com les famílies poden estar juntes per sempre.",
+    "btnMeet": "Reunir-se amb Missioners",
+    "btnLearn": "Aprèn Més en Línia",
+    "formTitle": "Reunir-se amb Missioners",
+    "formDescription": "Completa el formulari a continuació i els nostres missioners es posaran en contacte amb tu per programar una reunió.",
+    "nameLabel": "Nom *",
+    "addressLabel": "Adreça *",
+    "learnAboutLabel": "Sobre què t'agradaria aprendre més?",
+    "namePlaceholder": "El teu nom",
+    "addressPlaceholder": "La teva adreça",
+    "learnAboutPlaceholder": "Explica'ns què t'interessa aprendre...",
+    "submitBtn": "Enviar Sol·licitud",
+    "successMessage": "Gràcies! Ens posarem en contacte amb tu aviat."
+  },
+  "locations": {
+    "title": "Troba una Església a Prop de Tu",
+    "useLocation": "Utilitzar la Meva Ubicació",
+    "or": "o",
+    "placeholder": "Introdueix la teva ciutat, adreça o codi postal",
+    "findBtn": "Buscar Església",
+    "openMaps": "Obrir a Google Maps",
+    "note": "Introdueix una ciutat específica en lloc d'una regió gran per obtenir resultats més precisos."
+  },
+  "contact": {
+    "title": "Contacta'ns",
+    "heading": "Posar-se en Contacte",
+    "p": "Ens encantaria saber de tu i respondre qualsevol pregunta que puguis tenir sobre la nostra església o activitats.",
+    "phone": "+34 93 123 4567",
+    "email": "info@buscacristo.org",
+    "address": "123 Carrer de la Fe, Barcelona, Espanya",
+    "namePlaceholder": "El Teu Nom",
+    "emailPlaceholder": "El Teu Correu",
+    "messagePlaceholder": "El Teu Missatge",
+    "sendBtn": "Enviar Missatge"
+  },
+  "footer": {
+    "about": "Busca Cristo",
+    "aboutText": "Veniu a Crist i perfeccioneu-vos en Ell mitjançant la fe, el penediment, el baptisme i el do de l'Esperit Sant.",
+    "quickLinks": "Enllaços Ràpids",
+    "resources": "Recursos",
+    "follow": "Segueix-nos",
+    "copyright": "© 2024 Busca Cristo - L'Església de Jesucrist dels Sants dels Últims Dies. Tots els drets reservats."
+  },
+  "modal": {
+    "close": "×",
+    "activityDetails": "Detalls de l'Activitat",
+    "locationInfo": "Obtenir Informació Específica de la Ubicació",
+    "locationInfoDesc": "Per rebre horaris detallats i informació per a la teva ubicació específica, si us plau proporciona la teva informació de contacte a continuació.",
+    "firstName": "Nom *",
+    "lastName": "Cognom *",
+    "email": "Correu Electrònic *",
+    "phone": "Número de Telèfon",
+    "firstNamePlaceholder": "El teu nom",
+    "lastNamePlaceholder": "El teu cognom",
+    "emailPlaceholder": "El teu correu",
+    "phonePlaceholder": "El teu telèfon",
+    "preferredLocation": "Ubicació Preferida *",
+    "selectLocation": "Selecciona una ubicació",
+    "interests": "Activitats d'Interès",
+    "worship": "Serveis de l'Església",
+    "youth": "Serveis per a Joves",
+    "family": "Activitats Familiars",
+    "education": "Educació Religiosa",
+    "service": "Classes d'Anglès",
+    "temple": "Activitats del Temple",
+    "message": "Preguntes o Comentaris Addicionals",
+    "messagePlaceholder": "Si us plau, fes-nos-ho saber si tens preguntes específiques sobre activitats o t'agradaria saber més sobre algun programa en particular.",
+    "submitBtn": "Obtenir Detalls d'Ubicació",
+    "backToFaith": "Tornar a La Nostra Fe"
+  },
+  "breadcrumb": {
+    "home": "Inici",
+    "faith": "La Nostra Fe"
+  },
+  "activitiesDetail": {
+    "worship": {
+      "title": "Serveis de l'Església",
+      "desc": "Uneix-te a nosaltres cada setmana per adorar, aprendre i créixer en la fe. Les nostres reunions inclouen serveis de la santa cena, Escola Diumenge i reunions de sacerdoci i Societat de Socors, amb devocionals i reunions de testimonis durant tot l'any.",
+      "activities": []
+    },
+    "youth": {
+      "title": "Activitats per a Joves",
+      "desc": "Per a joves de 12 a 18 anys, oferim activitats setmanals edificants, conferències de joves i campaments d'estiu que construeixen amistats, fe i confiança a través del servei, l'aprenentatge i la diversió.",
+      "activities": []
+    },
+    "family": {
+      "title": "Activitats Familiars",
+      "desc": "Les famílies poden apropar-se més a través de les nits de casa familiar, projectes de servei i reunions socials que enforteixen la fe i la unitat. Els viatges al temple i les activitats d'història familiar ajuden a connectar generacions en amor i propòsit.",
+      "activities": []
+    },
+    "education": {
+      "title": "Activitats per a Joves Adults",
+      "desc": "Els joves adults es reuneixen setmanalment per a un breu missatge espiritual, seguit de menjar, jocs i temps social. Les classes d'Institut i altres discussions de l'evangeli ofereixen formes significatives d'aprendre i créixer junts.",
+      "activities": []
+    },
+    "service": {
+      "title": "Classes d'Anglès",
+      "desc": "Millora les teves habilitats en anglès a través de classes gratuïtes dissenyades per a tots els nivells. Les nostres classes se centren en conversa pràctica, gramàtica i vocabulari útil per a situacions quotidianes. Uneix-te a una comunitat d'aprenentatge on pots practicar anglès mentre coneixes noves persones.",
+      "activities": []
+    },
+    "temple": {
+      "title": "Adoració al Temple",
+      "desc": "Troba pau i propòsit a través de l'adoració i el servei al temple. Participa en sessions del temple, classes de preparació i treball d'història familiar que enforteixen la fe i aporten goig espiritual.",
+      "activities": []
+    },
+    "availableActivities": "Activitats Disponibles:"
+  },
+  "notifications": {
+    "fillFields": "Si us plau completa tots els camps.",
+    "validEmail": "Si us plau introdueix una adreça de correu electrònic vàlida.",
+    "thankYou": "Gràcies pel teu missatge! Et respondrem aviat.",
+    "locationInfo": "Gràcies! T'enviarem informació específica de la ubicació dins de 24 hores.",
+    "enterLocation": "Si us plau introdueix una ubicació per buscar.",
+    "noChurches": "No s'han trobat esglésies SUD en aquesta àrea.",
+    "foundChurches": "S'han trobat {count} esglésies SUD a prop de {location}",
+    "locationNotFound": "Ubicació no trobada. Si us plau intenta amb una adreça diferent.",
+    "gettingLocation": "Obtenint Ubicació...",
+    "foundNearYou": "S'han trobat {count} esglésies SUD a prop de tu!",
+    "noChurchesNearYou": "No s'han trobat esglésies SUD a la teva àrea.",
+    "locationFound": "Ubicació trobada! Buscant esglésies properes...",
+    "geolocationError": "No s'ha pogut obtenir la teva ubicació. ",
+    "permissionDenied": "Si us plau permet l'accés a la ubicació i intenta de nou.",
+    "positionUnavailable": "La informació d'ubicació no està disponible.",
+    "timeout": "La sol·licitud d'ubicació ha expirat.",
+    "unknownError": "S'ha produït un error desconegut.",
+    "geolocationNotSupported": "La geolocalització no és compatible amb aquest navegador.",
+    "openNow": "Obert Ara",
+    "closed": "Tancat",
+    "viewAllHours": "Veure Totes les Hores",
+    "directions": "Direccions",
+    "call": "Trucar",
+    "visitWebsite": "Visitar Lloc Web"
+  },
+  "locationsList": {
+    "mainChapel": "Capella Principal - 123 Carrer de la Fe",
+    "northBuilding": "Edifici Nord - 456 Avinguda de l'Esperança",
+    "eastBuilding": "Edifici Est - 789 Carrer de la Caritat",
+    "southBuilding": "Edifici Sud - 321 Bulevard de la Gràcia"
+  },
+  "doctrinePages": {
+    "jesusChrist": {
+      "title": "Jesucrist",
+      "subtitle": "El Nostre Salvador, Redemptor i la figura central de la nostra fe",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "whoIs": {
+        "title": "Qui és Jesucrist?",
+        "p1": "Jesucrist és el Fill de Déu, el Salvador i Redemptor del món. Ell és la figura central de la nostra fe i el fonament de la nostra esperança. A través de la Seva Expiació infinita, tota la humanitat pot ser salvada mitjançant l'obediència a les lleis i ordenances de l'Evangeli.",
+        "p2": "Creiem que Jesucrist és el Fill literal de Déu, nascut de Maria a Betlem. Va viure una vida perfecta i sense pecat, mostrant-nos el camí per viure i servir als altres. Els seus ensenyaments, miracles i exemple proporcionen el patró per a les nostres vides."
+      },
+      "atonement": {
+        "title": "L'Expiació de Jesucrist",
+        "p1": "L'Expiació de Jesucrist és la doctrina central de la nostra fe. A través del Seu patiment a Getsemaní i la Seva mort a la creu, Jesucrist va prendre sobre Si mateix els pecats, dolors i afliccions de tota la humanitat. Aquest sacrifici infinit fa possible que siguem perdonats dels nostres pecats i tornem a viure amb el nostre Pare Celestial.",
+        "scripture": "Perquè Déu va estimar tant el món, que va donar el seu Fill unigènit, perquè tot aquell que creu en Ell no es perdi, sinó que tingui vida eterna.",
+        "reference": "Joan 3:16",
+        "p2": "L'Expiació no només proporciona el perdó dels nostres pecats, sinó que també ens dóna força per superar les nostres debilitats i desafiaments. A través de la Seva gràcia, podem convertir-nos en millors persones i apropar-nos més a Déu."
+      },
+      "following": {
+        "title": "Seguint l'Exemple de Crist",
+        "p1": "Com a seguidors de Jesucrist, ens esforcem per viure com Ell va viure. Això significa estimar Déu amb tot el nostre cor, ment, força i poder, i estimar el nostre pròxim com a nosaltres mateixos. Busquem servir als altres, mostrar compassió i viure amb integritat i fe.",
+        "p2": "Crist ens va ensenyar a ser humils, perdonadors i caritatius. Ens va mostrar com pregar, com tractar als altres amb bondat i com confiar en el pla del nostre Pare Celestial. En seguir el Seu exemple, podem trobar pau, goig i propòsit a les nostres vides."
+      },
+      "relationship": {
+        "title": "La Nostra Relació amb Crist",
+        "p1": "Jesucrist no és només una figura històrica per a nosaltres—Ell és el nostre Salvador viu. Creiem que Ell ens coneix personalment a cadascun de nosaltres i ens estima incondicionalment. A través de l'oració, l'estudi de les escriptures i seguir els Seus ensenyaments, podem desenvolupar una relació personal amb Ell.",
+        "p2": "A mesura que venim a Crist, trobem sanació, esperança i direcció per a les nostres vides. Ell és el nostre advocat amb el Pare i la nostra font de fortalesa en temps de prova. A través de la Seva Expiació, podem ser transformats i arribar a ser més com Ell."
+      },
+      "related": "Temes Relacionats"
+    },
+    "bookOfMormon": {
+      "title": "Llibre de Mormó",
+      "subtitle": "Un altre testimoni de Jesucrist",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "whatIs": {
+        "title": "Què és el Llibre de Mormó?",
+        "p1": "El Llibre de Mormó és un altre testimoni de Jesucrist, confirmant les veritats que es troben a la Bíblia. És un registre sagrat de civilitzacions americanes antigues i conté la plenitud de l'evangeli sempitern. El llibre va ser escrit per profetes antics que van viure al continent americà des d'aproximadament 600 a.C. fins a 421 d.C.",
+        "p2": "El Llibre de Mormó testifica de Jesucrist i la Seva missió divina. Ensenya els mateixos principis de fe, penediment, baptisme i el do de l'Esperit Sant que es troben a la Bíblia. Junts, la Bíblia i el Llibre de Mormó proporcionen una comprensió més completa del pla de Déu per als Seus fills."
+      },
+      "comingForth": {
+        "title": "La Vinguda del Llibre de Mormó",
+        "p1": "El Llibre de Mormó va ser traduït per Joseph Smith mitjançant el do i el poder de Déu. Els registres originals van ser escrits en planxes d'or i van estar enterrats a la terra durant més de 1.400 anys. El 1823, l'àngel Moroni es va aparèixer a Joseph Smith i li va parlar sobre aquests registres sagrats.",
+        "scripture": "I portarà un nou registre, i en ell estarà el mateix evangeli que ell els ha declarat a la Bíblia; i no hi haurà més de dues nacions.",
+        "reference": "Ezequiel 37:16-17",
+        "p2": "Després de quatre anys de preparació, Joseph Smith va rebre les planxes d'or i les va traduir pel poder de Déu. El Llibre de Mormó es va publicar per primera vegada el 1830 i des de llavors ha estat traduït a més de 100 idiomes."
+      },
+      "teachings": {
+        "title": "Ensenyances Clau del Llibre de Mormó",
+        "p1": "El Llibre de Mormó conté moltes ensenyances importants sobre Jesucrist, incloent el Seu naixement, ministeri, mort i resurrecció. Ensenya sobre la importància de la fe, el penediment, el baptisme i rebre el do de l'Esperit Sant. El llibre també emfatitza la importància de les famílies, el servei als altres i seguir els manaments de Déu.",
+        "p2": "Una de les ensenyances més poderoses del Llibre de Mormó és sobre l'Expiació de Jesucrist. El llibre ensenya que a través del sacrifici de Crist, tota la humanitat pot ser salvada i tornar a viure amb Déu. També ensenya sobre la importància de la revelació personal i com podem rebre guia de Déu a la nostra vida diària."
+      },
+      "promise": {
+        "title": "La Promesa del Llibre de Mormó",
+        "p1": "El Llibre de Mormó conté una promesa que qualsevol que el llegeixi amb cor sincer i pregunti a Déu amb fe rebrà un testimoni de la seva veracitat. Aquesta promesa es troba a Moroni 10:3-5, on se'ns convida a llegir, meditar i pregar sobre el llibre.",
+        "scripture": "I quan rebeu aquestes coses, us exhortaria a que pregunteu a Déu, el Pare Etern, en el nom de Crist, si aquestes coses no són veritables; i si demaneu amb cor sincer, amb veritable intenció, tenint fe en Crist, Ell us manifestarà la veritat d'elles pel poder de l'Esperit Sant.",
+        "reference": "Moroni 10:4",
+        "p2": "Aquesta promesa s'aplica a tots els que llegeixen el Llibre de Mormó. A través de l'oració i l'estudi, podem rebre un testimoni personal que el llibre és veritable i que conté la paraula de Déu."
+      },
+      "study": {
+        "title": "Com Estudiar el Llibre de Mormó",
+        "p1": "El Llibre de Mormó està destinat a ser estudiat amb oració i regularment. Animem a tots a llegir-lo diàriament, meditar en les seves ensenyances i aplicar els seus principis a les seves vides. El llibre pot llegir-se individualment o en família, i hi ha molts recursos disponibles per ajudar a comprendre les seves ensenyances.",
+        "p2": "Mentre estudies el Llibre de Mormó, busca principis que s'apliquin a la teva vida. Presta atenció als exemples de fe, valentia i obediència mostrats per les persones al llibre. El més important, ora per entendiment i guia mentre llegeixes."
+      },
+      "related": "Temes Relacionats"
+    },
+    "eternalFamilies": {
+      "title": "Famílies Eternes",
+      "subtitle": "Les Famílies Poden Estar Juntes per Sempre",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "divineNature": {
+        "title": "La Naturalesa Divina de les Famílies",
+        "p1": "Les famílies són centrals en el pla de Déu per als Seus fills. Creiem que les famílies poden estar juntes per sempre a través d'ordenances sagrades del temple. La família és la unitat fonamental de la societat i l'organització més important en el temps i l'eternitat. Déu va establir les famílies per proporcionar amor, suport i guia per als Seus fills.",
+        "p2": "La família és on aprenem a estimar, servir i cuidar als altres. És on desenvolupem el nostre caràcter, valors i fe. A través de les relacions familiars, experimentem goig, creixement i les benediccions de l'amor de Déu. La família proporciona un refugi segur on podem aprendre, créixer i arribar a ser les persones que Déu vol que siguem."
+      },
+      "templeMarriage": {
+        "title": "Matrimoni al Temple i Famílies Eternes",
+        "p1": "Als temples, les parelles dignes poden ser segellades juntes pel temps i tota l'eternitat. Aquesta ordenança sagrada, realitzada per l'autoritat apropiada del sacerdoci, uneix a les famílies més enllà de la mort. Quan una parella és segellada al temple, el seu matrimoni no és només per a aquesta vida sinó per a l'eternitat.",
+        "scripture": "I a tu et donaré les claus del regne dels cels; i tot el que lliguis a la terra serà lligat als cels; i tot el que deslliguis a la terra serà deslligat als cels.",
+        "reference": "Mateu 16:19",
+        "p2": "Els nens nascuts de pares que han estat segellats al temple estan automàticament segellats als seus pares per l'eternitat. Això significa que les famílies poden estar juntes per sempre, no només fins que la mort les separi. Aquesta és una de les majors benediccions de l'evangeli de Jesucrist."
+      },
+      "familyHistory": {
+        "title": "Història Familiar i Obra del Temple",
+        "p1": "Creiem que tots els fills de Déu, tant vius com morts, han de tenir l'oportunitat de rebre les benediccions de l'evangeli. A través de la investigació d'història familiar i l'obra del temple, podem ajudar als nostres avantpassats difunts a rebre les ordenances de salvació, incloent el baptisme, la confirmació i el segellament del temple.",
+        "p2": "L'obra d'història familiar ens connecta amb els nostres avantpassats i ens ajuda a entendre el nostre patrimoni. Enforteix a les nostres famílies i ens apropa més a Déu. Quan realitzem ordenances del temple per als nostres avantpassats, els estem ajudant a progressar en el seu viatge etern i enfortint els llaços de la nostra família eterna."
+      },
+      "strengthening": {
+        "title": "Enfortint les Famílies Avui",
+        "p1": "Mentre que les famílies eternes són una benedicció futura, podem començar a enfortir les nostres famílies avui. Això inclou l'oració familiar regular, l'estudi de les escriptures i la nit de casa familiar. També hem de passar temps de qualitat junts, donar-nos suport mútuament i treballar junts per superar desafiaments.",
+        "p2": "Les famílies fortes es construeixen sobre principis d'amor, respecte, perdó i servei. Els pares han d'ensenyar l'evangeli als seus fills i ajudar-los a desenvolupar fe en Jesucrist. Els fills han d'honrar i obeir als seus pares. Quan les famílies treballen juntes i es donen suport mútuament, es tornen més fortes i més unides."
+      },
+      "promise": {
+        "title": "La Promesa de les Famílies Eternes",
+        "p1": "La promesa de les famílies eternes ens dóna esperança i consol en temps de pèrdua i separació. Sabem que la mort no és el fi de les nostres relacions amb els nostres éssers estimats. A través de l'Expiació de Jesucrist i el poder del sacerdoci, les famílies poden ser reunides i viure juntes per sempre en la presència de Déu.",
+        "scripture": "I si passa que treballeu tots els vostres dies proclamant el penediment a aquest poble i porteu, encara que sigui una sola ànima a mi, què gran serà el vostre goig amb ella al regne del meu Pare!",
+        "reference": "Doctrina i Convenis 18:15",
+        "p2": "Aquesta promesa ens motiva a viure rectament i a treballar per ser dignes de la vida eterna. Ens anima a enfortir les nostres relacions familiars i a ajudar als altres a venir a Crist. La família no és només un arranjament temporal sinó una institució eterna que continuarà per sempre."
+      },
+      "related": "Temes Relacionats"
+    },
+    "livingProphets": {
+      "title": "Profetes Vius",
+      "subtitle": "Déu Parla a Través dels Seus Servents Elegits",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "whatIs": {
+        "title": "Què és un Profeta?",
+        "p1": "Un profeta és un home cridat per Déu per ser el Seu portaveu a la terra. Els profetes reben revelació de Déu i ensenyen la Seva voluntat al poble. Són elegits per Déu per dirigir la Seva església i guiar als Seus fills en la rectitud. Al llarg de la història, Déu ha cridat profetes per ensenyar el Seu evangeli i advertir al Seu poble.",
+        "p2": "Els profetes no són homes perfectes, però són cridats per Déu i sostinguts pel poble. Reben inspiració i revelació per guiar l'església i ajudar als fills de Déu a navegar els desafiaments del seu temps. Parlen per Déu i proporcionen direcció per a les nostres vides."
+      },
+      "modernRevelation": {
+        "title": "Revelació Moderna",
+        "p1": "Creiem que Déu continua parlant als Seus fills avui a través de profetes vivents. Així com Déu va parlar a Moisès, Isaïes i altres profetes antics, Ell parla als Seus profetes avui. Aquesta revelació moderna ens ajuda a entendre la voluntat de Déu per al nostre temps i proporciona guia per als desafiaments que enfrontem.",
+        "scripture": "Perquè no farà res Jehovà el Senyor, sense que reveli el seu secret als seus servents els profetes.",
+        "reference": "Amós 3:7",
+        "p2": "La revelació moderna ve a través del President de L'Església de Jesucrist dels Sants dels Últims Dies, qui serveix com a profeta, vident i revelador per a tot el món. Aquesta revelació es dóna en discursos de conferència general, declaracions oficials i altres comunicacions inspirades."
+      },
+      "firstPresidency": {
+        "title": "La Primera Presidència i el Quòrum dels Dotze",
+        "p1": "La Primera Presidència consisteix en el President de l'Església i els seus dos consellers. El Quòrum dels Dotze Apòstols són testimonis especials de Jesucrist i serveixen sota la direcció de la Primera Presidència. Junts, aquests quinze homes formen el cos governant de l'església i reben revelació per a tot el món.",
+        "p2": "Aquests homes són cridats per Déu i sostinguts pels membres de l'església. Viatgen per tot el món per ensenyar, testificar i ministrar als fills de Déu. Proporcionen guia sobre assumptes de doctrina, política i conducta personal. Els seus ensenyaments ens ajuden a entendre la voluntat de Déu i viure d'acord amb els Seus manaments."
+      },
+      "generalConference": {
+        "title": "Conferència General",
+        "p1": "Dues vegades a l'any, l'església celebra conferència general, on el profeta i altres líders de l'església parlen a tot el món. Aquestes conferències es transmeten a tot el món i proporcionen una oportunitat perquè tots els membres escoltin la paraula de Déu a través dels Seus servents elegits. Els missatges donats a la conferència general es consideren escriptura i proporcionen guia per a les nostres vides.",
+        "p2": "Els discursos de la conferència general cobreixen una àmplia gamma de temes, incloent fe, penediment, servei, família i desafiaments actuals que enfronta el món. Aquests missatges proporcionen consol, guia i direcció per als membres de l'església i qualsevol que triï escoltar. Ens ajuden a entendre com aplicar els principis de l'evangeli a la nostra vida diària."
+      },
+      "following": {
+        "title": "Seguint al Profeta",
+        "p1": "Se'ns anima a seguir el consell dels profetes vivents. Els seus ensenyaments ens ajuden a romandre en el camí que porta a la vida eterna. Quan seguim la Seva guia, som beneïts amb pau, protecció i creixement espiritual. Les paraules del profeta no són només suggeriments sinó guia inspirada de Déu.",
+        "scripture": "Ja sigui per la meva pròpia veu o per la veu dels meus servents, és el mateix.",
+        "reference": "Doctrina i Convenis 1:38",
+        "p2": "Seguir al profeta requereix fe i obediència. Pot ser que no sempre entenguem per què es dóna cert consell, però podem confiar que ve de Déu i és per al nostre benefici. A mesura que seguim la guia del profeta, serem beneïts i protegits dels mals del món."
+      },
+      "related": "Temes Relacionats"
+    },
+    "baptism": {
+      "title": "Baptisme",
+      "subtitle": "Els Primers Principis i Ordenances de l'Evangeli",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "faith": {
+        "title": "Fe en Jesucrist",
+        "p1": "La fe és el primer principi de l'evangeli. És una esperança en coses que no es veuen, però que són veritables. La fe en Jesucrist significa confiar en Ell, creure en els Seus ensenyaments i seguir el Seu exemple. Quan tenim fe en Crist, L'acceptem com el nostre Salvador i Redemptor i creiem que a través de la Seva Expiació, podem ser perdonats dels nostres pecats i tornar a viure amb Déu.",
+        "scripture": "I ara, com vaig dir concernent a la fe—la fe no és tenir un coneixement perfecte de les coses; per tant, si teniu fe, espereu en coses que no es veuen, que són veritables.",
+        "reference": "Alma 32:21",
+        "p2": "La fe ens porta a actuar. Quan tenim fe en Jesucrist, estem disposats a guardar els Seus manaments, penedir-nos dels nostres pecats i seguir els Seus ensenyaments. La fe és com una llavor—quan la plantem i la nodrim, creix i produeix bons fruits a les nostres vides."
+      },
+      "repentance": {
+        "title": "Penediment",
+        "p1": "El penediment és el segon principi de l'evangeli. És el procés de canviar els nostres pensaments, creences i comportaments per alinear-los amb la voluntat de Déu. A través del penediment, ens allunyem del pecat i ens tornem cap a Déu. El penediment implica reconèixer els nostres errors, sentir pesar per ells, confessar-los a Déu, fer restitució quan sigui possible i comprometre'ns a canviar.",
+        "scripture": "Per això sabreu si un home es penedeix dels seus pecats—heus aquí, els confessarà i els abandonarà.",
+        "reference": "Doctrina i Convenis 58:43",
+        "p2": "El penediment és possible gràcies a l'Expiació de Jesucrist. Quan ens penedim, podem ser perdonats dels nostres pecats i rebre pau i goig. El penediment no és un esdeveniment únic sinó un procés continu al llarg de les nostres vides mentre ens esforcem per arribar a ser més com Crist."
+      },
+      "baptism": {
+        "title": "Baptisme",
+        "p1": "El baptisme és la primera ordenança de l'evangeli i és essencial per a la salvació. Es realitza per immersió en aigua per algú que té l'autoritat apropiada del sacerdoci. El baptisme representa la mort, sepultura i resurrecció de Jesucrist i simbolitza el nostre compromís de seguir-li. Quan som batejats, fem un conveni amb Déu de prendre sobre nosaltres el nom de Jesucrist, recordar-li sempre i guardar els Seus manaments.",
+        "scripture": "I ara, si l'Anyell de Déu, sent sant, té necessitat de ser batejat per aigua per complir tota justícia, oh llavors, quanta més necessitat tenim nosaltres, sent impurs, de ser batejats, sí, fins i tot per aigua!",
+        "reference": "2 Nefi 31:5",
+        "p2": "El baptisme és la porta d'entrada al sender que condueix a la vida eterna. A través del baptisme, som netejats dels nostres pecats i ens convertim en membres de l'església de Crist. Som batejats a l'edat de responsabilitat (vuit anys) o quan tenim l'edat suficient per entendre i fer aquest important conveni amb Déu."
+      },
+      "holyghost": {
+        "title": "El Do de l'Esperit Sant",
+        "p1": "Després del baptisme, rebem el do de l'Esperit Sant mitjançant la imposició de mans per aquells amb autoritat del sacerdoci. L'Esperit Sant és el tercer membre de la Trinitat i serveix com a company constant, guia i consolador. El do de l'Esperit Sant és diferent de la influència de l'Esperit Sant—és el dret de tenir a l'Esperit Sant com a company constant, sempre que romanguem dignes.",
+        "scripture": "I pel poder de l'Esperit Sant podreu conèixer la veritat de totes les coses.",
+        "reference": "Moroni 10:5",
+        "p2": "L'Esperit Sant ens ajuda de moltes maneres: Ell testifica de la veritat, ens adverteix del perill, ens consola en temps de necessitat, ens guia en la presa de decisions i ens ajuda a entendre les escriptures. Quan vivim rectament i guardem els manaments, podem tenir la companyia constant de l'Esperit Sant, que porta pau, goig i fortalesa espiritual."
+      },
+      "endure": {
+        "title": "Perseverar fins al Fi",
+        "p1": "Perseverar fins al fi significa romandre fidels als convenis que fem al llarg de les nostres vides. Significa continuar tenint fe en Jesucrist, penedint-nos diàriament, guardant els manaments i servint als altres. Perseverar fins al fi no es tracta només de sobreviure—es tracta de créixer, aprendre i arribar a ser més com el nostre Salvador.",
+        "scripture": "Mira'm en tot pensament; no dubtis, no temis. Heus aquí les ferides que van travessar el meu costat, i també les impressions dels claus a les meves mans i peus; sigues fidel, guarda els meus manaments, i heretaràs el regne dels cels.",
+        "reference": "Doctrina i Convenis 6:36-37",
+        "p2": "L'evangeli de Jesucrist és una forma de vida, no només un esdeveniment únic. A mesura que perseverem fins al fi, continuem creixent espiritually, servint als altres i apropar-nos més a Déu. A través de l'Expiació de Jesucrist i la nostra fidelitat, podem rebre el major de tots els dons de Déu—la vida eterna."
+      },
+      "related": "Temes Relacionats"
+    },
+    "planOfSalvation": {
+      "title": "Pla de Salvació",
+      "subtitle": "El Pla Etern de Déu per als Seus Fills",
+      "backToFaith": "Tornar a La Nostra Fe",
+      "whatIs": {
+        "title": "Què és el Pla de Salvació?",
+        "p1": "El Pla de Salvació és el pla etern de Déu per a la felicitat i salvació dels Seus fills. Explica el nostre propòsit a la vida, d'on vinguem, per què estem aquí i on anem després de la mort. Aquest pla es va establir abans que el món fos creat i proporciona el marc per al nostre progrés etern.",
+        "p2": "El pla inclou tres fases principals: vida pre-mortal, vida mortal i vida després de la mort. Cada fase és essencial per al nostre desenvolupament i felicitat eterns. A través d'aquest pla, podem arribar a ser com el nostre Pare Celestial i viure amb Ell per sempre en famílies eternes."
+      },
+      "preMortal": {
+        "title": "Vida Pre-Mortal",
+        "p1": "Abans de néixer a la terra, vivíem amb el nostre Pare Celestial com els Seus fills espirituals. Vam ser creats a la Seva imatge i teníem el potencial d'arribar a ser com Ell. En aquesta existència pre-mortal, vam aprendre sobre el pla de Déu i vam triar venir a la terra per obtenir cossos físics i experimentar la mortalitat.",
+        "scripture": "Abans que et formés al ventre et vaig conèixer, i abans que naixessis et vaig santificar, et vaig donar per profeta a les nacions.",
+        "reference": "Jeremies 1:5",
+        "p2": "A la vida pre-mortal, vam desenvolupar les nostres personalitats, talents i dons espirituals. També vam fer eleccions que van influir en les nostres experiències terrenals. Aquesta existència pre-mortal ajuda a explicar per què tenim diferents circumstàncies i desafiaments en aquesta vida."
+      },
+      "mortal": {
+        "title": "Vida Mortal",
+        "p1": "La vida mortal és un temps de prova i creixement. Estem aquí per obtenir cossos físics, aprendre a triar entre el bé i el mal, i desenvolupar fe en Jesucrist. Aquesta vida no és fàcil, però és essencial per al nostre progrés etern. A través de les nostres experiències, aprenem a arribar a ser més com el nostre Pare Celestial.",
+        "p2": "Durant la mortalitat, enfrontem desafiaments, cometem errors i experimentem tant goig com tristesa. Aquestes experiències ens ajuden a desenvolupar caràcter, compassió i saviesa. També tenim l'oportunitat d'aprendre sobre l'evangeli, fer convenis amb Déu i servir als altres. Les eleccions que fem en aquesta vida determinen el nostre destí etern."
+      },
+      "afterDeath": {
+        "title": "Vida Després de la Mort",
+        "p1": "Després de la mort, els nostres esperits van al món dels esperits, on continuem aprenent i creixent. El món dels esperits està dividit en paradís i presó, basat en la nostra acceptació de l'evangeli durant la mortalitat. Aquells que van acceptar l'evangeli van al paradís, mentre que aquells que no ho van fer van a presó, on encara poden aprendre sobre l'evangeli.",
+        "p2": "Eventualment, totes les persones seran ressuscitades i jutjades segons les seves obres i desitjos. Basat en les nostres eleccions i fidelitat, serem assignats a un de tres regnes de glòria: el regne celestial (el més alt), el regne terrestre o el regne telestial. El regne celestial és on podem viure amb Déu i les nostres famílies per sempre."
+      },
+      "atonement": {
+        "title": "L'Expiació de Jesucrist",
+        "p1": "Central al Pla de Salvació està l'Expiació de Jesucrist. A través del Seu patiment, mort i resurrecció, Jesucrist va fer possible que superem el pecat i la mort. La Seva Expiació proporciona el camí perquè tornem al nostre Pare Celestial i rebem la vida eterna.",
+        "scripture": "Perquè Déu va estimar tant el món, que va donar el seu Fill unigènit, perquè tot aquell que creu en Ell no es perdi, sinó que tingui vida eterna.",
+        "reference": "Joan 3:16",
+        "p2": "L'Expiació no es tracta només del perdó dels pecats, sinó també de capacitar-nos per arribar a ser millors persones. A través de la gràcia de Crist, podem superar les nostres debilitats, desenvolupar atributs semblants a Crist i progressar cap a la vida eterna. L'Expiació fa possible el Pla de Salvació."
+      },
+      "ourRole": {
+        "title": "El Nostre Paper en el Pla",
+        "p1": "Tenim un paper important a jugar en el Pla de Salvació. Hem de triar seguir a Jesucrist, guardar els Seus manaments i servir als altres. Hem d'esforçar-nos per desenvolupar fe, penedir-nos dels nostres pecats, ser batejats, rebre el do de l'Esperit Sant i perseverar fins al fi. Aquests són els principis i ordenances de l'evangeli.",
+        "p2": "També tenim la responsabilitat d'ajudar als altres a entendre i acceptar el pla. Això inclou compartir l'evangeli amb els nostres amics i familiars, servir a l'església i ser exemples de rectitud. A mesura que ajudem als altres a venir a Crist, estem participant en l'obra de Déu i ajudant a complir el Seu pla."
+      },
+      "related": "Temes Relacionats"
+    }
+  }
+}

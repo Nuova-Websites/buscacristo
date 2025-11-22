@@ -41,9 +41,9 @@
       "desc": "Apprenez l'espagnol et l'anglais dans un environnement communautaire bienveillant avec des cours gratuits pour tous les niveaux",
       "btn": "Voir les Activités"
     },
-    "temple": {
-      "title": "Culte au Temple",
-      "desc": "Culte au temple, histoire familiale et classes de préparation au temple",
+    "other": {
+      "title": "Autres Opportunités",
+      "desc": "Activités et programmes supplémentaires disponibles dans nos emplacements",
       "btn": "Voir les Activités"
     }
   },
@@ -112,7 +112,8 @@
     "namePlaceholder": "Votre Nom",
     "emailPlaceholder": "Votre Email",
     "messagePlaceholder": "Votre Message",
-    "sendBtn": "Envoyer le Message"
+    "sendBtn": "Envoyer le Message",
+    "activitiesLabel": "Activités d'Intérêt"
   },
   "footer": {
     "about": "Busca Cristo",
@@ -125,6 +126,8 @@
   "modal": {
     "close": "×",
     "activityDetails": "Détails de l'Activité",
+    "backToActivities": "Retour aux Activités",
+    "backToFaith": "Retour à Notre Foi",
     "locationInfo": "Obtenir des Informations Spécifiques à l'Emplacement",
     "locationInfoDesc": "Pour recevoir des horaires détaillés et des informations pour votre emplacement spécifique, veuillez fournir vos informations de contact ci-dessous.",
     "firstName": "Prénom *",
@@ -179,12 +182,14 @@
       "desc": "Améliorez vos compétences en espagnol et en anglais grâce à des cours gratuits conçus pour tous les niveaux. Nos cours se concentrent sur la conversation pratique, la grammaire et le vocabulaire utile pour les situations quotidiennes. Rejoignez une communauté d'apprentissage où vous pouvez pratiquer les deux langues tout en rencontrant de nouvelles personnes.",
       "activities": []
     },
-    "temple": {
-      "title": "Culte au Temple",
-      "desc": "Trouvez la paix et le but grâce à l'adoration et au service au temple. Participez aux sessions du temple, aux classes de préparation et au travail d'histoire familiale qui renforcent la foi et apportent la joie spirituelle.",
+    "other": {
+      "title": "Autres Opportunités",
+      "desc": "Découvrez des activités et des programmes supplémentaires disponibles dans nos emplacements. Contenu détaillé à venir bientôt.",
       "activities": []
     },
-    "availableActivities": "Activités Disponibles:"
+    "availableActivities": "Activités Disponibles:",
+    "related": "Activités Connexes",
+    "wantToParticipate": "Vous voulez participer? Alors contactez-nous ici"
   },
   "notifications": {
     "fillFields": "Veuillez remplir tous les champs.",
@@ -247,6 +252,7 @@
       },
       "related": "Sujets Connexes"
     },
+    "wantToLearn": "Vous voulez en savoir plus? Alors contactez-nous ici",
     "bookOfMormon": {
       "title": "Livre de Mormon",
       "subtitle": "Un autre témoignage de Jésus-Christ",

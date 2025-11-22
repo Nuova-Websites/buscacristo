@@ -41,9 +41,9 @@
       "desc": "Aprèn espanyol i anglès en un ambient comunitari de suport amb classes gratuïtes per a tots els nivells",
       "btn": "Veure Activitats"
     },
-    "temple": {
-      "title": "Adoració al Temple",
-      "desc": "Adoració al temple, història familiar i classes de preparació per al temple",
+    "other": {
+      "title": "Altres Oportunitats",
+      "desc": "Activitats i programes addicionals disponibles a les nostres ubicacions",
       "btn": "Veure Activitats"
     }
   },
@@ -112,7 +112,8 @@
     "namePlaceholder": "El Teu Nom",
     "emailPlaceholder": "El Teu Correu",
     "messagePlaceholder": "El Teu Missatge",
-    "sendBtn": "Enviar Missatge"
+    "sendBtn": "Enviar Missatge",
+    "activitiesLabel": "Activitats d'Interès"
   },
   "footer": {
     "about": "Busca Cristo",
@@ -125,6 +126,8 @@
   "modal": {
     "close": "×",
     "activityDetails": "Detalls de l'Activitat",
+    "backToActivities": "Tornar a Activitats",
+    "backToFaith": "Tornar a la Nostra Fe",
     "locationInfo": "Obtenir Informació Específica de la Ubicació",
     "locationInfoDesc": "Per rebre horaris detallats i informació per a la teva ubicació específica, si us plau proporciona la teva informació de contacte a continuació.",
     "firstName": "Nom *",
@@ -179,12 +182,14 @@
       "desc": "Millora les teves habilitats en espanyol i anglès a través de classes gratuïtes dissenyades per a tots els nivells. Les nostres classes se centren en conversa pràctica, gramàtica i vocabulari útil per a situacions quotidianes. Uneix-te a una comunitat d'aprenentatge on pots practicar ambdós idiomes mentre coneixes noves persones.",
       "activities": []
     },
-    "temple": {
-      "title": "Adoració al Temple",
-      "desc": "Troba pau i propòsit a través de l'adoració i el servei al temple. Participa en sessions del temple, classes de preparació i treball d'història familiar que enforteixen la fe i aporten goig espiritual.",
+    "other": {
+      "title": "Altres Oportunitats",
+      "desc": "Descobreix activitats i programes addicionals disponibles a les nostres ubicacions. Contingut detallat disponible aviat.",
       "activities": []
     },
-    "availableActivities": "Activitats Disponibles:"
+    "availableActivities": "Activitats Disponibles:",
+    "related": "Activitats Relacionades",
+    "wantToParticipate": "Vols participar? Aleshores posa't en contacte amb nosaltres aquí"
   },
   "notifications": {
     "fillFields": "Si us plau completa tots els camps.",
@@ -247,6 +252,7 @@
       },
       "related": "Temes Relacionats"
     },
+    "wantToLearn": "Vols aprendre més? Aleshores posa't en contacte amb nosaltres aquí",
     "bookOfMormon": {
       "title": "Llibre de Mormó",
       "subtitle": "Un altre testimoni de Jesucrist",

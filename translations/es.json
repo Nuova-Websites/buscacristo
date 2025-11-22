@@ -112,7 +112,8 @@
     "namePlaceholder": "Tu Nombre",
     "emailPlaceholder": "Tu Email",
     "messagePlaceholder": "Tu Mensaje",
-    "sendBtn": "Enviar Mensaje"
+    "sendBtn": "Enviar Mensaje",
+    "activitiesLabel": "Actividades de Interés"
   },
   "footer": {
     "about": "Busca Cristo",
@@ -125,6 +126,8 @@
   "modal": {
     "close": "×",
     "activityDetails": "Detalles de la Actividad",
+    "backToActivities": "Volver a Actividades",
+    "backToFaith": "Volver a Nuestra Fe",
     "locationInfo": "Obtener Información Específica de la Ubicación",
     "locationInfoDesc": "Para recibir horarios detallados e información para tu ubicación específica, por favor proporciona tu información de contacto a continuación.",
     "firstName": "Nombre *",
@@ -184,7 +187,9 @@
       "desc": "Descubre actividades y programas adicionales disponibles en nuestras ubicaciones. Contenido detallado disponible próximamente.",
       "activities": []
     },
-    "availableActivities": "Actividades Disponibles:"
+    "availableActivities": "Actividades Disponibles:",
+    "related": "Actividades Relacionadas",
+    "wantToParticipate": "¿Quieres participar? Entonces ponte en contacto con nosotros aquí"
   },
   "notifications": {
     "fillFields": "Por favor completa todos los campos.",
@@ -247,6 +252,7 @@
       },
       "related": "Temas Relacionados"
     },
+    "wantToLearn": "¿Quieres aprender más? Entonces ponte en contacto con nosotros aquí",
     "bookOfMormon": {
       "title": "Libro de Mormón",
       "subtitle": "Otro Testamento de Jesucristo",

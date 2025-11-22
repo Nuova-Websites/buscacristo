@@ -126,16 +126,19 @@
                     </div>
                     <h3 data-i18n="activities.worship.title">Worship Services</h3>
                     <p data-i18n="activities.worship.desc">Sunday worship, sacrament meetings, and special devotional services</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('worship')" data-i18n="activities.worship.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/worship-services.html';" data-i18n="activities.worship.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="youth">
+                    <div class="activity-card-image">
+                        <img src="/images/youth.avif" alt="Youth Programs">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3 data-i18n="activities.youth.title">Youth Programs</h3>
                     <p data-i18n="activities.youth.desc">Activities, camps, and programs for youth ages 12-18</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('youth')" data-i18n="activities.youth.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/youth-programs.html';" data-i18n="activities.youth.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="family">
@@ -147,34 +150,43 @@
                     </div>
                     <h3 data-i18n="activities.family.title">Family Activities</h3>
                     <p data-i18n="activities.family.desc">Family home evening, activities, and programs for all ages</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('family')" data-i18n="activities.family.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/family-activities.html';" data-i18n="activities.family.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="education">
+                    <div class="activity-card-image">
+                        <img src="/images/young-adult.avif" alt="Young Adult Activities">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-user-friends"></i>
                     </div>
                     <h3 data-i18n="activities.education.title">Young Adult Activities</h3>
                     <p data-i18n="activities.education.desc">Sunday School, Institute, and other learning opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('education')" data-i18n="activities.education.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/young-adult-activities.html';" data-i18n="activities.education.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="service">
+                    <div class="activity-card-image">
+                        <img src="/images/language.avif" alt="Language Classes">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-graduation-cap"></i>   
                     </div>
                     <h3 data-i18n="activities.service.title">Language Study</h3>
                     <p data-i18n="activities.service.desc">Community service, humanitarian aid, and volunteer opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('service')" data-i18n="activities.service.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/language-classes.html';" data-i18n="activities.service.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="other">
+                    <div class="activity-card-image">
+                        <img src="/images/other-activities.jpeg" alt="Other Opportunities">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
                     <h3 data-i18n="activities.other.title">Other Opportunities</h3>
                     <p data-i18n="activities.other.desc">Additional activities and programs available at our locations</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('other')" data-i18n="activities.other.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/other-opportunities.html';" data-i18n="activities.other.btn">View Activities</button>
                 </div>
             </div>
         </div>
@@ -325,13 +337,24 @@
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
+                            <input type="text" id="contactName" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
+                            <input type="email" id="contactEmail" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
+                            <label data-i18n="contact.activitiesLabel">Activities of Interest</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="activities" value="worship" id="activity-worship"> <span data-i18n="activities.worship.title">Church Services</span></label>
+                                <label><input type="checkbox" name="activities" value="youth" id="activity-youth"> <span data-i18n="activities.youth.title">Youth Programs</span></label>
+                                <label><input type="checkbox" name="activities" value="family" id="activity-family"> <span data-i18n="activities.family.title">Family Activities</span></label>
+                                <label><input type="checkbox" name="activities" value="education" id="activity-education"> <span data-i18n="activities.education.title">Young Adult Activities</span></label>
+                                <label><input type="checkbox" name="activities" value="service" id="activity-service"> <span data-i18n="activities.service.title">Language Classes</span></label>
+                                <label><input type="checkbox" name="activities" value="other" id="activity-other"> <span data-i18n="activities.other.title">Other Opportunities</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.sendBtn">Send Message</button>
                     </form>
@@ -347,6 +370,22 @@
         if (typeof languageManager !== 'undefined') {
             languageManager.updateLanguageSelector();
         }
+        
+        // Handle activity pre-selection from URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const activity = urlParams.get('activity');
+            if (activity) {
+                const checkbox = document.getElementById('activity-' + activity);
+                if (checkbox) {
+                    checkbox.checked = true;
+                    // Scroll to contact form
+                    setTimeout(() => {
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
     </script>
 {% endblock %}
 

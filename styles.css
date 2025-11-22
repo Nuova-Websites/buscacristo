@@ -325,6 +325,7 @@ body:has(.doctrine-page) .navbar {
     bottom: 0;
     z-index: 0;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .activity-card-image img {
@@ -355,46 +356,10 @@ body:has(.doctrine-page) .navbar {
     background-repeat: no-repeat;
 }
 
-/* Activity-specific background images */
-.activity-type-card[data-activity="worship"] {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1520637836862-4d197d17c93a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
-.activity-type-card[data-activity="youth"] {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
-.activity-type-card[data-activity="family"] {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
-.activity-type-card[data-activity="education"] {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
-.activity-type-card[data-activity="service"] {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
 .activity-type-card[data-activity="temple"] {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
 }
 
-.activity-type-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(135deg, #1A4B5C, #2C5F5F);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.activity-type-card:hover::before {
-    transform: scaleX(1);
-}
 
 .activity-type-card:hover {
     transform: translateY(-5px);
@@ -448,6 +413,8 @@ body:has(.doctrine-page) .navbar {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .view-activities-btn:hover {
@@ -699,6 +666,10 @@ body:has(.doctrine-page) .navbar {
     object-position: center top;
 }
 
+.doctrine-card-image img[src*="bautismo"] {
+    object-position: 90% center;
+}
+
 .doctrine-topic-card:hover .doctrine-card-image img {
     transform: scale(1.05);
 }
@@ -796,31 +767,6 @@ body:has(.doctrine-page) .navbar {
 
 .doctrine-topic-card:hover .topic-arrow i {
     color: white;
-}
-
-/* Specific background images for each doctrine topic */
-.doctrine-topic-card:nth-child(1) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-}
-
-.doctrine-topic-card:nth-child(2) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/book-of-mormon.jpg');
-}
-
-.doctrine-topic-card:nth-child(3) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/eternal-families.jpg');
-}
-
-.doctrine-topic-card:nth-child(4) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/living-prophets.jpg');
-}
-
-.doctrine-topic-card:nth-child(5) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/priesthood-power.jpg');
-}
-
-.doctrine-topic-card:nth-child(6) {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/plan-of-salvation.jpg');
 }
 
 /* Missionaries Section */
@@ -1530,50 +1476,6 @@ textarea:focus {
     position: relative;
 }
 
-.breadcrumb {
-    background: transparent;
-    padding: 1rem 0;
-    border-bottom: none;
-    position: sticky;
-    top: 70px;
-    z-index: 100;
-    box-shadow: none;
-}
-
-.breadcrumb-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.breadcrumb-content a {
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.breadcrumb-content a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.breadcrumb-content i {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.breadcrumb-content span {
-    color: rgba(255, 255, 255, 0.95);
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
 .doctrine-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -1746,6 +1648,31 @@ textarea:focus {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(26, 75, 92, 0.3);
+}
+
+.contact-cta {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e9ecef;
+    text-align: center;
+}
+
+.contact-cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #1A4B5C, #2C5F5F);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 75, 92, 0.3);
+}
+
+.contact-cta-button:hover {
+    background: linear-gradient(135deg, #2C5F5F, #1A4B5C);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 75, 92, 0.4);
 }
 
 /* Responsive styles for doctrine pages */

@@ -37,8 +37,8 @@
       "btn": "View Activities"
     },
     "service": {
-      "title": "English Classes",
-      "desc": "Learn English in a supportive community environment with free classes for all levels",
+      "title": "Language Classes",
+      "desc": "Learn Spanish and English in a supportive community environment with free classes for all levels",
       "btn": "View Activities"
     },
     "other": {
@@ -112,7 +112,8 @@
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "Your Email",
     "messagePlaceholder": "Your Message",
-    "sendBtn": "Send Message"
+    "sendBtn": "Send Message",
+    "activitiesLabel": "Activities of Interest"
   },
   "footer": {
     "about": "Busca Cristo",
@@ -125,6 +126,8 @@
   "modal": {
     "close": "×",
     "activityDetails": "Activity Details",
+    "backToActivities": "Back to Activities",
+    "backToFaith": "Back to Our Faith",
     "locationInfo": "Get Location-Specific Information",
     "locationInfoDesc": "To receive detailed schedules and information for your specific location, please provide your contact information below.",
     "firstName": "First Name *",
@@ -175,8 +178,8 @@
       "activities": []
     },
     "service": {
-      "title": "English Classes",
-      "desc": "Improve your English skills through free classes designed for all levels. Our classes focus on practical conversation, grammar, and useful vocabulary for everyday situations. Join a learning community where you can practice English while meeting new people.",
+      "title": "Language Classes",
+      "desc": "Improve your Spanish and English skills through free classes designed for all levels. Our classes focus on practical conversation, grammar, and useful vocabulary for everyday situations. Join a learning community where you can practice both languages while meeting new people.",
       "activities": []
     },
     "other": {
@@ -184,7 +187,9 @@
       "desc": "Discover additional activities and programs available at our locations. Detailed content coming soon.",
       "activities": []
     },
-    "availableActivities": "Available Activities:"
+    "availableActivities": "Available Activities:",
+    "related": "Related Activities",
+    "wantToParticipate": "Want to participate? Then get in contact with us here"
   },
   "notifications": {
     "fillFields": "Please fill in all fields.",
@@ -247,6 +252,7 @@
       },
       "related": "Related Topics"
     },
+    "wantToLearn": "Want to learn more? Then get in contact with us here",
     "bookOfMormon": {
       "title": "Book of Mormon",
       "subtitle": "Another Testament of Jesus Christ",

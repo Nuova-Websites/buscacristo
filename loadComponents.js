@@ -67,6 +67,13 @@
             })
             .catch(error => {
                 console.error('Error loading header:', error);
+                // Retry once after a short delay
+                setTimeout(() => {
+                    const headerContainer = document.getElementById('header-container');
+                    if (headerContainer && !headerContainer.innerHTML.trim()) {
+                        loadHeader();
+                    }
+                }, 500);
             });
     }
     
@@ -104,18 +111,52 @@
             })
             .catch(error => {
                 console.error('Error loading footer:', error);
+                // Retry once after a short delay
+                setTimeout(() => {
+                    const footerContainer = document.getElementById('footer-container');
+                    if (footerContainer && !footerContainer.innerHTML.trim()) {
+                        loadFooter();
+                    }
+                }, 500);
             });
     }
     
     // Load components when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            loadHeader();
-            loadFooter();
-        });
-    } else {
+    function initializeComponents() {
         loadHeader();
         loadFooter();
     }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeComponents);
+    } else {
+        // DOM already loaded, but wait a bit to ensure everything is ready
+        setTimeout(initializeComponents, 0);
+    }
+    
+    // Also reload components on page show (handles back/forward navigation and page loads)
+    window.addEventListener('pageshow', function(event) {
+        // Check if components are missing and reload them
+        const headerContainer = document.getElementById('header-container');
+        const footerContainer = document.getElementById('footer-container');
+        if (headerContainer && !headerContainer.innerHTML.trim()) {
+            loadHeader();
+        }
+        if (footerContainer && !footerContainer.innerHTML.trim()) {
+            loadFooter();
+        }
+    });
+    
+    // Check and reload components after a short delay (handles navigation from other pages)
+    setTimeout(function() {
+        const headerContainer = document.getElementById('header-container');
+        const footerContainer = document.getElementById('footer-container');
+        if (headerContainer && !headerContainer.innerHTML.trim()) {
+            loadHeader();
+        }
+        if (footerContainer && !footerContainer.innerHTML.trim()) {
+            loadFooter();
+        }
+    }, 100);
 })();
 

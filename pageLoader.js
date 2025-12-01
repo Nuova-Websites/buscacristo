@@ -92,8 +92,9 @@ class PageLoader {
         const contactCta = document.querySelector('.contact-cta-button');
         if (contactCta) {
             if (source === 'activities') {
-                // Use index.html with query parameter before hash for proper navigation
-                contactCta.href = basePath + `index.html?activity=${metadata.page_key}#contact`;
+                // For activities, include activity parameter in query string
+                // Use relative path without index.html - browser will resolve to index.html automatically
+                contactCta.href = basePath + `?activity=${metadata.page_key}#contact`;
             } else {
                 contactCta.href = basePath + '#contact';
             }

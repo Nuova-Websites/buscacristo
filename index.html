@@ -385,21 +385,38 @@
             languageManager.updateLanguageSelector();
         }
         
-        // Handle activity pre-selection from URL parameter
-        document.addEventListener('DOMContentLoaded', function() {
+        // Handle activity pre-selection and hash navigation to contact section
+        function handleContactNavigation() {
+            // Handle activity pre-selection from URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const activity = urlParams.get('activity');
             if (activity) {
                 const checkbox = document.getElementById('activity-' + activity);
                 if (checkbox) {
                     checkbox.checked = true;
-                    // Scroll to contact form
-                    setTimeout(() => {
-                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 100);
                 }
             }
-        });
+            
+            // Handle hash navigation to contact section
+            if (window.location.hash === '#contact') {
+                setTimeout(() => {
+                    const contactSection = document.getElementById('contact');
+                    if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 500); // Wait for components to load
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', handleContactNavigation);
+        
+        // Also handle hash changes
+        window.addEventListener('hashchange', handleContactNavigation);
+        
+        // Handle initial hash if page loads with hash
+        if (window.location.hash === '#contact' || window.location.search.includes('activity=')) {
+            window.addEventListener('load', handleContactNavigation);
+        }
     </script>
 
 </body>

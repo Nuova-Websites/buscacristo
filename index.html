@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca Cristo - LDS Church</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="languageManager.js"></script>
+    <script src="/languageManager.js"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/faro.png" alt="Busca Cristo Logo" class="logo-image">
+                <img src="/images/faro.png" alt="Busca Cristo Logo" class="logo-image">
                 <span>Busca Cristo</span>
             </div>
             <ul class="nav-menu">
@@ -53,6 +53,9 @@
         </div>
     </nav>
 
+    
+
+    
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
@@ -73,9 +76,9 @@
             <p class="doctrine-intro" data-i18n="doctrine.intro">Learn more about our core beliefs and teachings. Click on any topic to explore deeper understanding of our faith.</p>
             
             <div class="doctrine-topics">
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/jesus-christ.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/jesus-christ.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/jesus.webp" alt="Jesus Christ">
+                        <img src="/images/jesus.webp" alt="Jesus Christ">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-cross"></i>
@@ -87,9 +90,9 @@
                     </div>
                 </div>
 
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/book-of-mormon.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/book-of-mormon.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/bookofmormonnew.jpg" alt="Book of Mormon">
+                        <img src="/images/bookofmormonnew.jpg" alt="Book of Mormon">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-book"></i>
@@ -101,9 +104,9 @@
                     </div>
                 </div>
 
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/eternal-families.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/eternal-families.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/family.jpg" alt="Eternal Families">
+                        <img src="/images/family.jpg" alt="Eternal Families">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-heart"></i>
@@ -115,9 +118,9 @@
                     </div>
                 </div>
 
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/living-prophets.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/living-prophets.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/prophet.jpeg" alt="Living Prophets">
+                        <img src="/images/prophet.jpeg" alt="Living Prophets">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-user-tie"></i>
@@ -129,9 +132,9 @@
                     </div>
                 </div>
 
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/baptism.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/baptism.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/bautismo.jpeg" alt="Baptism">
+                        <img src="/images/bautismo.jpeg" alt="Baptism">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-tint"></i>
@@ -143,9 +146,9 @@
                     </div>
                 </div>
 
-                <div class="doctrine-topic-card" onclick="window.location.href='doctrine/plan-of-salvation.html'">
+                <div class="doctrine-topic-card" onclick="window.location.href='/doctrine/plan-of-salvation.html'">
                     <div class="doctrine-card-image">
-                        <img src="images/salvation.jpg" alt="Plan of Salvation">
+                        <img src="/images/salvation.jpg" alt="Plan of Salvation">
                     </div>
                     <div class="topic-icon">
                         <i class="fas fa-globe"></i>
@@ -169,62 +172,74 @@
             <div class="activity-types-grid">
                 <div class="activity-type-card" data-activity="worship">
                     <div class="activity-card-image">
-                        <img src="images/church.jpg" alt="Worship Services">
+                        <img src="/images/church.jpg" alt="Worship Services">
                     </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-pray"></i>
                     </div>
                     <h3 data-i18n="activities.worship.title">Worship Services</h3>
                     <p data-i18n="activities.worship.desc">Sunday worship, sacrament meetings, and special devotional services</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('worship')" data-i18n="activities.worship.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/worship-services.html';" data-i18n="activities.worship.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="youth">
+                    <div class="activity-card-image">
+                        <img src="/images/youth.avif" alt="Youth Programs">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3 data-i18n="activities.youth.title">Youth Programs</h3>
                     <p data-i18n="activities.youth.desc">Activities, camps, and programs for youth ages 12-18</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('youth')" data-i18n="activities.youth.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/youth-programs.html';" data-i18n="activities.youth.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="family">
                     <div class="activity-card-image">
-                        <img src="images/family.jpg" alt="Family Activities">
+                        <img src="/images/family.jpg" alt="Family Activities">
                     </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3 data-i18n="activities.family.title">Family Activities</h3>
                     <p data-i18n="activities.family.desc">Family home evening, activities, and programs for all ages</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('family')" data-i18n="activities.family.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/family-activities.html';" data-i18n="activities.family.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="education">
+                    <div class="activity-card-image">
+                        <img src="/images/young-adult.avif" alt="Young Adult Activities">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-user-friends"></i>
                     </div>
                     <h3 data-i18n="activities.education.title">Young Adult Activities</h3>
                     <p data-i18n="activities.education.desc">Sunday School, Institute, and other learning opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('education')" data-i18n="activities.education.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/young-adult-activities.html';" data-i18n="activities.education.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="service">
+                    <div class="activity-card-image">
+                        <img src="/images/language.avif" alt="Language Classes">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-graduation-cap"></i>   
                     </div>
                     <h3 data-i18n="activities.service.title">Language Study</h3>
                     <p data-i18n="activities.service.desc">Community service, humanitarian aid, and volunteer opportunities</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('service')" data-i18n="activities.service.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/language-classes.html';" data-i18n="activities.service.btn">View Activities</button>
                 </div>
 
                 <div class="activity-type-card" data-activity="other">
+                    <div class="activity-card-image">
+                        <img src="/images/other-activities.jpeg" alt="Other Opportunities">
+                    </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
                     <h3 data-i18n="activities.other.title">Other Opportunities</h3>
                     <p data-i18n="activities.other.desc">Additional activities and programs available at our locations</p>
-                    <button class="view-activities-btn" onclick="showActivityDetails('other')" data-i18n="activities.other.btn">View Activities</button>
+                    <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='/activities/other-opportunities.html';" data-i18n="activities.other.btn">View Activities</button>
                 </div>
             </div>
         </div>
@@ -334,7 +349,7 @@
                     </div>
                 </div>
                 <div class="missionaries-image">
-                    <img src="images/missionaries.jpg" alt="Missionaries Ready to Serve">
+                    <img src="/images/missionaries.jpg" alt="Missionaries Ready to Serve">
                 </div>
             </div>
         </div>
@@ -346,7 +361,7 @@
             <h2 class="section-title" data-i18n="locations.title">Find a Church Near You</h2>            
             <div class="location-finder-container">
                 <div class="location-image-container">
-                    <img src="images/church.jpg" alt="Church" class="location-church-image">
+                    <img src="/images/church.jpg" alt="Church" class="location-church-image">
                 </div>
                 <div class="location-controls">
                     <button onclick="useMyLocation()" class="btn btn-secondary location-btn">
@@ -375,13 +390,24 @@
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
+                            <input type="text" id="contactName" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
+                            <input type="email" id="contactEmail" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
+                            <label data-i18n="contact.activitiesLabel">Activities of Interest</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="activities" value="worship" id="activity-worship"> <span data-i18n="activities.worship.title">Church Services</span></label>
+                                <label><input type="checkbox" name="activities" value="youth" id="activity-youth"> <span data-i18n="activities.youth.title">Youth Programs</span></label>
+                                <label><input type="checkbox" name="activities" value="family" id="activity-family"> <span data-i18n="activities.family.title">Family Activities</span></label>
+                                <label><input type="checkbox" name="activities" value="education" id="activity-education"> <span data-i18n="activities.education.title">Young Adult Activities</span></label>
+                                <label><input type="checkbox" name="activities" value="service" id="activity-service"> <span data-i18n="activities.service.title">Language Classes</span></label>
+                                <label><input type="checkbox" name="activities" value="other" id="activity-other"> <span data-i18n="activities.other.title">Other Opportunities</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.sendBtn">Send Message</button>
                     </form>
@@ -389,6 +415,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -432,12 +459,31 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+    <script src="/pageLoader.js"></script>
+    
     <script>
         // Initialize language on page load
         if (typeof languageManager !== 'undefined') {
             languageManager.updateLanguageSelector();
         }
+        
+        // Handle activity pre-selection from URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const activity = urlParams.get('activity');
+            if (activity) {
+                const checkbox = document.getElementById('activity-' + activity);
+                if (checkbox) {
+                    checkbox.checked = true;
+                    // Scroll to contact form
+                    setTimeout(() => {
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
     </script>
+
 </body>
 </html>

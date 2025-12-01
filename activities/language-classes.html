@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Busca Cristo - LDS Church{% endblock %}</title>
+    <title>Language Classes - Busca Cristo LDS Church</title>
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,22 +19,22 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#home{% else %}/#home{% endif %}" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="/#home" class="nav-link" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#activities{% else %}/#activities{% endif %}" class="nav-link" data-i18n="nav.activities">Activities</a>
+                    <a href="/#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#doctrine{% else %}/#doctrine{% endif %}" class="nav-link" data-i18n="nav.faith">Our Faith</a>
+                    <a href="/#doctrine" class="nav-link" data-i18n="nav.faith">Our Faith</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#missionaries{% else %}/#missionaries{% endif %}" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
+                    <a href="/#missionaries" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#locations{% else %}/#locations{% endif %}" class="nav-link" data-i18n="nav.locations">Locations</a>
+                    <a href="/#locations" class="nav-link" data-i18n="nav.locations">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% if is_index_page %}#contact{% else %}/#contact{% endif %}" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    <a href="/#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
             <div class="language-selector-container">
@@ -53,9 +53,60 @@
         </div>
     </nav>
 
-    {% block breadcrumb %}{% endblock %}
+    
 
-    {% block content %}{% endblock %}
+    
+    <!-- Content Page -->
+    <section class="doctrine-page" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/language.avif'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="doctrine-header">
+                <h1 data-i18n="activitiesDetail.service.title">Language Classes</h1>
+                <p class="subtitle" data-i18n="activities.service.desc">Learn Spanish and English in a supportive community environment</p>
+            </div>
+
+            <div class="doctrine-content">
+                <a href="/#activities" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="modal.backToActivities">
+                        Back to Activities
+                    </span>
+                </a>
+
+                
+<div class="doctrine-section">
+    <h2 data-i18n="activitiesDetail.service.title">Language Classes</h2>
+    <p data-i18n="activitiesDetail.service.desc">
+        Improve your Spanish and English skills through free classes designed for all levels. Our classes focus on practical conversation, grammar, and useful vocabulary for everyday situations. Join a learning community where you can practice both languages while meeting new people.
+    </p>
+</div>
+
+
+                
+                <div class="related-topics">
+                    <h3 data-i18n="activitiesDetail.related">Related Activities</h3>
+                    <div class="related-links">
+                        
+                        <a href="/activities/worship-services.html" class="related-link">Church Services</a>
+                        
+                        <a href="/activities/young-adult-activities.html" class="related-link">Young Adult Activities</a>
+                        
+                        <a href="/activities/other-opportunities.html" class="related-link">Other Opportunities</a>
+                        
+                    </div>
+                </div>
+                
+
+                <div class="contact-cta">
+                    <a href="/#contact?activity=service" class="contact-cta-button">
+                        
+                        <span data-i18n="activitiesDetail.wantToParticipate">Want to participate? Then get in contact with us here</span>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -68,10 +119,10 @@
                 <div class="footer-section">
                     <h3 data-i18n="footer.quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="{% if is_index_page %}#home{% else %}/#home{% endif %}" data-i18n="nav.home">Home</a></li>
-                        <li><a href="{% if is_index_page %}#activities{% else %}/#activities{% endif %}" data-i18n="nav.activities">Activities</a></li>
-                        <li><a href="{% if is_index_page %}#doctrine{% else %}/#doctrine{% endif %}" data-i18n="nav.faith">Our Faith</a></li>
-                        <li><a href="{% if is_index_page %}#locations{% else %}/#locations{% endif %}" data-i18n="nav.locations">Locations</a></li>
+                        <li><a href="/#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="/#activities" data-i18n="nav.activities">Activities</a></li>
+                        <li><a href="/#doctrine" data-i18n="nav.faith">Our Faith</a></li>
+                        <li><a href="/#locations" data-i18n="nav.locations">Locations</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -101,7 +152,6 @@
 
     <script src="/script.js"></script>
     <script src="/pageLoader.js"></script>
-    {% block extra_scripts %}{% endblock %}
+    
 </body>
 </html>
-

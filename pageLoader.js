@@ -88,13 +88,15 @@ class PageLoader {
             });
         }
 
-        // Update contact CTA link - use relative path
+        // Update contact CTA link - use index.html for proper hash navigation
         const contactCta = document.querySelector('.contact-cta-button');
         if (contactCta) {
             if (source === 'activities') {
-                contactCta.href = basePath + `#contact?activity=${metadata.page_key}`;
+                // For subdirectory pages, use index.html to ensure hash navigation works
+                contactCta.href = isSubdirectory ? `../index.html#contact?activity=${metadata.page_key}` : `#contact?activity=${metadata.page_key}`;
             } else {
-                contactCta.href = basePath + '#contact';
+                // For doctrine pages
+                contactCta.href = isSubdirectory ? '../index.html#contact' : '#contact';
             }
         }
     }

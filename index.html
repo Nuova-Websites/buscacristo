@@ -385,17 +385,34 @@
             languageManager.updateLanguageSelector();
         }
         
-        // Handle activity pre-selection from URL parameter
+        // Handle activity pre-selection from URL parameter (can be in hash or query string)
         document.addEventListener('DOMContentLoaded', function() {
+            let activity = null;
+            
+            // Check query string first
             const urlParams = new URLSearchParams(window.location.search);
-            const activity = urlParams.get('activity');
+            activity = urlParams.get('activity');
+            
+            // If not in query string, check hash (for links from subdirectory pages)
+            if (!activity && window.location.hash) {
+                const hash = window.location.hash.substring(1); // Remove #
+                if (hash.includes('?')) {
+                    const hashParts = hash.split('?');
+                    const hashParams = new URLSearchParams(hashParts[1]);
+                    activity = hashParams.get('activity');
+                }
+            }
+            
             if (activity) {
                 const checkbox = document.getElementById('activity-' + activity);
                 if (checkbox) {
                     checkbox.checked = true;
                     // Scroll to contact form
                     setTimeout(() => {
-                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        const contactSection = document.getElementById('contact');
+                        if (contactSection) {
+                            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
                     }, 100);
                 }
             }

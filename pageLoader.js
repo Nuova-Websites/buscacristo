@@ -7,8 +7,11 @@ class PageLoader {
 
     async init() {
         // Load page metadata
+        // Use relative path - works for both root and subdirectory deployments
+        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+        const metadataPath = basePath ? `${basePath}/page-metadata.json` : 'page-metadata.json';
         try {
-            const response = await fetch('/page-metadata.json');
+            const response = await fetch(metadataPath);
             if (response.ok) {
                 this.pageMetadata = await response.json();
             }

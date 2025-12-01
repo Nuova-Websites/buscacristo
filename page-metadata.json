@@ -3,7 +3,7 @@
     "worship-services": {
       "title_i18n": "activitiesDetail.worship.title",
       "subtitle_i18n": "activities.worship.desc",
-      "background_image": "/images/church.jpg",
+      "background_image": "images/church.jpg",
       "page_key": "worship",
       "related_links": [
         {
@@ -23,7 +23,7 @@
     "youth-programs": {
       "title_i18n": "activitiesDetail.youth.title",
       "subtitle_i18n": "activities.youth.desc",
-      "background_image": "/images/youth.avif",
+      "background_image": "images/youth.avif",
       "page_key": "youth",
       "related_links": [
         {
@@ -43,7 +43,7 @@
     "family-activities": {
       "title_i18n": "activitiesDetail.family.title",
       "subtitle_i18n": "activities.family.desc",
-      "background_image": "/images/family.jpg",
+      "background_image": "images/family.jpg",
       "page_key": "family",
       "related_links": [
         {
@@ -63,7 +63,7 @@
     "young-adult-activities": {
       "title_i18n": "activitiesDetail.education.title",
       "subtitle_i18n": "activities.education.desc",
-      "background_image": "/images/young-adult.avif",
+      "background_image": "images/young-adult.avif",
       "page_key": "education",
       "related_links": [
         {
@@ -83,7 +83,7 @@
     "language-classes": {
       "title_i18n": "activitiesDetail.service.title",
       "subtitle_i18n": "activities.service.desc",
-      "background_image": "/images/language.avif",
+      "background_image": "images/language.avif",
       "page_key": "service",
       "related_links": [
         {
@@ -103,7 +103,7 @@
     "other-opportunities": {
       "title_i18n": "activitiesDetail.other.title",
       "subtitle_i18n": "activities.other.desc",
-      "background_image": "/images/other-activities.jpeg",
+      "background_image": "images/other-activities.jpeg",
       "page_key": "other",
       "related_links": [
         {
@@ -125,7 +125,7 @@
     "baptism": {
       "title_i18n": "doctrinePages.baptism.title",
       "subtitle_i18n": "doctrinePages.baptism.subtitle",
-      "background_image": "/images/bautismo.jpeg",
+      "background_image": "images/bautismo.jpeg",
       "page_key": "baptism",
       "related_links": [
         {
@@ -149,7 +149,7 @@
     "jesus-christ": {
       "title_i18n": "doctrinePages.jesusChrist.title",
       "subtitle_i18n": "doctrinePages.jesusChrist.subtitle",
-      "background_image": "/images/jesus.webp",
+      "background_image": "images/jesus.webp",
       "page_key": "jesus-christ",
       "related_links": [
         {
@@ -169,7 +169,7 @@
     "book-of-mormon": {
       "title_i18n": "doctrinePages.bookOfMormon.title",
       "subtitle_i18n": "doctrinePages.bookOfMormon.subtitle",
-      "background_image": "/images/bookofmormonnew.jpg",
+      "background_image": "images/bookofmormonnew.jpg",
       "page_key": "book-of-mormon",
       "related_links": [
         {
@@ -189,7 +189,7 @@
     "eternal-families": {
       "title_i18n": "doctrinePages.eternalFamilies.title",
       "subtitle_i18n": "doctrinePages.eternalFamilies.subtitle",
-      "background_image": "/images/family.jpg",
+      "background_image": "images/family.jpg",
       "page_key": "eternal-families",
       "related_links": [
         {
@@ -209,7 +209,7 @@
     "living-prophets": {
       "title_i18n": "doctrinePages.livingProphets.title",
       "subtitle_i18n": "doctrinePages.livingProphets.subtitle",
-      "background_image": "/images/prophet.jpeg",
+      "background_image": "images/prophet.jpeg",
       "page_key": "living-prophets",
       "related_links": [
         {
@@ -229,7 +229,7 @@
     "plan-of-salvation": {
       "title_i18n": "doctrinePages.planOfSalvation.title",
       "subtitle_i18n": "doctrinePages.planOfSalvation.subtitle",
-      "background_image": "/images/salvation.jpg",
+      "background_image": "images/salvation.jpg",
       "page_key": "plan-of-salvation",
       "related_links": [
         {

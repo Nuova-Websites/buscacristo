@@ -4,7 +4,7 @@
 
 {% block content %}
     <!-- Content Page -->
-    <section class="doctrine-page" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ background_image }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <section class="doctrine-page" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ base_path }}{{ background_image }}'); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="container">
             <div class="doctrine-header">
                 <h1 data-i18n="{{ title_i18n }}">{{ page_title }}</h1>
@@ -12,7 +12,7 @@
             </div>
 
             <div class="doctrine-content">
-                <a href="{% if source == 'activities' %}/#activities{% else %}/#doctrine{% endif %}" class="back-button">
+                <a href="{{ base_path }}{% if source == 'activities' %}#activities{% else %}#doctrine{% endif %}" class="back-button">
                     <i class="fas fa-arrow-left"></i>
                     <span data-i18n="{% if source == 'activities' %}modal.backToActivities{% else %}modal.backToFaith{% endif %}">
                         {% if source == 'activities' %}Back to Activities{% else %}Back to Our Faith{% endif %}
@@ -26,7 +26,7 @@
                     <h3 data-i18n="activitiesDetail.related">Related Activities</h3>
                     <div class="related-links">
                         {% for link in related_links %}
-                        <a href="/activities/{{ link.url }}" class="related-link">{{ link.text }}</a>
+                        <a href="{{ base_path }}activities/{{ link.url }}" class="related-link">{{ link.text }}</a>
                         {% endfor %}
                     </div>
                 </div>
@@ -35,14 +35,14 @@
                     <h3 data-i18n="doctrinePages.jesusChrist.related">Related Topics</h3>
                     <div class="related-links">
                         {% for link in related_links %}
-                        <a href="/doctrine/{{ link.url }}" class="related-link">{{ link.text }}</a>
+                        <a href="{{ base_path }}doctrine/{{ link.url }}" class="related-link">{{ link.text }}</a>
                         {% endfor %}
                     </div>
                 </div>
                 {% endif %}
 
                 <div class="contact-cta">
-                    <a href="/#contact{% if source == 'activities' %}?activity={{ page_key }}{% endif %}" class="contact-cta-button">
+                    <a href="{{ base_path }}#contact{% if source == 'activities' %}?activity={{ page_key }}{% endif %}" class="contact-cta-button">
                         {% if source == 'activities' %}
                         <span data-i18n="activitiesDetail.wantToParticipate">Want to participate? Then get in contact with us here</span>
                         {% else %}

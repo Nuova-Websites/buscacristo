@@ -52,7 +52,10 @@ class LanguageManager {
         }
 
         // Create loading promise
-        const loadPromise = fetch(`/translations/${lang}.json`)
+        // Use relative path - works for both root and subdirectory deployments
+        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+        const translationsPath = basePath ? `${basePath}/translations/${lang}.json` : `translations/${lang}.json`;
+        const loadPromise = fetch(translationsPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to load ${lang}.json`);

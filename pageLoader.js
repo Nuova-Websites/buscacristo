@@ -8,8 +8,9 @@ class PageLoader {
     async init() {
         // Load page metadata
         // Use relative path - works for both root and subdirectory deployments
-        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
-        const metadataPath = basePath ? `${basePath}/page-metadata.json` : 'page-metadata.json';
+        const pathParts = window.location.pathname.split('/').filter(p => p);
+        const isSubdirectory = pathParts.length > 1; // More than just the filename
+        const metadataPath = isSubdirectory ? '../page-metadata.json' : 'page-metadata.json';
         try {
             const response = await fetch(metadataPath);
             if (response.ok) {
@@ -57,41 +58,43 @@ class PageLoader {
         const metadata = this.pageMetadata[source]?.[pageKey];
         if (!metadata) return;
 
-        // Update background image if needed
-        const doctrinePage = document.querySelector('.doctrine-page');
-        if (doctrinePage && metadata.background_image) {
-            doctrinePage.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${metadata.background_image}')`;
-        }
+        // Determine base path for relative links
+        const pathParts = window.location.pathname.split('/').filter(p => p);
+        const isSubdirectory = pathParts.length > 1;
+        const basePath = isSubdirectory ? '../' : '';
 
-        // Update back button link
+        // Don't update background image - it's already correctly set in the HTML
+        // The background image is set inline in the HTML with the correct relative path
+
+        // Update back button link - use relative path
         const backButton = document.querySelector('.back-button');
         if (backButton) {
             if (source === 'activities') {
-                backButton.href = '/#activities';
+                backButton.href = basePath + '#activities';
             } else {
-                backButton.href = '/#doctrine';
+                backButton.href = basePath + '#doctrine';
             }
         }
 
-        // Update related links
+        // Update related links - use relative paths
         const relatedLinks = document.querySelectorAll('.related-link');
         if (relatedLinks.length > 0 && metadata.related_links) {
             relatedLinks.forEach((link, index) => {
                 if (index < metadata.related_links.length) {
                     const linkData = metadata.related_links[index];
-                    link.href = `/${source}/${linkData.url}`;
+                    link.href = basePath + `${source}/${linkData.url}`;
                     link.textContent = linkData.text;
                 }
             });
         }
 
-        // Update contact CTA link
+        // Update contact CTA link - use relative path
         const contactCta = document.querySelector('.contact-cta-button');
         if (contactCta) {
             if (source === 'activities') {
-                contactCta.href = `/#contact?activity=${metadata.page_key}`;
+                contactCta.href = basePath + `#contact?activity=${metadata.page_key}`;
             } else {
-                contactCta.href = '/#contact';
+                contactCta.href = basePath + '#contact';
             }
         }
     }

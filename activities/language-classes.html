@@ -10,48 +10,7 @@
     <script src="../languageManager.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="../images/faro.png" alt="Busca Cristo Logo" class="logo-image">
-                <span>Busca Cristo</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="../#home" class="nav-link" data-i18n="nav.home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../#doctrine" class="nav-link" data-i18n="nav.faith">Our Faith</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../#missionaries" class="nav-link" data-i18n="nav.missionaries">Missionaries</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../#locations" class="nav-link" data-i18n="nav.locations">Locations</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-                </li>
-            </ul>
-            <div class="language-selector-container">
-                <select id="languageSelector" class="language-selector" onchange="changeLanguage(this.value)">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="ca">Català</option>
-                    <option value="fr">Français</option>
-                </select>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <div id="header-container"></div>
 
     
 
@@ -108,50 +67,11 @@
     </section>
 
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 data-i18n="footer.about">Busca Cristo</h3>
-                    <p data-i18n="footer.aboutText">Come unto Christ and be perfected in Him through faith, repentance, baptism, and the gift of the Holy Ghost.</p>
-                </div>
-                <div class="footer-section">
-                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
-                    <ul>
-                        <li><a href="../#home" data-i18n="nav.home">Home</a></li>
-                        <li><a href="../#activities" data-i18n="nav.activities">Activities</a></li>
-                        <li><a href="../#doctrine" data-i18n="nav.faith">Our Faith</a></li>
-                        <li><a href="../#locations" data-i18n="nav.locations">Locations</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3 data-i18n="footer.resources">Resources</h3>
-                    <ul>
-                        <li><a href="https://www.churchofjesuschrist.org" target="_blank">Church Website</a></li>
-                        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a></li>
-                        <li><a href="https://www.churchofjesuschrist.org/temples" target="_blank">Temples</a></li>
-                        <li><a href="https://www.churchofjesuschrist.org/study/manual" target="_blank">Manuals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3 data-i18n="footer.follow">Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p data-i18n="footer.copyright">&copy; 2024 Busca Cristo - The Church of Jesus Christ of Latter-day Saints. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <script src="../script.js"></script>
     <script src="../pageLoader.js"></script>
+    <script src="../loadComponents.js"></script>
     
 </body>
 </html>

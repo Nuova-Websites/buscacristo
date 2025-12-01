@@ -53,8 +53,9 @@ class LanguageManager {
 
         // Create loading promise
         // Use relative path - works for both root and subdirectory deployments
-        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
-        const translationsPath = basePath ? `${basePath}/translations/${lang}.json` : `translations/${lang}.json`;
+        const pathParts = window.location.pathname.split('/').filter(p => p);
+        const isSubdirectory = pathParts.length > 1; // More than just the filename
+        const translationsPath = isSubdirectory ? `../translations/${lang}.json` : `translations/${lang}.json`;
         const loadPromise = fetch(translationsPath)
             .then(response => {
                 if (!response.ok) {

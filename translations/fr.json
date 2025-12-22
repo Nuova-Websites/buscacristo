@@ -42,8 +42,8 @@
       "btn": "Voir les Activités"
     },
     "other": {
-      "title": "Autres Opportunités",
-      "desc": "Activités et programmes supplémentaires disponibles dans nos emplacements",
+      "title": "Discussions Missionnaires",
+      "desc": "Apprenez-en plus sur Jésus-Christ, le Livre de Mormon et l'Évangile rétabli grâce à des discussions gratuites avec nos missionnaires",
       "btn": "Voir les Activités"
     }
   },
@@ -146,6 +146,7 @@
     "family": "Activités Familiales",
     "education": "Éducation Religieuse",
     "service": "Cours d'Anglais",
+    "other": "Discussions Missionnaires",
     "temple": "Activités du Temple",
     "message": "Questions ou Commentaires Supplémentaires",
     "messagePlaceholder": "Veuillez nous faire savoir si vous avez des questions spécifiques sur les activités ou si vous souhaitez en savoir plus sur un programme particulier.",
@@ -183,8 +184,8 @@
       "activities": []
     },
     "other": {
-      "title": "Autres Opportunités",
-      "desc": "Découvrez des activités et des programmes supplémentaires disponibles dans nos emplacements. Contenu détaillé à venir bientôt.",
+      "title": "Discussions Missionnaires",
+      "desc": "Nos missionnaires sont là pour vous aider à en apprendre davantage sur Jésus-Christ, le Livre de Mormon et l'Évangile rétabli. Ces discussions gratuites couvrent des sujets tels que le Plan de Salut, la Restauration de l'Évangile et comment les familles peuvent être ensemble pour toujours. Que vous soyez curieux de nos croyances ou que vous cherchiez des conseils spirituels, nos missionnaires sont prêts à répondre à vos questions et à partager des messages d'espoir et de paix.",
       "activities": []
     },
     "availableActivities": "Activités Disponibles:",

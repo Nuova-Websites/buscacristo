@@ -42,8 +42,8 @@
       "btn": "View Activities"
     },
     "other": {
-      "title": "Other Opportunities",
-      "desc": "Additional activities and programs available at our locations",
+      "title": "Missionary Discussions",
+      "desc": "Learn about Jesus Christ, the Book of Mormon, and the restored gospel through free discussions with our missionaries",
       "btn": "View Activities"
     }
   },
@@ -111,9 +111,10 @@
     "address": "123 Faith Street, Barcelona, Spain",
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "Your Email",
-    "messagePlaceholder": "Your Message",
-    "sendBtn": "Send Message",
-    "activitiesLabel": "Activities of Interest"
+      "messagePlaceholder": "Your Message",
+      "sendBtn": "Send Message",
+      "activitiesLabel": "Activities of Interest",
+      "missionaryLessons": "Missionary Lessons"
   },
   "footer": {
     "about": "Busca Cristo",
@@ -146,7 +147,7 @@
     "family": "Family Activities",
     "education": "Religious Education",
     "service": "English Classes",
-    "other": "Other Opportunities",
+    "other": "Missionary Discussions",
     "message": "Additional Questions or Comments",
     "messagePlaceholder": "Please let us know if you have any specific questions about activities or would like to know more about any particular program.",
     "submitBtn": "Get Location Details"
@@ -182,8 +183,8 @@
       "activities": []
     },
     "other": {
-      "title": "Other Opportunities",
-      "desc": "Discover additional activities and programs available at our locations. Detailed content coming soon.",
+      "title": "Missionary Discussions",
+      "desc": "Our missionaries are here to help you learn about Jesus Christ, the Book of Mormon, and the restored gospel. These free discussions cover topics such as the Plan of Salvation, the Restoration of the Gospel, and how families can be together forever. Whether you're curious about our beliefs or seeking spiritual guidance, our missionaries are ready to answer your questions and share messages of hope and peace.",
       "activities": []
     },
     "availableActivities": "Available Activities:",
@@ -194,6 +195,7 @@
     "fillFields": "Please fill in all fields.",
     "validEmail": "Please enter a valid email address.",
     "thankYou": "Thank you for your message! We will get back to you soon.",
+    "submitError": "There was an error submitting your form. Please try again later.",
     "locationInfo": "Thank you! We will send you location-specific information within 24 hours.",
     "enterLocation": "Please enter a location to search.",
     "noChurches": "No LDS churches found in that area.",

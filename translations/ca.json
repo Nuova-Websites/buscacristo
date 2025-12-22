@@ -42,8 +42,8 @@
       "btn": "Veure Activitats"
     },
     "other": {
-      "title": "Altres Oportunitats",
-      "desc": "Activitats i programes addicionals disponibles a les nostres ubicacions",
+      "title": "Discussions Missionals",
+      "desc": "Aprèn sobre Jesucrist, el Llibre del Mormó i l'evangeli restaurat a través de discussions gratuïtes amb els nostres missioners",
       "btn": "Veure Activitats"
     }
   },
@@ -146,6 +146,7 @@
     "family": "Activitats Familiars",
     "education": "Educació Religiosa",
     "service": "Classes d'Anglès",
+    "other": "Discussions Missionals",
     "temple": "Activitats del Temple",
     "message": "Preguntes o Comentaris Addicionals",
     "messagePlaceholder": "Si us plau, fes-nos-ho saber si tens preguntes específiques sobre activitats o t'agradaria saber més sobre algun programa en particular.",
@@ -183,8 +184,8 @@
       "activities": []
     },
     "other": {
-      "title": "Altres Oportunitats",
-      "desc": "Descobreix activitats i programes addicionals disponibles a les nostres ubicacions. Contingut detallat disponible aviat.",
+      "title": "Discussions Missionals",
+      "desc": "Els nostres missioners estan aquí per ajudar-te a aprendre sobre Jesucrist, el Llibre del Mormó i l'evangeli restaurat. Aquestes discussions gratuïtes cobreixen temes com el Pla de Salvació, la Restauració de l'Evangeli i com les famílies poden estar juntes per sempre. Tant si tens curiositat sobre les nostres creences com si busques orientació espiritual, els nostres missioners estan preparats per respondre les teves preguntes i compartir missatges d'esperança i pau.",
       "activities": []
     },
     "availableActivities": "Activitats Disponibles:",

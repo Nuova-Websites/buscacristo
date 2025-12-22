@@ -44,25 +44,44 @@
                         languageManager.updateLanguageSelector();
                     }
                     
-                    // Re-initialize mobile menu
-                    const hamburger = headerContainer.querySelector('.hamburger');
-                    const navMenu = headerContainer.querySelector('.nav-menu');
-                    if (hamburger && navMenu) {
-                        hamburger.addEventListener('click', () => {
-                            hamburger.classList.toggle('active');
-                            navMenu.classList.toggle('active');
+                    // Re-initialize mobile menu - use the function from script.js if available
+                    if (typeof initializeMobileMenu === 'function') {
+                        setTimeout(initializeMobileMenu, 100);
+                    } else {
+                        // Fallback: initialize directly
+                        const hamburger = headerContainer.querySelector('.hamburger');
+                        const navMenu = headerContainer.querySelector('.nav-menu');
+                        if (hamburger && navMenu) {
+                            hamburger.addEventListener('click', () => {
+                                hamburger.classList.toggle('active');
+                                navMenu.classList.toggle('active');
+                            });
+                        }
+                        
+                        // Close mobile menu when clicking on a link
+                        headerContainer.querySelectorAll('.nav-link').forEach(link => {
+                            link.addEventListener('click', () => {
+                                if (hamburger && navMenu) {
+                                    hamburger.classList.remove('active');
+                                    navMenu.classList.remove('active');
+                                }
+                            });
                         });
                     }
                     
-                    // Close mobile menu when clicking on a link
-                    headerContainer.querySelectorAll('.nav-link').forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (hamburger && navMenu) {
-                                hamburger.classList.remove('active');
-                                navMenu.classList.remove('active');
-                            }
-                        });
-                    });
+                    // Initialize navbar scroll handler after header loads
+                    setTimeout(() => {
+                        const navbar = headerContainer.querySelector('.navbar');
+                        if (navbar && typeof window.updateNavbarScrollState === 'function') {
+                            window.updateNavbarScrollState();
+                            // Trigger scroll to update state
+                            window.dispatchEvent(new Event('scroll'));
+                        }
+                        // Also try to initialize scroll handler if not already done
+                        if (typeof initializeScrollHandler === 'function' && !window.scrollHandlerInitialized) {
+                            initializeScrollHandler();
+                        }
+                    }, 150);
                 }
             })
             .catch(error => {

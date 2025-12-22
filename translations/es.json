@@ -42,8 +42,8 @@
       "btn": "Ver Actividades"
     },
     "other": {
-      "title": "Otras Oportunidades",
-      "desc": "Actividades y programas adicionales disponibles en nuestras ubicaciones",
+      "title": "Discusiones Misionales",
+      "desc": "Aprende sobre Jesucristo, el Libro de Mormón y el evangelio restaurado a través de discusiones gratuitas con nuestros misioneros",
       "btn": "Ver Actividades"
     }
   },
@@ -146,7 +146,7 @@
     "family": "Actividades Familiares",
     "education": "Educación Religiosa",
     "service": "Clases de Inglés",
-    "other": "Otras Oportunidades",
+    "other": "Discusiones Misionales",
     "message": "Preguntas o Comentarios Adicionales",
     "messagePlaceholder": "Por favor, háznoslo saber si tienes preguntas específicas sobre actividades o te gustaría saber más sobre algún programa en particular.",
     "submitBtn": "Obtener Detalles de Ubicación",
@@ -183,8 +183,8 @@
       "activities": []
     },
     "other": {
-      "title": "Otras Oportunidades",
-      "desc": "Descubre actividades y programas adicionales disponibles en nuestras ubicaciones. Contenido detallado disponible próximamente.",
+      "title": "Discusiones Misionales",
+      "desc": "Nuestros misioneros están aquí para ayudarte a aprender sobre Jesucristo, el Libro de Mormón y el evangelio restaurado. Estas discusiones gratuitas cubren temas como el Plan de Salvación, la Restauración del Evangelio y cómo las familias pueden estar juntas para siempre. Ya sea que tengas curiosidad sobre nuestras creencias o busques orientación espiritual, nuestros misioneros están listos para responder tus preguntas y compartir mensajes de esperanza y paz.",
       "activities": []
     },
     "availableActivities": "Actividades Disponibles:",

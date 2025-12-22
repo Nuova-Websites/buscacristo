@@ -134,6 +134,13 @@ body:has(.doctrine-page) .navbar {
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
 }
 
+.language-selector option {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+    font-weight: 500;
+}
+
 .navbar.scrolled .language-selector {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
@@ -557,8 +564,12 @@ body:has(.doctrine-page) .navbar {
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .checkbox-group label {
@@ -566,6 +577,73 @@ body:has(.doctrine-page) .navbar {
     align-items: center;
     font-weight: normal;
     margin-bottom: 0;
+    color: #333333;
+}
+
+/* Contact form checkbox labels - make text readable on dark background */
+.contact .checkbox-group {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact .checkbox-group label {
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.contact .checkbox-group label:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact .checkbox-group label:active {
+    transform: translateY(0);
+}
+
+.contact .checkbox-group input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 1rem;
+    accent-color: #D4AF37;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.contact .checkbox-group input[type="checkbox"]:checked + span {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+.contact .checkbox-group label:has(input[type="checkbox"]:checked) {
+    border-color: rgba(212, 175, 55, 0.5);
+    background: rgba(212, 175, 55, 0.1);
+}
+
+/* Fallback for browsers that don't support :has() */
+.contact .checkbox-group input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.contact .checkbox-group label span {
+    color: #ffffff;
+    flex: 1;
+    line-height: 1.5;
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -1157,6 +1235,11 @@ body:has(.doctrine-page) .navbar {
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form .form-group label {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .form-group {

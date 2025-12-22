@@ -582,12 +582,12 @@ body:has(.doctrine-page) .navbar {
 
 /* Contact form checkbox labels - make text readable on dark background */
 .contact .checkbox-group {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    border: none;
     border-radius: 12px;
     padding: 1.5rem;
     margin-top: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
 }
 
 .contact .checkbox-group label {
@@ -973,84 +973,314 @@ body:has(.doctrine-page) .navbar {
     color: #1A4B5C;
 }
 
-/* Locations Section */
+/* Locations Section - Full Screen Image Hero */
 .locations {
-    padding: 80px 0;
-    background: white;
-}
-
-.locations-intro {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Location Finder Container - Two Column Layout */
-.location-finder-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-top: 2rem;
+    padding: 0;
     background: #f8f9fa;
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-.location-image-container {
+/* Full Screen Image */
+.location-hero-image {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 900px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.location-image-overlay-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Content Card - Positioned inside image */
+.location-hero-image .container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.location-church-image {
+.location-content-card {
+    position: relative;
+    background: transparent;
+    border-radius: 24px;
+    padding: 2.625rem 3rem;
+    box-shadow: none;
+    max-width: 675px;
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    object-fit: cover;
+    margin: 0 auto;
 }
 
-.location-controls {
+.location-content-header {
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+.location-icon-badge {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #1A4B5C, #2C5F5F);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 10px 30px rgba(26, 75, 92, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.location-icon-badge:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.location-icon-badge i {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.location-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A4B5C;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+
+.location-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #5a6c7d;
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-action-section {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .location-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
+    gap: 0.75rem;
+    padding: 1.25rem 3rem;
+    font-weight: 600;
+    font-size: 1.15rem;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #1A4B5C, #2C5F5F);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 14px;
     cursor: pointer;
-    font-size: 1rem;
     text-decoration: none;
+    box-shadow: 0 8px 25px rgba(26, 75, 92, 0.35);
+    position: relative;
+    overflow: hidden;
+    min-width: 280px;
+}
+
+.location-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    transition: left 0.6s ease;
+}
+
+.location-btn:hover::before {
+    left: 100%;
 }
 
 .location-btn:hover:not(:disabled) {
     background: linear-gradient(135deg, #2C5F5F, #1A4B5C) !important;
     color: white !important;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(26, 75, 92, 0.45);
+}
+
+.location-btn:active:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 75, 92, 0.3);
+    box-shadow: 0 8px 25px rgba(26, 75, 92, 0.35);
+}
+
+.location-btn i:last-child {
+    transition: transform 0.3s ease;
+}
+
+.location-btn:hover i:last-child {
+    transform: translateX(6px);
 }
 
 .location-btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+}
+
+/* Features Grid */
+.location-features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.location-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.location-feature:hover {
+    background: transparent;
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.location-feature i {
+    font-size: 1.5rem;
+    color: #1A4B5C;
+    margin-bottom: 0.25rem;
+}
+
+.location-feature span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5a6c7d;
+    text-align: center;
+}
+
+/* Responsive Design for Locations Section */
+@media (max-width: 968px) {
+    .location-hero-image {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .location-hero-image .container {
+        padding: 30px 15px;
+    }
+    
+    .location-content-card {
+        padding: 2.25rem 1.875rem;
+        border-radius: 20px;
+    }
+    
+    .location-title {
+        font-size: 2rem;
+    }
+    
+    .location-description {
+        font-size: 1.05rem;
+    }
+    
+    .location-features {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .location-hero-image {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .location-hero-image .container {
+        padding: 20px 15px;
+    }
+    
+    .location-content-card {
+        padding: 1.875rem 1.125rem;
+        border-radius: 18px;
+    }
+    
+    .location-icon-badge {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .location-icon-badge i {
+        font-size: 1.9rem;
+    }
+    
+    .location-title {
+        font-size: 1.75rem;
+    }
+    
+    .location-description {
+        font-size: 1rem;
+    }
+    
+    .location-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        min-width: 100%;
+    }
+    
+    .location-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .location-feature {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        min-width: auto;
+    }
+    
+    .location-feature i {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
 }
 
 .search-form {

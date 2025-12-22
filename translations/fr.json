@@ -95,6 +95,7 @@
   },
   "locations": {
     "title": "Trouvez une Église Près de Vous",
+    "intro": "<strong>Vous cherchez plus de paix ou de joie dans votre vie? Découvrez les églises de votre région et rejoignez-nous pour les services de culte, les activités et les événements communautaires. Trouvez le lieu de réunion le plus proche et connectez-vous avec votre congrégation locale.</strong>",
     "useLocation": "Utiliser Ma Position",
     "or": "ou",
     "placeholder": "Entrez votre ville, adresse ou code postal",
@@ -110,7 +111,8 @@
     "email": "info@buscacristo.org",
     "address": "123 Rue de la Foi, Barcelone, Espagne",
     "namePlaceholder": "Votre Nom",
-    "emailPlaceholder": "Votre Email",
+    "directionPlaceholder": "Votre Adresse",
+    "phonePlaceholder": "Votre Numéro de Téléphone",
     "messagePlaceholder": "Votre Message",
     "sendBtn": "Envoyer le Message",
     "activitiesLabel": "Activités d'Intérêt"

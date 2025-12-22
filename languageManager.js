@@ -163,7 +163,12 @@ class LanguageManager {
                     element.textContent = translation;
                 }
             } else {
-                element.textContent = translation;
+                // Check if translation contains HTML tags
+                if (translation.includes('<') && translation.includes('>')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
             }
         });
 

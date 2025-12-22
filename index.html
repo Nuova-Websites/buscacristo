@@ -313,17 +313,25 @@
 
     <!-- Locations Section -->
     <section id="locations" class="locations">
-        <div class="container">
-            <h2 class="section-title" data-i18n="locations.title">Find a Church Near You</h2>            
-            <div class="location-finder-container">
-                <div class="location-image-container">
-                    <img src="images/church.jpg" alt="Church" class="location-church-image">
-                </div>
-                <div class="location-controls">
-                    <button onclick="findChurch()" class="btn btn-primary location-btn">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span data-i18n="locations.findBtn">Find a Church</span>
-                    </button>
+        <div class="location-hero-image">
+            <img src="images/church1.jpg" alt="Church" class="location-full-image">
+            <div class="location-image-overlay-gradient"></div>
+            <div class="container">
+                <div class="location-content-card">
+                    <div class="location-content-header">
+                        <div class="location-icon-badge" onclick="findChurch()" style="cursor: pointer;">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h2 class="location-title" data-i18n="locations.title">Find a Church Near You</h2>
+                        <p class="location-description" data-i18n="locations.intro">Discover LDS churches in your area and join us for worship services, activities, and community events. Find the nearest meetinghouse and connect with your local congregation.</p>
+                    </div>
+                    <div class="location-action-section">
+                        <button onclick="findChurch()" class="btn btn-primary location-btn">
+                            <i class="fas fa-search"></i>
+                            <span data-i18n="locations.findBtn">Find a Church Near Me</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -344,7 +352,10 @@
                             <input type="text" id="contactName" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="contactEmail" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Your Email" required>
+                            <input type="text" id="contactDirection" name="direction" data-i18n-placeholder="contact.directionPlaceholder" placeholder="Your Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="Your Phone Number" required>
                         </div>
                         <div class="form-group">
                             <label data-i18n="contact.activitiesLabel">Activities of Interest</label>

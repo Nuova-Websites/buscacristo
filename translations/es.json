@@ -95,6 +95,7 @@
   },
   "locations": {
     "title": "Encuentra una Iglesia Cerca de Ti",
+    "intro": "<strong>¿Buscas más paz o alegría en tu vida? Descubre iglesias en tu área y únete a nosotros para servicios de adoración, actividades y eventos comunitarios. Encuentra el centro de reuniones más cercano y conéctate con tu congregación local.</strong>",
     "useLocation": "Usar Mi Ubicación",
     "or": "o",
     "placeholder": "Ingresa tu ciudad, dirección o código postal",
@@ -110,7 +111,8 @@
     "email": "info@buscacristo.org",
     "address": "123 Calle de la Fe, Barcelona, España",
     "namePlaceholder": "Tu Nombre",
-    "emailPlaceholder": "Tu Email",
+    "directionPlaceholder": "Tu Dirección",
+    "phonePlaceholder": "Tu Número de Teléfono",
     "messagePlaceholder": "Tu Mensaje",
     "sendBtn": "Enviar Mensaje",
     "activitiesLabel": "Actividades de Interés"

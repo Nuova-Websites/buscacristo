@@ -125,6 +125,14 @@
                     // Re-initialize language manager
                     if (typeof languageManager !== 'undefined') {
                         languageManager.updatePageContent();
+                        updateFooterResourceLinks();
+                    } else {
+                        // If languageManager not ready yet, try again after a short delay
+                        setTimeout(() => {
+                            if (typeof languageManager !== 'undefined') {
+                                updateFooterResourceLinks();
+                            }
+                        }, 200);
                     }
                 }
             })
@@ -138,6 +146,73 @@
                     }
                 }, 500);
             });
+    }
+    
+    // Update footer Resources links based on current language
+    function updateFooterResourceLinks() {
+        if (typeof languageManager === 'undefined') return;
+        
+        const currentLang = languageManager.getCurrentLanguage();
+        // Map our language codes to church website language codes
+        // For Catalan, most pages redirect to Spanish, but Scriptures has Catalan support
+        const langMap = {
+            'en': 'eng',
+            'es': 'spa',
+            'ca': 'spa', // Catalan redirects to Spanish for most pages
+            'fr': 'fra'
+        };
+        const scripturesLangMap = {
+            'en': 'eng',
+            'es': 'spa',
+            'ca': 'cat', // Scriptures has Catalan support
+            'fr': 'fra'
+        };
+        const churchLangCode = langMap[currentLang] || 'eng'; // Default to English
+        const scripturesLangCode = scripturesLangMap[currentLang] || 'eng'; // Default to English
+        
+        // Update Church Website link
+        const churchWebsiteLink = document.getElementById('footer-church-website-link');
+        if (churchWebsiteLink) {
+            churchWebsiteLink.href = `https://www.churchofjesuschrist.org?lang=${churchLangCode}`;
+        }
+        
+        // Update Scriptures link (uses different map for Catalan)
+        const scripturesLink = document.getElementById('footer-scriptures-link');
+        if (scripturesLink) {
+            scripturesLink.href = `https://www.churchofjesuschrist.org/study/scriptures?lang=${scripturesLangCode}`;
+        }
+        
+        // Update Temples link
+        const templesLink = document.getElementById('footer-temples-link');
+        if (templesLink) {
+            templesLink.href = `https://www.churchofjesuschrist.org/temples?lang=${churchLangCode}`;
+        }
+        
+        // Update Locations link
+        const locationsLink = document.getElementById('footer-locations-link');
+        if (locationsLink) {
+            locationsLink.href = `https://www.churchofjesuschrist.org/welcome/find-a-church?lang=${churchLangCode}`;
+        }
+        
+        // Update Missionary "Learn More Online" link
+        const missionaryLearnLink = document.getElementById('missionary-learn-more-link');
+        if (missionaryLearnLink) {
+            missionaryLearnLink.href = `https://www.churchofjesuschrist.org/comeuntochrist?lang=${churchLangCode}`;
+        }
+    }
+    
+    // Listen for language changes to update the links
+    window.addEventListener('languageChanged', function() {
+        updateFooterResourceLinks();
+    });
+    
+    // Also update links when DOM is ready (for links in main page, not just footer)
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(updateFooterResourceLinks, 300);
+        });
+    } else {
+        setTimeout(updateFooterResourceLinks, 300);
     }
     
     // Load components when DOM is ready

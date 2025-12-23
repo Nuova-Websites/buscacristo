@@ -128,7 +128,7 @@
             <div class="activity-types-grid">
                 <div class="activity-type-card" data-activity="worship">
                     <div class="activity-card-image">
-                        <img src="images/church.jpg" alt="Worship Services">
+                        <img src="images/church1.jpg" alt="Worship Services">
                     </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-pray"></i>
@@ -188,7 +188,7 @@
 
                 <div class="activity-type-card" data-activity="other">
                     <div class="activity-card-image">
-                        <img src="images/other-activities.jpeg" alt="Missionary Discussions">
+                        <img src="images/missionaries2.jpg" alt="Missionary Discussions">
                     </div>
                     <div class="activity-type-icon">
                         <i class="fas fa-hands-praying"></i>
@@ -258,34 +258,6 @@
         </div>
     </div>
 
-    <!-- Missionary Form Modal -->
-    <div id="missionaryModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 data-i18n="missionaries.formTitle">Meet with Missionaries</h2>
-                <span class="close" onclick="closeMissionaryForm()" data-i18n="modal.close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p data-i18n="missionaries.formDescription">Fill out the form below and our missionaries will contact you to schedule a meeting.</p>
-                <form id="missionaryForm" class="location-form">
-                    <div class="form-group">
-                        <label for="missionaryName" data-i18n="missionaries.nameLabel">Name *</label>
-                        <input type="text" id="missionaryName" name="name" required data-i18n-placeholder="missionaries.namePlaceholder" placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="missionaryAddress" data-i18n="missionaries.addressLabel">Address *</label>
-                        <input type="text" id="missionaryAddress" name="address" required data-i18n-placeholder="missionaries.addressPlaceholder" placeholder="Your address">
-                    </div>
-                    <div class="form-group">
-                        <label for="missionaryLearnAbout" data-i18n="missionaries.learnAboutLabel">What would you like to learn more about?</label>
-                        <textarea id="missionaryLearnAbout" name="learnAbout" rows="5" data-i18n-placeholder="missionaries.learnAboutPlaceholder" placeholder="Tell us what you're interested in learning about..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-i18n="missionaries.submitBtn">Submit Request</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- Missionaries Section -->
     <section id="missionaries" class="missionaries">
         <div class="container">
@@ -300,8 +272,8 @@
                         These missionaries are here to help you learn about our beliefs, answer your questions, and provide spiritual guidance. They offer free lessons about Jesus Christ, the Book of Mormon, and how families can be together forever.
                     </p>
                     <div class="missionary-cta">
-                        <button onclick="showMissionaryForm()" class="btn btn-primary" data-i18n="missionaries.btnMeet">Meet with Missionaries</button>
-                        <a href="https://www.churchofjesuschrist.org/comeuntochrist" target="_blank" class="btn btn-secondary" data-i18n="missionaries.btnLearn">Learn More Online</a>
+                        <button onclick="window.location.href='#contact?activity=other';" class="btn btn-primary" data-i18n="missionaries.btnMeet">Meet with Missionaries</button>
+                        <a href="https://www.churchofjesuschrist.org/comeuntochrist?lang=eng" target="_blank" class="btn btn-secondary" data-i18n="missionaries.btnLearn" id="missionary-learn-more-link">Learn More Online</a>
                     </div>
                 </div>
                 <div class="missionaries-image">
@@ -340,11 +312,16 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
+                    <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
                     <h3 data-i18n="contact.heading">Get in Touch</h3>
                     <p data-i18n="contact.p">We'd love to hear from you and answer any questions you may have about our church or activities.</p>
+                    <div class="missionary-photos">
+                        <img src="images/missionary1.jpg" alt="Missionary" class="missionary-photo">
+                        <img src="images/missionary2.jpg" alt="Missionary" class="missionary-photo">
+                        <img src="images/missionary3.jpg" alt="Missionary" class="missionary-photo">
+                    </div>
                 </div>
                 <div class="contact-form">
                     <form>
@@ -352,10 +329,18 @@
                             <input type="text" id="contactName" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="contactDirection" name="direction" data-i18n-placeholder="contact.directionPlaceholder" placeholder="Your Address" required>
+                            <div class="direction-input-group">
+                                <input type="text" id="contactDirection" name="direction" data-i18n-placeholder="contact.directionPlaceholder" placeholder="Your Address" required>
+                                <button type="button" id="useLocationBtn" class="use-location-btn" data-i18n="contact.useLocation">Use your location</button>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="contactPhone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="Your Phone Number" required>
+                            <label data-i18n="contact.phoneLabel">Phone Number</label>
+                            <div class="phone-input-group">
+                                <input type="tel" id="contactPhoneCode" name="phoneCode" placeholder="+34" class="phone-code-input" required>
+                                <input type="tel" id="contactPhone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="123 456 789" class="phone-number-input" required>
+                            </div>
+                            <small class="phone-hint" data-i18n="contact.phoneHint">Enter country code with + (e.g., +34) and your phone number</small>
                         </div>
                         <div class="form-group">
                             <label data-i18n="contact.activitiesLabel">Activities of Interest</label>
@@ -369,7 +354,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea id="contactMessage" name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="5" required></textarea>
+                            <label data-i18n="contact.messageLabel">Questions, or comments? (Optional)</label>
+                            <textarea id="contactMessage" name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your Message" rows="2"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.sendBtn">Send Message</button>
                     </form>
@@ -394,9 +380,19 @@
         
         // Handle activity pre-selection and hash navigation to contact section
         function handleContactNavigation() {
-            // Handle activity pre-selection from URL parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const activity = urlParams.get('activity');
+            // Handle activity pre-selection from URL parameter (in hash or search)
+            let activity = null;
+            if (window.location.hash.includes('?')) {
+                // Hash contains query string like #contact?activity=other
+                const hashParts = window.location.hash.split('?');
+                const urlParams = new URLSearchParams(hashParts[1]);
+                activity = urlParams.get('activity');
+            } else {
+                // Check regular search params
+                const urlParams = new URLSearchParams(window.location.search);
+                activity = urlParams.get('activity');
+            }
+            
             if (activity) {
                 const checkbox = document.getElementById('activity-' + activity);
                 if (checkbox) {
@@ -405,7 +401,7 @@
             }
             
             // Handle hash navigation to contact section
-            if (window.location.hash === '#contact') {
+            if (window.location.hash.startsWith('#contact')) {
                 setTimeout(() => {
                     const contactSection = document.getElementById('contact');
                     if (contactSection) {

@@ -347,6 +347,10 @@ body:has(.doctrine-page) .navbar {
     object-position: calc(50% - 100px) center;
 }
 
+.activity-type-card[data-activity="other"] .activity-card-image img {
+    object-position: calc(50% - 50px) center;
+}
+
 .activity-type-card:hover .activity-card-image img {
     transform: scale(1.05);
     filter: brightness(0.5);
@@ -521,7 +525,7 @@ body:has(.doctrine-page) .navbar {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-group label {
@@ -561,6 +565,140 @@ body:has(.doctrine-page) .navbar {
     background-color: #ffffff;
 }
 
+/* Direction input with location button */
+.direction-input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.use-location-btn {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    background-color: #1A4B5C;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.use-location-btn:hover {
+    background-color: #153d4a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.use-location-btn:active {
+    transform: translateY(0);
+}
+
+.use-location-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.7;
+}
+
+.direction-input-group input {
+    flex: 1;
+    padding: 10px 15px;
+}
+
+.use-location-btn {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    background-color: #1A4B5C;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .direction-input-group {
+        flex-direction: column;
+    }
+    
+    .use-location-btn {
+        width: 100%;
+    }
+}
+
+/* Phone input with country code */
+.phone-input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.phone-input-group .phone-code-input {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 90px !important;
+    min-width: 90px;
+    max-width: 90px;
+    padding: 10px 8px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.phone-code-input:focus {
+    outline: none;
+    border-color: #1A4B5C;
+    background-color: #ffffff;
+}
+
+.phone-number-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+.phone-number-input:focus {
+    outline: none;
+    border-color: #1A4B5C;
+    background-color: #ffffff;
+}
+
+.phone-hint {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+@media (max-width: 640px) {
+    .phone-input-group {
+        flex-direction: column;
+    }
+    
+    .phone-code-input {
+        width: 100%;
+    }
+}
+
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -584,21 +722,23 @@ body:has(.doctrine-page) .navbar {
 .contact .checkbox-group {
     background: transparent;
     border: none;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-top: 1rem;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    margin-top: 0.75rem;
     box-shadow: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 1rem;
 }
 
 .contact .checkbox-group label {
     color: #ffffff;
-    padding: 1rem 1.25rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
-    font-weight: 500;
+    padding: 0.5rem 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     margin-bottom: 0;
     cursor: pointer;
     display: flex;
@@ -606,20 +746,21 @@ body:has(.doctrine-page) .navbar {
 }
 
 .contact .checkbox-group label:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(212, 175, 55, 0.4);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border: none;
+    color: #D4AF37;
+    transform: none;
+    box-shadow: none;
 }
 
 .contact .checkbox-group label:active {
-    transform: translateY(0);
+    transform: none;
 }
 
 .contact .checkbox-group input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    margin-right: 1rem;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.75rem;
     accent-color: #D4AF37;
     cursor: pointer;
     flex-shrink: 0;
@@ -631,19 +772,27 @@ body:has(.doctrine-page) .navbar {
 }
 
 .contact .checkbox-group label:has(input[type="checkbox"]:checked) {
-    border-color: rgba(212, 175, 55, 0.5);
-    background: rgba(212, 175, 55, 0.1);
+    color: #D4AF37;
 }
 
-/* Fallback for browsers that don't support :has() */
-.contact .checkbox-group input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
-}
+/* Fallback for browsers that don't support :has() - handled by :checked + span above */
 
 .contact .checkbox-group label span {
     color: #ffffff;
     flex: 1;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .contact .checkbox-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .checkbox-group {
+        grid-template-columns: 1fr;
+    }
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -944,7 +1093,6 @@ body:has(.doctrine-page) .navbar {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
-    border: 3px solid white;
 }
 
 .missionaries-image img:hover {
@@ -1423,11 +1571,12 @@ body:has(.doctrine-page) .navbar {
 
 .contact .section-title {
     color: white;
+    margin-bottom: 1.5rem;
 }
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.85fr 1.5fr;
     gap: 4rem;
     align-items: start;
 }
@@ -1436,6 +1585,7 @@ body:has(.doctrine-page) .navbar {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .contact-info p {
@@ -1443,6 +1593,48 @@ body:has(.doctrine-page) .navbar {
     line-height: 1.7;
     margin-bottom: 2rem;
     color: #d1e7f7;
+}
+
+.missionary-photos {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.missionary-photo {
+    width: 269px;
+    height: 269px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -30px; /* Negative margin to bring them closer */
+}
+
+.missionary-photo:last-child {
+    margin-right: 0; /* Remove margin from last image */
+}
+
+.missionary-photos .missionary-photo:nth-child(2) {
+    transform: translateY(134.5px);
+}
+
+/* Responsive styles for missionary photos */
+@media (max-width: 768px) {
+    .missionary-photos {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .missionary-photo {
+        width: 235px;
+        height: 235px;
+        margin-right: -15px; /* Smaller negative margin on mobile */
+    }
+    
+    .missionary-photos .missionary-photo:nth-child(2) {
+        transform: translateY(117.5px);
+    }
 }
 
 .contact-item {
@@ -1473,13 +1665,13 @@ body:has(.doctrine-page) .navbar {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact-form .form-group input,
 .contact-form .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 15px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.2);

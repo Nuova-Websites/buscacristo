@@ -106,13 +106,17 @@
   "contact": {
     "title": "Contactez-nous",
     "heading": "Entrer en Contact",
-    "p": "Nous aimerions avoir de vos nouvelles et répondre à toutes vos questions sur notre église ou nos activités.",
+    "p": "Nous aimerions avoir de vos nouvelles et répondre à toutes vos questions sur notre église ou nos activités. Que vous souhaitiez rencontrer des missionnaires, en apprendre davantage sur nos croyances, participer à des activités, ou simplement vous connecter avec notre communauté, veuillez remplir le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
     "phone": "+34 93 123 4567",
     "email": "info@buscacristo.org",
     "address": "123 Rue de la Foi, Barcelone, Espagne",
     "namePlaceholder": "Votre Nom",
     "directionPlaceholder": "Votre Adresse",
-    "phonePlaceholder": "Votre Numéro de Téléphone",
+    "useLocation": "Utiliser votre localisation",
+    "phoneLabel": "Numéro de Téléphone",
+    "phonePlaceholder": "123 456 789",
+    "phoneHint": "Entrez le code pays avec + (ex., +33) et votre numéro de téléphone",
+    "messageLabel": "Questions ou commentaires? (Optionnel)",
     "messagePlaceholder": "Votre Message",
     "sendBtn": "Envoyer le Message",
     "activitiesLabel": "Activités d'Intérêt"
@@ -122,6 +126,10 @@
     "aboutText": "Venez au Christ et soyez rendus parfaits en Lui par la foi, le repentir, le baptême et le don du Saint-Esprit.",
     "quickLinks": "Liens Rapides",
     "resources": "Ressources",
+    "churchWebsite": "Site Web de l'Église",
+    "scriptures": "Écritures",
+    "temples": "Temples",
+    "locations": "Emplacements",
     "follow": "Suivez-nous",
     "copyright": "© 2024 Busca Cristo - L'Église de Jésus-Christ des Saints des Derniers Jours. Tous droits réservés."
   },
@@ -190,6 +198,7 @@
       "desc": "Nos missionnaires sont là pour vous aider à en apprendre davantage sur Jésus-Christ, le Livre de Mormon et l'Évangile rétabli. Ces discussions gratuites couvrent des sujets tels que le Plan de Salut, la Restauration de l'Évangile et comment les familles peuvent être ensemble pour toujours. Que vous soyez curieux de nos croyances ou que vous cherchiez des conseils spirituels, nos missionnaires sont prêts à répondre à vos questions et à partager des messages d'espoir et de paix.",
       "activities": []
     },
+    "related": "Activités Connexes",
     "availableActivities": "Activités Disponibles:",
     "related": "Activités Connexes",
     "wantToParticipate": "Vous voulez participer? Alors contactez-nous ici"
@@ -197,6 +206,16 @@
   "notifications": {
     "fillFields": "Veuillez remplir tous les champs.",
     "validEmail": "Veuillez entrer une adresse email valide.",
+    "invalidName": "Veuillez entrer un nom valide (au moins 2 caractères).",
+    "nameTooLong": "Le nom est trop long (maximum 100 caractères).",
+    "invalidAddress": "Veuillez entrer une adresse valide (au moins 5 caractères).",
+    "addressTooLong": "L'adresse est trop longue (maximum 200 caractères).",
+    "invalidPhoneCode": "Veuillez entrer un code pays valide commençant par + (ex., +33, +1, +44).",
+    "invalidPhoneNumber": "Veuillez entrer un numéro de téléphone valide (au moins 6 chiffres).",
+    "phoneTooLong": "Le numéro de téléphone est trop long (maximum 15 chiffres au total incluant le code pays).",
+    "invalidMessage": "Veuillez entrer un message (au moins 10 caractères).",
+    "messageTooLong": "Le message est trop long (maximum 1000 caractères).",
+    "noActivitySelected": "Veuillez sélectionner au moins une activité d'intérêt.",
     "thankYou": "Merci pour votre message! Nous vous répondrons bientôt.",
     "locationInfo": "Merci! Nous vous enverrons des informations spécifiques à l'emplacement dans les 24 heures.",
     "enterLocation": "Veuillez entrer un emplacement à rechercher.",
@@ -204,6 +223,7 @@
     "foundChurches": "Trouvé {count} églises SUD près de {location}",
     "locationNotFound": "Emplacement non trouvé. Veuillez essayer une adresse différente.",
     "gettingLocation": "Obtention de la Position...",
+    "locationAddressFound": "Adresse trouvée et ajoutée au formulaire!",
     "foundNearYou": "Trouvé {count} églises SUD près de vous!",
     "noChurchesNearYou": "Aucune église SUD trouvée dans votre zone.",
     "locationFound": "Emplacement trouvé! Recherche d'églises à proximité...",
@@ -441,6 +461,7 @@
         "p2": "Nous avons également la responsabilité d'aider les autres à comprendre et accepter le plan. Cela inclut de partager l'évangile avec nos amis et notre famille, de servir dans l'église et d'être des exemples de droiture. Alors que nous aidons les autres à venir au Christ, nous participons à l'œuvre de Dieu et aidons à accomplir Son plan."
       },
       "related": "Sujets Connexes"
-    }
+    },
+    "wantToLearn": "Vous voulez en savoir plus? Alors contactez-nous ici"
   }
 }

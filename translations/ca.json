@@ -106,13 +106,17 @@
   "contact": {
     "title": "Contacta'ns",
     "heading": "Posar-se en Contacte",
-    "p": "Ens encantaria saber de tu i respondre qualsevol pregunta que puguis tenir sobre la nostra església o activitats.",
+    "p": "Ens encantaria saber de tu i respondre qualsevol pregunta que puguis tenir sobre la nostra església o activitats. Tant si estàs interessat en reunir-te amb els missioners, aprendre sobre les nostres creences, participar en activitats, o simplement vols connectar-te amb la nostra comunitat, si us plau completa el formulari a continuació i et respondrem el més aviat possible.",
     "phone": "+34 93 123 4567",
     "email": "info@buscacristo.org",
     "address": "123 Carrer de la Fe, Barcelona, Espanya",
     "namePlaceholder": "El Teu Nom",
     "directionPlaceholder": "La Teva Adreça",
-    "phonePlaceholder": "El Teu Número de Telèfon",
+    "useLocation": "Utilitza la teva ubicació",
+    "phoneLabel": "Número de Telèfon",
+    "phonePlaceholder": "123 456 789",
+    "phoneHint": "Introdueix el codi de país amb + (ex., +34) i el teu número de telèfon",
+    "messageLabel": "Preguntes o comentaris? (Opcional)",
     "messagePlaceholder": "El Teu Missatge",
     "sendBtn": "Enviar Missatge",
     "activitiesLabel": "Activitats d'Interès"
@@ -122,6 +126,10 @@
     "aboutText": "Veniu a Crist i perfeccioneu-vos en Ell mitjançant la fe, el penediment, el baptisme i el do de l'Esperit Sant.",
     "quickLinks": "Enllaços Ràpids",
     "resources": "Recursos",
+    "churchWebsite": "Lloc Web de l'Església",
+    "scriptures": "Escriptures",
+    "temples": "Temples",
+    "locations": "Ubicacions",
     "follow": "Segueix-nos",
     "copyright": "© 2024 Busca Cristo - L'Església de Jesucrist dels Sants dels Últims Dies. Tots els drets reservats."
   },
@@ -190,6 +198,7 @@
       "desc": "Els nostres missioners estan aquí per ajudar-te a aprendre sobre Jesucrist, el Llibre del Mormó i l'evangeli restaurat. Aquestes discussions gratuïtes cobreixen temes com el Pla de Salvació, la Restauració de l'Evangeli i com les famílies poden estar juntes per sempre. Tant si tens curiositat sobre les nostres creences com si busques orientació espiritual, els nostres missioners estan preparats per respondre les teves preguntes i compartir missatges d'esperança i pau.",
       "activities": []
     },
+    "related": "Activitats Relacionades",
     "availableActivities": "Activitats Disponibles:",
     "related": "Activitats Relacionades",
     "wantToParticipate": "Vols participar? Aleshores posa't en contacte amb nosaltres aquí"
@@ -197,6 +206,16 @@
   "notifications": {
     "fillFields": "Si us plau completa tots els camps.",
     "validEmail": "Si us plau introdueix una adreça de correu electrònic vàlida.",
+    "invalidName": "Si us plau introdueix un nom vàlid (almenys 2 caràcters).",
+    "nameTooLong": "El nom és massa llarg (màxim 100 caràcters).",
+    "invalidAddress": "Si us plau introdueix una adreça vàlida (almenys 5 caràcters).",
+    "addressTooLong": "L'adreça és massa llarga (màxim 200 caràcters).",
+    "invalidPhoneCode": "Si us plau introdueix un codi de país vàlid que comenci amb + (ex., +34, +1, +44).",
+    "invalidPhoneNumber": "Si us plau introdueix un número de telèfon vàlid (almenys 6 dígits).",
+    "phoneTooLong": "El número de telèfon és massa llarg (màxim 15 dígits en total incloent el codi de país).",
+    "invalidMessage": "Si us plau introdueix un missatge (almenys 10 caràcters).",
+    "messageTooLong": "El missatge és massa llarg (màxim 1000 caràcters).",
+    "noActivitySelected": "Si us plau selecciona almenys una activitat d'interès.",
     "thankYou": "Gràcies pel teu missatge! Et respondrem aviat.",
     "locationInfo": "Gràcies! T'enviarem informació específica de la ubicació dins de 24 hores.",
     "enterLocation": "Si us plau introdueix una ubicació per buscar.",
@@ -204,6 +223,7 @@
     "foundChurches": "S'han trobat {count} esglésies SUD a prop de {location}",
     "locationNotFound": "Ubicació no trobada. Si us plau intenta amb una adreça diferent.",
     "gettingLocation": "Obtenint Ubicació...",
+    "locationAddressFound": "Adreça trobada i afegida al formulari!",
     "foundNearYou": "S'han trobat {count} esglésies SUD a prop de tu!",
     "noChurchesNearYou": "No s'han trobat esglésies SUD a la teva àrea.",
     "locationFound": "Ubicació trobada! Buscant esglésies properes...",
@@ -441,6 +461,7 @@
         "p2": "També tenim la responsabilitat d'ajudar als altres a entendre i acceptar el pla. Això inclou compartir l'evangeli amb els nostres amics i familiars, servir a l'església i ser exemples de rectitud. A mesura que ajudem als altres a venir a Crist, estem participant en l'obra de Déu i ajudant a complir el Seu pla."
       },
       "related": "Temes Relacionats"
-    }
+    },
+    "wantToLearn": "Vols aprendre més? Aleshores posa't en contacte amb nosaltres aquí"
   }
 }

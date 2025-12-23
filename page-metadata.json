@@ -8,15 +8,15 @@
       "related_links": [
         {
           "url": "youth-programs.html",
-          "text": "Youth Programs"
+          "text_i18n": "activitiesDetail.youth.title"
         },
         {
           "url": "family-activities.html",
-          "text": "Family Activities"
+          "text_i18n": "activitiesDetail.family.title"
         },
         {
           "url": "language-classes.html",
-          "text": "Language Classes"
+          "text_i18n": "activitiesDetail.service.title"
         }
       ]
     },
@@ -28,15 +28,15 @@
       "related_links": [
         {
           "url": "worship-services.html",
-          "text": "Church Services"
+          "text_i18n": "activitiesDetail.worship.title"
         },
         {
           "url": "family-activities.html",
-          "text": "Family Activities"
+          "text_i18n": "activitiesDetail.family.title"
         },
         {
           "url": "young-adult-activities.html",
-          "text": "Young Adult Activities"
+          "text_i18n": "activitiesDetail.education.title"
         }
       ]
     },
@@ -48,15 +48,15 @@
       "related_links": [
         {
           "url": "worship-services.html",
-          "text": "Church Services"
+          "text_i18n": "activitiesDetail.worship.title"
         },
         {
           "url": "youth-programs.html",
-          "text": "Youth Programs"
+          "text_i18n": "activitiesDetail.youth.title"
         },
         {
           "url": "other-opportunities.html",
-          "text": "Missionary Discussions"
+          "text_i18n": "activitiesDetail.other.title"
         }
       ]
     },
@@ -68,15 +68,15 @@
       "related_links": [
         {
           "url": "youth-programs.html",
-          "text": "Youth Programs"
+          "text_i18n": "activitiesDetail.youth.title"
         },
         {
           "url": "language-classes.html",
-          "text": "Language Classes"
+          "text_i18n": "activitiesDetail.service.title"
         },
         {
           "url": "other-opportunities.html",
-          "text": "Missionary Discussions"
+          "text_i18n": "activitiesDetail.other.title"
         }
       ]
     },
@@ -88,15 +88,15 @@
       "related_links": [
         {
           "url": "worship-services.html",
-          "text": "Church Services"
+          "text_i18n": "activitiesDetail.worship.title"
         },
         {
           "url": "young-adult-activities.html",
-          "text": "Young Adult Activities"
+          "text_i18n": "activitiesDetail.education.title"
         },
         {
           "url": "other-opportunities.html",
-          "text": "Missionary Discussions"
+          "text_i18n": "activitiesDetail.other.title"
         }
       ]
     },
@@ -108,15 +108,15 @@
       "related_links": [
         {
           "url": "worship-services.html",
-          "text": "Church Services"
+          "text_i18n": "activitiesDetail.worship.title"
         },
         {
           "url": "family-activities.html",
-          "text": "Family Activities"
+          "text_i18n": "activitiesDetail.family.title"
         },
         {
           "url": "language-classes.html",
-          "text": "Language Classes"
+          "text_i18n": "activitiesDetail.service.title"
         }
       ]
     }
@@ -130,19 +130,19 @@
       "related_links": [
         {
           "url": "jesus-christ.html",
-          "text": "Jesus Christ"
+          "text_i18n": "doctrinePages.jesusChrist.title"
         },
         {
           "url": "book-of-mormon.html",
-          "text": "Book of Mormon"
+          "text_i18n": "doctrinePages.bookOfMormon.title"
         },
         {
           "url": "eternal-families.html",
-          "text": "Eternal Families"
+          "text_i18n": "doctrinePages.eternalFamilies.title"
         },
         {
           "url": "plan-of-salvation.html",
-          "text": "Plan of Salvation"
+          "text_i18n": "doctrinePages.planOfSalvation.title"
         }
       ]
     },
@@ -154,15 +154,15 @@
       "related_links": [
         {
           "url": "plan-of-salvation.html",
-          "text": "Plan of Salvation"
+          "text_i18n": "doctrinePages.planOfSalvation.title"
         },
         {
           "url": "book-of-mormon.html",
-          "text": "Book of Mormon"
+          "text_i18n": "doctrinePages.bookOfMormon.title"
         },
         {
           "url": "eternal-families.html",
-          "text": "Eternal Families"
+          "text_i18n": "doctrinePages.eternalFamilies.title"
         }
       ]
     },
@@ -174,15 +174,15 @@
       "related_links": [
         {
           "url": "jesus-christ.html",
-          "text": "Jesus Christ"
+          "text_i18n": "doctrinePages.jesusChrist.title"
         },
         {
           "url": "living-prophets.html",
-          "text": "Living Prophets"
+          "text_i18n": "doctrinePages.livingProphets.title"
         },
         {
           "url": "plan-of-salvation.html",
-          "text": "Plan of Salvation"
+          "text_i18n": "doctrinePages.planOfSalvation.title"
         }
       ]
     },
@@ -194,15 +194,15 @@
       "related_links": [
         {
           "url": "jesus-christ.html",
-          "text": "Jesus Christ"
+          "text_i18n": "doctrinePages.jesusChrist.title"
         },
         {
           "url": "plan-of-salvation.html",
-          "text": "Plan of Salvation"
+          "text_i18n": "doctrinePages.planOfSalvation.title"
         },
         {
           "url": "book-of-mormon.html",
-          "text": "Book of Mormon"
+          "text_i18n": "doctrinePages.bookOfMormon.title"
         }
       ]
     },
@@ -214,15 +214,15 @@
       "related_links": [
         {
           "url": "jesus-christ.html",
-          "text": "Jesus Christ"
+          "text_i18n": "doctrinePages.jesusChrist.title"
         },
         {
           "url": "book-of-mormon.html",
-          "text": "Book of Mormon"
+          "text_i18n": "doctrinePages.bookOfMormon.title"
         },
         {
           "url": "plan-of-salvation.html",
-          "text": "Plan of Salvation"
+          "text_i18n": "doctrinePages.planOfSalvation.title"
         }
       ]
     },

@@ -22,7 +22,24 @@ class PageLoader {
 
         // Update page content if on a content page
         if (this.isContentPage()) {
-            this.updatePageContent();
+            // Wait for languageManager to be ready
+            if (typeof languageManager !== 'undefined') {
+                // If languageManager is already initialized, update immediately
+                if (languageManager.currentLanguage) {
+                    this.updatePageContent();
+                } else {
+                    // Wait for languageManager to initialize
+                    setTimeout(() => this.updatePageContent(), 100);
+                }
+            } else {
+                // Wait a bit for languageManager to load
+                setTimeout(() => this.updatePageContent(), 200);
+            }
+            
+            // Also update when language changes
+            window.addEventListener('languageChanged', () => {
+                this.updatePageContent();
+            });
         }
     }
 
@@ -76,14 +93,20 @@ class PageLoader {
             }
         }
 
-        // Update related links - use relative paths
+        // Update related links - use relative paths and translations
         const relatedLinks = document.querySelectorAll('.related-link');
         if (relatedLinks.length > 0 && metadata.related_links) {
             relatedLinks.forEach((link, index) => {
                 if (index < metadata.related_links.length) {
                     const linkData = metadata.related_links[index];
                     link.href = basePath + `${source}/${linkData.url}`;
-                    link.textContent = linkData.text;
+                    
+                    // Use translation if available
+                    if (linkData.text_i18n) {
+                        this.updateLinkText(link, linkData.text_i18n);
+                    } else {
+                        link.textContent = linkData.text || '';
+                    }
                 }
             });
         }
@@ -98,6 +121,40 @@ class PageLoader {
             } else {
                 contactCta.href = basePath + '#contact';
             }
+        }
+    }
+
+    updateLinkText(link, translationKey) {
+        // Try to get translation from languageManager
+        if (typeof languageManager !== 'undefined' && languageManager.getTranslation) {
+            const translation = languageManager.getTranslation(translationKey);
+            if (translation && translation !== translationKey) {
+                link.textContent = translation;
+                return;
+            }
+        }
+        
+        // Fallback: try to get from global translations object
+        if (typeof translations !== 'undefined') {
+            const lang = typeof languageManager !== 'undefined' ? languageManager.getCurrentLanguage() : 'en';
+            const t = translations[lang] || translations['en'];
+            if (t) {
+                const keys = translationKey.split('.');
+                let value = t;
+                for (const key of keys) {
+                    value = value?.[key];
+                    if (!value) break;
+                }
+                if (value && typeof value === 'string') {
+                    link.textContent = value;
+                    return;
+                }
+            }
+        }
+        
+        // Final fallback: keep existing text or use key
+        if (!link.textContent || link.textContent.trim() === '') {
+            link.textContent = translationKey.split('.').pop();
         }
     }
 }

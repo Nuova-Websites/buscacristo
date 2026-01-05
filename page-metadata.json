@@ -234,15 +234,15 @@
       "related_links": [
         {
           "url": "jesus-christ.html",
-          "text": "Jesus Christ"
+          "text_i18n": "doctrinePages.jesusChrist.title"
         },
         {
           "url": "eternal-families.html",
-          "text": "Eternal Families"
+          "text_i18n": "doctrinePages.eternalFamilies.title"
         },
         {
           "url": "book-of-mormon.html",
-          "text": "Book of Mormon"
+          "text_i18n": "doctrinePages.bookOfMormon.title"
         }
       ]
     }

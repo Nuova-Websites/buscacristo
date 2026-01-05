@@ -641,6 +641,12 @@ body:has(.doctrine-page) .navbar {
     align-items: stretch;
 }
 
+.phone-code-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
 .phone-input-group .phone-code-input {
     flex-shrink: 0;
     flex-grow: 0;
@@ -656,6 +662,55 @@ body:has(.doctrine-page) .navbar {
     font-family: 'Inter', sans-serif;
     text-align: center;
     box-sizing: border-box;
+}
+
+.country-code-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    background-color: #ffffff;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.country-code-list {
+    max-height: 280px; /* Approximately 7 items * 40px - shows 7 items at a time */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.country-code-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333333;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.country-code-item:last-child {
+    border-bottom: none;
+}
+
+.country-code-item:hover {
+    background-color: #f8f9fa;
+}
+
+.country-code-item.no-results {
+    color: #999;
+    cursor: default;
+    font-style: italic;
+}
+
+.country-code-item.no-results:hover {
+    background-color: transparent;
 }
 
 .phone-code-input:focus {

@@ -126,7 +126,7 @@
             <p class="activities-intro" data-i18n="activities.intro">Discover the various activities and programs available at our church locations. Each location offers unique opportunities for spiritual growth, fellowship, and service.</p>
             
             <div class="activity-types-grid">
-                <div class="activity-type-card" data-activity="worship">
+                <div class="activity-type-card" data-activity="worship" onclick="window.location.href='activities/worship-services.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/church1.jpg" alt="Worship Services">
                     </div>
@@ -138,7 +138,7 @@
                     <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='activities/worship-services.html';" data-i18n="activities.worship.btn">View Activities</button>
                 </div>
 
-                <div class="activity-type-card" data-activity="youth">
+                <div class="activity-type-card" data-activity="youth" onclick="window.location.href='activities/youth-programs.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/youth.avif" alt="Youth Programs">
                     </div>
@@ -150,7 +150,7 @@
                     <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='activities/youth-programs.html';" data-i18n="activities.youth.btn">View Activities</button>
                 </div>
 
-                <div class="activity-type-card" data-activity="family">
+                <div class="activity-type-card" data-activity="family" onclick="window.location.href='activities/family-activities.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/family.jpg" alt="Family Activities">
                     </div>
@@ -162,7 +162,7 @@
                     <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='activities/family-activities.html';" data-i18n="activities.family.btn">View Activities</button>
                 </div>
 
-                <div class="activity-type-card" data-activity="education">
+                <div class="activity-type-card" data-activity="education" onclick="window.location.href='activities/young-adult-activities.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/young-adult.avif" alt="Young Adult Activities">
                     </div>
@@ -174,7 +174,7 @@
                     <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='activities/young-adult-activities.html';" data-i18n="activities.education.btn">View Activities</button>
                 </div>
 
-                <div class="activity-type-card" data-activity="service">
+                <div class="activity-type-card" data-activity="service" onclick="window.location.href='activities/language-classes.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/language.avif" alt="Language Classes">
                     </div>
@@ -186,7 +186,7 @@
                     <button class="view-activities-btn" onclick="event.stopPropagation(); window.location.href='activities/language-classes.html';" data-i18n="activities.service.btn">View Activities</button>
                 </div>
 
-                <div class="activity-type-card" data-activity="other">
+                <div class="activity-type-card" data-activity="other" onclick="window.location.href='activities/other-opportunities.html'" style="cursor: pointer;">
                     <div class="activity-card-image">
                         <img src="images/missionaries2.jpg" alt="Missionary Discussions">
                     </div>
@@ -337,10 +337,15 @@
                         <div class="form-group">
                             <label data-i18n="contact.phoneLabel">Phone Number</label>
                             <div class="phone-input-group">
-                                <input type="tel" id="contactPhoneCode" name="phoneCode" placeholder="+34" class="phone-code-input" required>
-                                <input type="tel" id="contactPhone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="123 456 789" class="phone-number-input" required>
+                                <div class="phone-code-wrapper">
+                                    <input type="tel" id="contactPhoneCode" name="phoneCode" placeholder="+34" class="phone-code-input" autocomplete="off">
+                                    <div id="countryCodeDropdown" class="country-code-dropdown">
+                                        <div class="country-code-list" id="countryCodeList"></div>
+                                    </div>
+                                </div>
+                                <input type="tel" id="contactPhone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="123 45 67 89" class="phone-number-input" required>
                             </div>
-                            <small class="phone-hint" data-i18n="contact.phoneHint">Enter country code with + (e.g., +34) and your phone number</small>
+                            <small class="phone-hint" data-i18n="contact.phoneHint">Enter country code (optional dropdown) and your phone number</small>
                         </div>
                         <div class="form-group">
                             <label data-i18n="contact.activitiesLabel">Activities of Interest</label>

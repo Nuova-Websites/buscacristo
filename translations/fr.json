@@ -223,6 +223,7 @@
     "foundChurches": "Trouvé {count} églises SUD près de {location}",
     "locationNotFound": "Emplacement non trouvé. Veuillez essayer une adresse différente.",
     "gettingLocation": "Obtention de la Position...",
+    "retryingLocation": "Nouvelle tentative...",
     "locationAddressFound": "Adresse trouvée et ajoutée au formulaire!",
     "foundNearYou": "Trouvé {count} églises SUD près de vous!",
     "noChurchesNearYou": "Aucune église SUD trouvée dans votre zone.",

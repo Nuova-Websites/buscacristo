@@ -219,6 +219,7 @@
     "foundChurches": "Found {count} LDS churches near {location}",
     "locationNotFound": "Location not found. Please try a different address.",
     "gettingLocation": "Getting Location...",
+    "retryingLocation": "Retrying...",
     "foundNearYou": "Found {count} LDS churches near you!",
     "noChurchesNearYou": "No LDS churches found in your area.",
     "locationFound": "Location found! Searching for nearby churches...",

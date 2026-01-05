@@ -223,6 +223,7 @@
     "foundChurches": "S'han trobat {count} esglésies SUD a prop de {location}",
     "locationNotFound": "Ubicació no trobada. Si us plau intenta amb una adreça diferent.",
     "gettingLocation": "Obtenint Ubicació...",
+    "retryingLocation": "Tornant a intentar...",
     "locationAddressFound": "Adreça trobada i afegida al formulari!",
     "foundNearYou": "S'han trobat {count} esglésies SUD a prop de tu!",
     "noChurchesNearYou": "No s'han trobat esglésies SUD a la teva àrea.",
